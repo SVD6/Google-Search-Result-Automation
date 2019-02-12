@@ -1,15 +1,15 @@
 import xlsxwriter
 import urllib
+
 import os
 import tkinter
 from tkinter import *
+from googlesearch import search 
 
-try: 
-    from googlesearch import search 
-except ImportError:  
-    print("No module named 'google' found") 
-
-os.remove('Test1.xlsx')
+try:
+    os.remove('Test1.xlsx')
+except FileNotFoundError:
+    print('File Test1.xlsx not found')
 
 def googleSearch(query, results):
     urls = []
