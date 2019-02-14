@@ -1,5 +1,6 @@
 import xlsxwriter
 import urllib
+import extractEmails
 
 import os
 import tkinter
@@ -15,13 +16,22 @@ def googleSearch(query, results):
     urls = []
     links = []
 
-    for j in search(query, tld='ca', safe='off', start=0, stop=results, pause=2):
+    stop = 0
+
+    for j in search(query, tld='ca', safe='off', start=0, pause=2):
+
+        if (stop == (results + 1)):
+            break 
+
         a, b, c, d = j.split('/', 3)
 
-        if (c not in urls and c != 'www.airbnb.com' and c != 'www.facebook.com' and c != 'www.tripadvisor.com'):
+        if (c not in urls and c != 'www.airbnb.com' and c != 'www.facebook.com' and c != 'www.tripadvisor.com' and c != 'www.kayak.com' 
+        and c != 'www.expedia.com' and c != 'www.viator.com' and c != 'www.getyourguide.com' and c != 'www.youtube.com' and c != 'www.amazon.com'):
             print(c)
             urls.append(c)
             links.append(j)
+        
+        stop += 1
     return links
 
 def findEmails():
@@ -42,7 +52,7 @@ def setupSheet(filename):
 def printtest():
     print('sup nigga')
 
-setupSheet('Test1')     
+# setupSheet('Test1')     
 # googleSearch('Sai Vikranth Desu', 10)
 
 root = tkinter.Tk()
@@ -63,7 +73,7 @@ numresults = IntVar()
 inp2 = Entry(root, textvariable=numresults)
 inp2.grid(row=1, column=1, pady=10)
 
-but = Button(root, text="Magic.")
+but = Button(root, text="Magic.", command = lambda: googleSearch(searchquery.get(), numresults.get()))
 but.grid(row=2, column=0, pady=10)
 
 root.mainloop()
