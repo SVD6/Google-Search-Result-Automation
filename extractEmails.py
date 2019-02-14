@@ -65,5 +65,5 @@ class ExtractEmails:
                 pass
 
 if __name__ == '__main__':
-    em = ExtractEmails('http://www.cumberlandhomes.org', print_log=True, depth=20, ssl_verify=False, user_agent='random')
+    em = ExtractEmails('http://www.wandure.com', print_log=True, depth=20, ssl_verify=False, user_agent='random')
     print(em.emails)
