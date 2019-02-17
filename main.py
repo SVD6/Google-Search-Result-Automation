@@ -3,16 +3,10 @@ import tldextract
 import os
 import tkinter
 import xlsxwriter
-import extractEmails
-
-import re
-import requests
-import urllib3
-from lxml import html
-from fake_useragent import UserAgent
 
 from googlesearch import search 
 from tkinter import Label, Entry, StringVar, IntVar, Button, Frame
+
 
 def buttonHandler(searchquery, numresults, filename):
     book = xlsxwriter.Workbook(filename + '.xlsx')
@@ -43,8 +37,8 @@ def runQuery(searchquery, numresults):
         extraction = tldextract.extract(webURL)
         domain = extraction.domain()
 
-        if (domain not in urls and domain != 'www.airbnb.com' and domain != 'www.facebook.com' and domain != 'www.tripadvisor.com' and domain != 'www.kayak.com' 
-        and domain != 'www.expedia.com' and domain != 'www.viator.com' and domain != 'www.getyourguide.com' and domain != 'www.youtube.com' and domain != 'www.amazon.com'):
+        if (domain not in urls and domain != 'airbnb' and domain != 'facebook' and domain != 'tripadvisor' and domain != 'kayak' 
+        and domain != 'expedia' and domain != 'viator' and domain != 'getyourguide' and domain != 'youtube' and domain != 'amazon'):
             print(domain)
             urls.append(domain)
             links.append(webURL)
@@ -53,9 +47,6 @@ def runQuery(searchquery, numresults):
     return links
 
 def emailExtract(links, excelsheet):
-    
-    for url in links:
-        return
     return
 
 root = tkinter.Tk()
