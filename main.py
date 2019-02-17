@@ -1,15 +1,18 @@
 import tldextract
 
-try:
-    import os
-    import tkinter
-    import xlsxwriter
-    import extractEmails
-    
-    from googlesearch import search 
-    from tkinter import Label, Entry, StringVar, IntVar, Button, Frame
-except ImportError:
-    print("Error importing a module")
+import os
+import tkinter
+import xlsxwriter
+import extractEmails
+
+import re
+import requests
+import urllib3
+from lxml import html
+from fake_useragent import UserAgent
+
+from googlesearch import search 
+from tkinter import Label, Entry, StringVar, IntVar, Button, Frame
 
 def buttonHandler(searchquery, numresults, filename):
     book = xlsxwriter.Workbook(filename + '.xlsx')

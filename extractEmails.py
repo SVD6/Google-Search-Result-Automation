@@ -1,5 +1,6 @@
 import re
 import requests
+import urllib3
 from lxml import html
 from fake_useragent import UserAgent
 
@@ -65,5 +66,6 @@ class ExtractEmails:
                 pass
 
 if __name__ == '__main__':
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     em = ExtractEmails('https://www.bikerentalbarcelona.com/', print_log=True, depth=20, ssl_verify=False, user_agent='random')
     print(em.emails)
