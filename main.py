@@ -28,9 +28,9 @@ depth = 20
 print_log = True
 verify = True
 
-def buttonHandler(searchquery, numresults, filename):
-    # Initialize the global variables to null in case the tool is used more than once in one run
 
+# Handler for the "Magic" Button
+def buttonHandler(searchquery, numresults, filename):
     # Create the workbook and format the first
     book = xlsxwriter.Workbook(filename + '.xlsx')
     wsh = book.add_worksheet()
@@ -41,11 +41,14 @@ def buttonHandler(searchquery, numresults, filename):
     wsh.write('B1', 'Website Link', bold)
     wsh.write('C1', 'Contact Email', bold)
 
+    # Perform the search and collect a list of links
     links = runQuery(searchquery, numresults)
 
+    # Use the email extractor for each URL and all sub-URL's
     for url in links:
         emailExtract(url)
     
+    # Take all the url-email pairs and put them in the excel file
     row = 1
     for pair in excel_ready:
         print(pair[0] + pair[1])
@@ -54,6 +57,7 @@ def buttonHandler(searchquery, numresults, filename):
         row += 1
     book.close()
 
+# Runs the search query on the given paramaters
 def runQuery(searchquery, numresults):
     urls = []
     links = []
@@ -74,6 +78,7 @@ def runQuery(searchquery, numresults):
             stop += 1
     return links
 
+# Sub-link + email extractor
 def emailExtract(url):
     headers = {'User-Agent': agents['chrome']}
     r = requests.get(url, headers = headers, verify = verify)
@@ -87,10 +92,12 @@ def emailExtract(url):
         if new_url not in scanned:
             emailExtract(new_url)
 
+# Print the state of the current url/email
 def print_logs():
         print('URLs: {}, emails: {}'
               .format(len(scanned), len(emails)))
 
+# Given one URL and an html page, find all sub-links based on the depth number
 def get_all_links(url, page):
         tree = html.fromstring(page)
         all_links = tree.findall('.//a')
@@ -105,6 +112,7 @@ def get_all_links(url, page):
             except KeyError:
                 pass
 
+# Given a URL and it's corresponding text, find all emails on the page
 def get_emails(url, page):
         t_emails = re.findall(r'\b[\w.-]+?@\w+?\.(?!jpg|png|jpeg)\w+?\b', page)
         if t_emails:
