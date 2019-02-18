@@ -1,5 +1,0 @@
-('c:\\users\\vikra\\appdata\\roaming\\python\\python37\\site-packages\\fake_useragent-0.1.10-py3.7.egg',
- None,
- {'*.pyw', 'EGG-INFO', '*.pyc', '*.pyd', '*.cp37-win32.pyd', '*.py'},
- 'DATA',
- [])
