@@ -18,8 +18,12 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Initialize some global variables
 ua = UserAgent()
 agents = {'ie': ua.ie, 'msie': ua.msie, 'opera': ua.opera,
-              'chrome': ua.chrome, 'google': ua.google, 'firefox': ua.firefox,
-              'safari': ua.safari, 'random': ua.random}
+            'chrome': ua.chrome, 'google': ua.google, 'firefox': ua.firefox,
+            'safari': ua.safari, 'random': ua.random}
+
+bad_domains = ['airbnb', 'youtube', 'facebook', 'viator', 'expedia', 'tripadvisor', 'kayak', 'amazon', 
+            'likealocalguide', 'getyourguide', 'wikipedia']
+
 for_scan = []
 scanned = []
 emails = []
@@ -36,7 +40,7 @@ def buttonHandler(searchquery, numresults, filename):
     wsh = book.add_worksheet()
 
     bold = book.add_format({'bold': 1})
-    wsh.set_column(0, 2, 30)  
+    wsh.set_column(0, 2, 50)  
     wsh.write('A1', 'Website Title', bold)
     wsh.write('B1', 'Website Link', bold)
     wsh.write('C1', 'Contact Email', bold)
@@ -70,8 +74,7 @@ def runQuery(searchquery, numresults):
         extraction = tldextract.extract(webURL)
         domain = extraction[1]
 
-        if (domain not in urls and domain != 'airbnb' and domain != 'facebook' and domain != 'tripadvisor' and domain != 'kayak' 
-        and domain != 'expedia' and domain != 'viator' and domain != 'getyourguide' and domain != 'youtube' and domain != 'amazon' and domain != 'likealocalguide'):
+        if (domain not in urls and domain not in bad_domains):
             print(domain)
             urls.append(domain)
             links.append(webURL)
