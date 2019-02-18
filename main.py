@@ -3,10 +3,23 @@ import tldextract
 import os
 import tkinter
 import xlsxwriter
+import re
+import requests
+import urllib3
 
 from googlesearch import search 
+from lxml import html
+from fake_useragent import UserAgent
 from tkinter import Label, Entry, StringVar, IntVar, Button, Frame
 
+ua = UserAgent()
+agents = {'ie': ua.ie, 'msie': ua.msie, 'opera': ua.opera,
+              'chrome': ua.chrome, 'google': ua.google, 'firefox': ua.firefox,
+              'safari': ua.safari, 'random': ua.random}
+for_scan = []
+scanned = []
+emails = []
+depth = 20
 
 def buttonHandler(searchquery, numresults, filename):
     book = xlsxwriter.Workbook(filename + '.xlsx')
@@ -24,7 +37,6 @@ def buttonHandler(searchquery, numresults, filename):
     book.close()
 
 def runQuery(searchquery, numresults):
-
     urls = []
     links = []
     stop = 0
@@ -35,19 +47,50 @@ def runQuery(searchquery, numresults):
             break 
 
         extraction = tldextract.extract(webURL)
-        domain = extraction.domain()
+        domain = extraction[1]
 
         if (domain not in urls and domain != 'airbnb' and domain != 'facebook' and domain != 'tripadvisor' and domain != 'kayak' 
         and domain != 'expedia' and domain != 'viator' and domain != 'getyourguide' and domain != 'youtube' and domain != 'amazon'):
             print(domain)
             urls.append(domain)
             links.append(webURL)
-        
-        stop += 1
+            stop += 1
     return links
 
 def emailExtract(links, excelsheet):
+    verify = False
+    headers = {'User-Agent': agents['chrome']}
+    
+    for url in links:
+        r = requests.get(url, headers = headers, verify = verify)
+        scanned.append(url)
+        if r.status_code == 200:
+            get_all_links(url, r.text)
+            get_emails(r.text)
+
     return
+
+def get_all_links(url, page):
+        tree = html.fromstring(page)
+        all_links = tree.findall('.//a')
+        for link in all_links:
+            try:
+                link_href = link.attrib['href']
+                if link_href.startswith(url) or link_href.startswith('/'):
+                    if link_href.startswith('/'):
+                        link_href = url + link_href
+                    if link_href not in for_scan:
+                        for_scan.append(link_href)
+            except KeyError:
+                pass
+
+def get_emails(self, page):
+        num = 0
+        emails = re.findall(r'\b[\w.-]+?@\w+?\.(?!jpg|png|jpeg)\w+?\b', page)
+        if emails:
+            for email in emails:
+                if email not in self.emails:
+                    self.emails.append(email)
 
 root = tkinter.Tk()
 root.height = 50
@@ -76,7 +119,7 @@ fileName = StringVar()
 inp3 = Entry(root, textvariable=fileName)
 inp3.grid(row=2, column=1, padx=10, pady=10)
 
-but = Button(root, text="Magic", command= lambda: buttonHandler(inp.get(), inp2.get(), inp3.get()))
+but = Button(root, text="Magic", command= lambda: buttonHandler(inp.get(), int(inp2.get()), inp3.get()))
 but.grid(row=3, column=0, pady=10)
 
 root.resizable(False, False)

@@ -1,16 +1,12 @@
 from urllib import request
 from urllib.request import Request, urlopen
 import re
+import tldextract
 
-link = 'https://www.timeout.com/'
+from googlesearch import search 
 
-req = Request(link, headers={'User-Agent': 'Mozilla/5.0'})
-webpage = urlopen(req).read().decode('utf-8')
+webURL = 'https://www.timeout.com/'
 
-# print(webpage)
-emails = re.findall(r'[\w\.-]+@[\w\.-]+', webpage) 
-
-for email in emails:
-    print(email)
-
-# reg_ex = re.compile(r'[-a-z0-9._]+@([-a-z0-9]+)(\.[-a-z0-9]+)+', re.IGNORECASE
+extraction = tldextract.extract(webURL)
+domain = extraction[1]
+print(domain)
