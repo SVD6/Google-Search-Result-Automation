@@ -46,9 +46,12 @@ def buttonHandler(searchquery, numresults, filename):
     for url in links:
         emailExtract(url)
     
+    row = 1
     for pair in excel_ready:
         print(pair[0] + pair[1])
-
+        wsh.write(row, 1, pair[0], None)
+        wsh.write(row, 2, pair[1], None)
+        row += 1
     book.close()
 
 def runQuery(searchquery, numresults):
