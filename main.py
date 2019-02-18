@@ -12,6 +12,10 @@ from lxml import html
 from fake_useragent import UserAgent
 from tkinter import Label, Entry, StringVar, IntVar, Button, Frame
 
+# Disable InsecureRequestWarning, makes the logs cleaner
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Initialize some global variables
 ua = UserAgent()
 agents = {'ie': ua.ie, 'msie': ua.msie, 'opera': ua.opera,
               'chrome': ua.chrome, 'google': ua.google, 'firefox': ua.firefox,
@@ -19,9 +23,15 @@ agents = {'ie': ua.ie, 'msie': ua.msie, 'opera': ua.opera,
 for_scan = []
 scanned = []
 emails = []
+excel_ready = []
 depth = 20
+print_log = True
+verify = True
 
 def buttonHandler(searchquery, numresults, filename):
+    # Initialize the global variables to null in case the tool is used more than once in one run
+
+    # Create the workbook and format the first
     book = xlsxwriter.Workbook(filename + '.xlsx')
     wsh = book.add_worksheet()
 
@@ -32,7 +42,12 @@ def buttonHandler(searchquery, numresults, filename):
     wsh.write('C1', 'Contact Email', bold)
 
     links = runQuery(searchquery, numresults)
-    emailExtract(links, book)
+
+    for url in links:
+        emailExtract(url)
+    
+    for pair in excel_ready:
+        print(pair[0] + pair[1])
 
     book.close()
 
@@ -42,33 +57,36 @@ def runQuery(searchquery, numresults):
     stop = 0
 
     for webURL in search(searchquery, tld='ca', safe='off', start=0, pause=2):
-
-        if (stop == (numresults + 1)):
+        if (stop == (numresults)):
             break 
 
         extraction = tldextract.extract(webURL)
         domain = extraction[1]
 
         if (domain not in urls and domain != 'airbnb' and domain != 'facebook' and domain != 'tripadvisor' and domain != 'kayak' 
-        and domain != 'expedia' and domain != 'viator' and domain != 'getyourguide' and domain != 'youtube' and domain != 'amazon'):
+        and domain != 'expedia' and domain != 'viator' and domain != 'getyourguide' and domain != 'youtube' and domain != 'amazon' and domain != 'likealocalguide'):
             print(domain)
             urls.append(domain)
             links.append(webURL)
             stop += 1
     return links
 
-def emailExtract(links, excelsheet):
-    verify = False
+def emailExtract(url):
     headers = {'User-Agent': agents['chrome']}
-    
-    for url in links:
-        r = requests.get(url, headers = headers, verify = verify)
-        scanned.append(url)
-        if r.status_code == 200:
-            get_all_links(url, r.text)
-            get_emails(r.text)
+    r = requests.get(url, headers = headers, verify = verify)
+    scanned.append(url)
+    if r.status_code == 200:
+        get_all_links(url, r.text)
+        get_emails(url, r.text)
+    if print_log:
+        print_logs()
+    for new_url in for_scan[:depth]:
+        if new_url not in scanned:
+            emailExtract(new_url)
 
-    return
+def print_logs():
+        print('URLs: {}, emails: {}'
+              .format(len(scanned), len(emails)))
 
 def get_all_links(url, page):
         tree = html.fromstring(page)
@@ -84,14 +102,16 @@ def get_all_links(url, page):
             except KeyError:
                 pass
 
-def get_emails(self, page):
-        num = 0
-        emails = re.findall(r'\b[\w.-]+?@\w+?\.(?!jpg|png|jpeg)\w+?\b', page)
-        if emails:
-            for email in emails:
-                if email not in self.emails:
-                    self.emails.append(email)
+def get_emails(url, page):
+        t_emails = re.findall(r'\b[\w.-]+?@\w+?\.(?!jpg|png|jpeg)\w+?\b', page)
+        if t_emails:
+            for email in t_emails:
+                if email not in emails:
+                    emails.append(email)
+                    excel_ready.append((url, email))
 
+
+# BUILD THE UI
 root = tkinter.Tk()
 root.height = 50
 root.width= 50

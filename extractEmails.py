@@ -45,7 +45,6 @@ class ExtractEmails:
               .format(len(self.scanned), len(self.emails)))
 
     def get_emails(self, page):
-        num = 0
         emails = re.findall(r'\b[\w.-]+?@\w+?\.(?!jpg|png|jpeg)\w+?\b', page)
         if emails:
             for email in emails:
@@ -68,5 +67,5 @@ class ExtractEmails:
 
 if __name__ == '__main__':
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    em = ExtractEmails('https://www.madridcitytours.com/', print_log=True, depth=20, ssl_verify=False, user_agent='random')
+    em = ExtractEmails('https://torontotours.ca', print_log=True, depth=20, ssl_verify=True, user_agent='random')
     print(em.emails)
