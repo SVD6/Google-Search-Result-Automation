@@ -9,6 +9,7 @@ import urllib3
 
 from googlesearch import search 
 from lxml import html
+from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 from tkinter import Label, Entry, StringVar, IntVar, Button, Frame
 
@@ -28,9 +29,9 @@ for_scan = []
 scanned = []
 emails = []
 excel_ready = []
-depth = 20
+depth = 30
 print_log = True
-verify = True
+verify = False
 
 
 # Handler for the "Magic" Button
@@ -56,6 +57,7 @@ def buttonHandler(searchquery, numresults, filename):
     row = 1
     for pair in excel_ready:
         print(pair[0] + pair[1])
+        wsh.write(row, 0, pair[2], None)
         wsh.write(row, 1, pair[0], None)
         wsh.write(row, 2, pair[1], None)
         row += 1
@@ -83,6 +85,7 @@ def runQuery(searchquery, numresults):
 
 # Sub-link + email extractor
 def emailExtract(url):
+    depth = 30
     headers = {'User-Agent': agents['chrome']}
     r = requests.get(url, headers = headers, verify = verify)
     scanned.append(url)
@@ -121,8 +124,9 @@ def get_emails(url, page):
         if t_emails:
             for email in t_emails:
                 if email not in emails:
+                    soup = BeautifulSoup(page)
                     emails.append(email)
-                    excel_ready.append((url, email))
+                    excel_ready.append((url, email, str(soup.title.contents[0])))
 
 
 # BUILD THE UI
@@ -130,30 +134,30 @@ root = tkinter.Tk()
 root.height = 50
 root.width= 50
 
-root.title("Wandure Autobot")
+root.title('Wandure Autobot')
 
-l = Label(root, text = "Enter your search query:", relief='flat')
+l = Label(root, text = 'Enter your search query:', relief='flat')
 l.grid(row=0, column=0, padx=5, pady=10)
 
 searchQuery = StringVar()
 inp = Entry(root, textvariable=searchQuery)
 inp.grid(row=0, column=1, padx=10, pady=10)
 
-l = Label(root, text = "How many entries?", relief = 'flat')
+l = Label(root, text = 'How many entries?', relief = 'flat')
 l.grid(row=1, column=0, padx=5, pady=10) 
 
 numResults = IntVar()
 inp2 = Entry(root, textvariable=numResults)
 inp2.grid(row=1, column=1, padx=10, pady=10)
 
-l = Label(root, text = "Name of Excel File:", relief='flat')
+l = Label(root, text = 'Name of Excel File:', relief='flat')
 l.grid(row=2, column=0, padx=5, pady=10)
 
 fileName = StringVar()
 inp3 = Entry(root, textvariable=fileName)
 inp3.grid(row=2, column=1, padx=10, pady=10)
 
-but = Button(root, text="Magic", command= lambda: buttonHandler(inp.get(), int(inp2.get()), inp3.get()))
+but = Button(root, text='Magic', command= lambda: buttonHandler(inp.get(), int(inp2.get()), inp3.get()))
 but.grid(row=3, column=0, pady=10)
 
 root.resizable(False, False)
