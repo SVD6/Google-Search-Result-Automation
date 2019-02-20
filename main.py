@@ -34,7 +34,7 @@ print_log = True
 verify = False
 finalnum = 0
 urls = []
-
+print(urllib3.__version__)
 
 # Handler for the "Magic" Button
 def buttonHandler(searchquery, numresults, filename):
