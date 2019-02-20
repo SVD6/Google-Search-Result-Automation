@@ -1,11 +1,11 @@
 import tldextract
-
 import os
 import tkinter
 import xlsxwriter
 import re
 import requests
 import urllib3
+import sys
 
 from googlesearch import search 
 from lxml import html
@@ -23,19 +23,23 @@ agents = {'ie': ua.ie, 'msie': ua.msie, 'opera': ua.opera,
             'safari': ua.safari, 'random': ua.random}
 
 bad_domains = ['airbnb', 'youtube', 'facebook', 'viator', 'expedia', 'tripadvisor', 'kayak', 'amazon', 
-            'likealocalguide', 'getyourguide', 'wikipedia']
+            'likealocalguide', 'getyourguide', 'wikipedia', 'twitter', 'bloomberg']
 
 for_scan = []
 scanned = []
 emails = []
 excel_ready = []
-depth = 30
+depth = 50
 print_log = True
 verify = False
+finalnum = 0
+urls = []
 
 
 # Handler for the "Magic" Button
 def buttonHandler(searchquery, numresults, filename):
+    global for_scan, finalnum, excel_ready
+    # if (os.path.isfile('./' + filename + '.txt'))
     # Create the workbook and format the first
     book = xlsxwriter.Workbook(filename + '.xlsx')
     wsh = book.add_worksheet()
@@ -47,12 +51,13 @@ def buttonHandler(searchquery, numresults, filename):
     wsh.write('C1', 'Contact Email', bold)
 
     # Perform the search and collect a list of links
-    links = runQuery(searchquery, numresults)
+    tosearchlinks = runQuery(searchquery, numresults)
 
     # Use the email extractor for each URL and all sub-URL's
-    for url in links:
+    for url in tosearchlinks:
         emailExtract(url)
     
+    print(finalnum)
     # Take all the url-email pairs and put them in the excel file
     row = 1
     for pair in excel_ready:
@@ -65,11 +70,11 @@ def buttonHandler(searchquery, numresults, filename):
 
 # Runs the search query on the given paramaters
 def runQuery(searchquery, numresults):
-    urls = []
+    global urls
     links = []
     stop = 0
 
-    for webURL in search(searchquery, tld='ca', safe='off', start=0, pause=2):
+    for webURL in search(searchquery, tld='ca', safe='off', start=len(urls), pause=5):
         if (stop == (numresults)):
             break 
 
@@ -85,13 +90,20 @@ def runQuery(searchquery, numresults):
 
 # Sub-link + email extractor
 def emailExtract(url):
+    global depth, agents, finalnum, for_scan, scanned, print_log
     depth = 30
     headers = {'User-Agent': agents['chrome']}
-    r = requests.get(url, headers = headers, verify = verify)
-    scanned.append(url)
-    if r.status_code == 200:
-        get_all_links(url, r.text)
-        get_emails(url, r.text)
+    try:
+        r = requests.get(url, headers = headers, verify = verify)
+        scanned.append(url)
+        if r.status_code == 200:
+            get_all_links(url, r.text)
+            email_result = get_emails(url, r.text)
+            if (email_result == 1):
+                global finalnum
+                finalnum += 1
+    except:
+        print('Error @ Line 93 ',sys.exc_info()[0])
     if print_log:
         print_logs()
     for new_url in for_scan[:depth]:
@@ -100,11 +112,14 @@ def emailExtract(url):
 
 # Print the state of the current url/email
 def print_logs():
-        print('URLs: {}, emails: {}'
-              .format(len(scanned), len(emails)))
+    global emails, scanned
+    print('URLs: {}, emails: {}'
+            .format(len(scanned), len(emails)))
 
 # Given one URL and an html page, find all sub-links based on the depth number
 def get_all_links(url, page):
+    global for_scan
+    try:
         tree = html.fromstring(page)
         all_links = tree.findall('.//a')
         for link in all_links:
@@ -115,19 +130,29 @@ def get_all_links(url, page):
                         link_href = url + link_href
                     if link_href not in for_scan:
                         for_scan.append(link_href)
-            except KeyError:
-                pass
+            except:
+                print('Error ',sys.exc_info()[0])
+    except:
+        print('Error @ Line 111',sys.exc_info()[0])
 
 # Given a URL and it's corresponding text, find all emails on the page
 def get_emails(url, page):
-        t_emails = re.findall(r'\b[\w.-]+?@\w+?\.(?!jpg|png|jpeg)\w+?\b', page)
-        if t_emails:
-            for email in t_emails:
-                if email not in emails:
-                    soup = BeautifulSoup(page)
-                    emails.append(email)
-                    excel_ready.append((url, email, str(soup.title.contents[0])))
+    global emails, urls
+    result = 0
+    extraction = tldextract.extract(url)
+    domain = extraction[1]
+    t_emails = re.findall(r'\b[\w.-]+?@\w+?\.(?!jpg|png|jpeg)\w+?\b', page)
+    if t_emails:
+        print(len(t_emails))
+        for email in t_emails:
+            if email not in emails:
+                soup = BeautifulSoup(page)
+                emails.append(email)
+                excel_ready.append((url, email, str(soup.title.contents[0])))
 
+            if (email not in emails and domain not in urls):
+                result = 1
+    return result
 
 # BUILD THE UI
 root = tkinter.Tk()
