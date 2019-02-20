@@ -91,7 +91,7 @@ def everythingelse():
                 break
     
     book.close()
-    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + '')
+    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries = ' + str(len(excelpairs)) + '\n')
     messagebox.showinfo('SUCCESS', 'Search completed :D')
 
 
