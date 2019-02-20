@@ -31,7 +31,10 @@ class ExtractEmails:
             self.headers = {
                 'User-Agent': user_agent
             }
-        self.extract_emails(url)
+        try:
+            self.extract_emails(url)
+        except:
+            print ('exception occured')
 
     def extract_emails(self, url):
         r = requests.get(url, headers=self.headers, verify=self.verify)

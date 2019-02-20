@@ -3,10 +3,11 @@ import sys
 import datetime
 import logging
 import uuid
+import tldextract
 
 from extract_emails import ExtractEmails
 from googlesearch import search 
-from tkinter import Label, Entry, StringVar, IntVar, Button, Frame, messagebox
+from tkinter import Label, Entry, StringVar, IntVar, Button, Frame, messagebox, filedialog
 
 # GLOBAL VARIABLES
 city = ''
@@ -24,7 +25,7 @@ logging.info(str(datetime.datetime.now()) + ': Autobot started')
 def reset():
     global city, keywordPairs, fileName, target
     city = None
-    keywordPairs = None
+    keywordPairs = []
     fileName = None
     target = None
 
@@ -43,18 +44,38 @@ def everythingelse():
         messagebox.showinfo('ERROR', 'Error populating keywordPairs: \n' + str(sys.exc_info()[0]))
         return 0
 
+    links = []
+    domains = []
+    excelpairs = []
+
     for word in keywordPairs:
-        print(city + " " + word[0])
+        searchquery = str(city + " " + word[0])
+        numresults = word[1]
+        numlinks = 0
+
+        for webURL in search(searchquery, tld='ca', safe='off', start=0, stop=2, pause=5):
+            domain = tldextract.extract(webURL)[1]
+            if (domain not in domains and domain not in bad_domains):
+                domains.append(domain)
+                em = ExtractEmails(webURL, True, 20, True, 'chrome').emails
+                if (len(em) > 0):
+                    numlinks += numlinks
+                    for email in em:
+                        print (str(webURL) + str(email))
+                        excelpairs.append((webURL, email))
+            
+            if (numlinks == numresults):
+                break
     
-    for keyword in keywordPairs:
-        target = keyword[1]
-        print(target)
+    messagebox.showinfo('SUCCESS', 'Search completed :D')
 
 # Handles the button clicks
 def buttonHandler(text, thiscity, three):
     global city, keywordPairs, fileName, cities
     reset()
     fileName = text + '.txt'
+
+    logging.info(str(datetime.datetime.now()) + ': Magic Button Pressed')
 
     # VERIFY CITY
     try:
@@ -65,8 +86,6 @@ def buttonHandler(text, thiscity, three):
     except:
         messagebox.showinfo('ERROR', 'Error verifying city: \n' + str(sys.exc_info()[0]))
         return None
-    
-    print(cities)
     
     if (thiscity not in cities):
         messagebox.showinfo('WARNING', "That's not a valid city, please try again.")
@@ -89,6 +108,9 @@ def buttonHandler(text, thiscity, three):
     if (result != None):
         messagebox.showinfo('FAILED', 'Failed to run tool, try again')
 
+def doneHandler():
+    sys.exit()
+
 # BUILD THE UI
 root = tkinter.Tk()
 root.height = 50
@@ -96,7 +118,7 @@ root.width= 50
 
 root.title('Wandure Autobot')
 
-l = Label(root, text = 'Keyword textfile:', relief='flat')
+l = Label(root, text = 'Keyword File:', relief='flat')
 l.grid(row=0, column=0, padx=5, pady=10)
 
 keywordFile = StringVar()
@@ -118,14 +140,12 @@ fileName = StringVar()
 inp3 = Entry(root, textvariable=fileName)
 inp3.grid(row=2, column=1, padx=10, pady=10)
 
-but = Button(root, text='Magic', command= lambda: buttonHandler(inp.get(), inp2.get(), inp3.get()))
+but = Button(root, text='Search', command= lambda: buttonHandler(inp.get(), inp2.get(), inp3.get()))
 but.grid(row=3, column=0, pady=10)
+
+but = Button(root, text='Finish', command= lambda: doneHandler())
+but.grid(row=3, column=1, pady=10)
 
 root.resizable(False, False)
 
 root.mainloop()
-
-# em = ExtractEmails('https://www.madridcitytours.com/', True, 20, True, 'chrome')
-# emails = em.emails
-# print (emails)
-# print (len(em.for_scan))
