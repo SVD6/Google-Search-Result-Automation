@@ -4,22 +4,26 @@ import datetime
 import logging
 import uuid
 import tldextract
+import xlsxwriter
 
 from extract_emails import ExtractEmails
 from googlesearch import search 
-from tkinter import Label, Entry, StringVar, IntVar, Button, Frame, messagebox, filedialog
+from tkinter import Label, Entry, StringVar, IntVar, Button, Frame, messagebox
+
 
 # GLOBAL VARIABLES
 city = ''
 fileName = ''
 keywordPairs = []
-bad_domains = []
+badDomains = []
 cities = []
 target = 0
+workbookName = None
 
 # START LOGGER
 logging.basicConfig(filename='LOG ' + str(uuid.uuid1().hex) + '.txt', level=logging.DEBUG)
 logging.info(str(datetime.datetime.now()) + ': Autobot started')
+
 
 # Reset Function which runs at the start of every button click
 def reset():
@@ -28,10 +32,21 @@ def reset():
     keywordPairs = []
     fileName = None
     target = None
+    workbook = None
 
 # Literally does everything else
 def everythingelse():
     global keywordPairs, city, fileName
+
+    # MAKE THE WORKSHEET
+    book = xlsxwriter.Workbook(workbookName + '.xlsx')
+    wsh = book.add_worksheet()
+
+    bold = book.add_format({'bold': 1})
+    wsh.set_column(0, 2, 50)  
+    wsh.write('A1', 'Contact Email', bold)
+    wsh.write('B1', 'Website Link', bold)
+    wsh.write('C1', 'Website Title', bold)
 
     # POPULATE KEYWORD PAIRS
     try:
@@ -41,39 +56,51 @@ def everythingelse():
                 word, num = final.split(',')
                 keywordPairs.append((word, int(num)))
     except:
+        logging.error(str(datetime.datetime.now()) + ': Error populating the keyword pairs')
         messagebox.showinfo('ERROR', 'Error populating keywordPairs: \n' + str(sys.exc_info()[0]))
         return 0
 
     links = []
     domains = []
     excelpairs = []
+    gotemails = []
+    row = 1
 
+    # PERFORM THE SEARCH AND EXTRACT THE EMAILS
     for word in keywordPairs:
         searchquery = str(city + " " + word[0])
         numresults = word[1]
         numlinks = 0
 
-        for webURL in search(searchquery, tld='ca', safe='off', start=0, stop=2, pause=5):
+        for webURL in search(searchquery, tld='ca', safe='off', start=0, pause=5):
             domain = tldextract.extract(webURL)[1]
-            if (domain not in domains and domain not in bad_domains):
+            if (domain not in domains and domain not in badDomains):
                 domains.append(domain)
                 em = ExtractEmails(webURL, True, 20, True, 'chrome').emails
                 if (len(em) > 0):
-                    numlinks += numlinks
+                    numlinks += 1
                     for email in em:
-                        print (str(webURL) + str(email))
-                        excelpairs.append((webURL, email))
+                        if email not in gotemails:
+                            gotemails.append(email)
+                            excelpairs.append((webURL, email))
+                            wsh.write(row, 0, email)
+                            wsh.write(row, 1, webURL)
+                            row += 1
             
             if (numlinks == numresults):
                 break
     
+    book.close()
+    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + '')
     messagebox.showinfo('SUCCESS', 'Search completed :D')
 
+
 # Handles the button clicks
-def buttonHandler(text, thiscity, three):
-    global city, keywordPairs, fileName, cities
+def buttonHandler(text, thiscity, filename):
+    global city, keywordPairs, fileName, cities, workbookName
     reset()
     fileName = text + '.txt'
+    workbookName = filename
 
     logging.info(str(datetime.datetime.now()) + ': Magic Button Pressed')
 
@@ -98,7 +125,7 @@ def buttonHandler(text, thiscity, three):
         with open('baddomains.txt', 'r') as lines2:
             for line2 in lines2:
                 final2 = line2.rstrip('\n')
-                bad_domains.append(final2)
+                badDomains.append(final2)
     except:
         messagebox.showinfo('ERROR', 'Error filling bad domains list: \n' + str(sys.exc_info()[0]))
     
@@ -108,8 +135,11 @@ def buttonHandler(text, thiscity, three):
     if (result != None):
         messagebox.showinfo('FAILED', 'Failed to run tool, try again')
 
+
 def doneHandler():
+    logging.info(str(datetime.datetime.now()) + ': Autobot ended')
     sys.exit()
+
 
 # BUILD THE UI
 root = tkinter.Tk()
@@ -147,5 +177,4 @@ but = Button(root, text='Finish', command= lambda: doneHandler())
 but.grid(row=3, column=1, pady=10)
 
 root.resizable(False, False)
-
 root.mainloop()

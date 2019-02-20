@@ -100,7 +100,6 @@ def emailExtract(url):
             get_all_links(url, r.text)
             email_result = get_emails(url, r.text)
             if (email_result == 1):
-                global finalnum
                 finalnum += 1
     except:
         print('Error @ Line 93 ',sys.exc_info()[0])
