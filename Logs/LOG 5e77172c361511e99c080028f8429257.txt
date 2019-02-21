@@ -1,0 +1,810 @@
+INFO:root:2019-02-21 15:15:01.858692: Autobot started
+INFO:root:2019-02-21 15:15:15.291382: Magic Button Pressed
+INFO:root:2019-02-21 15:15:15.291382Starting search for query: Madrid Tour
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&btnG=Google+Search&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:15:23.340399Scraping Result No.0
+INFO:root:2019-02-21 15:15:23.342404Scraping Result No.0
+INFO:root:2019-02-21 15:15:23.343406Scraping Result No.0
+INFO:root:2019-02-21 15:15:23.350676Scraping Result No.0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.madridcitytours.com
+DEBUG:urllib3.connectionpool:https://www.madridcitytours.com:443 "GET / HTTP/1.1" 410 35
+INFO:root:2019-02-21 15:15:24.194133Scraping Result No.0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tripsavvy.com
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tripsavvy.com
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751 HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:15:24.604533Scraping Result No.0
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:http://madrid.city-tour.com:80 "GET /en HTTP/1.1" 301 324
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:https://madrid.city-tour.com:443 "GET /en HTTP/1.1" 200 11814
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:http://madrid.city-tour.com:80 "GET /en/en/blog HTTP/1.1" 301 332
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:https://madrid.city-tour.com:443 "GET /en/en/blog HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:15:26.896900Scraping Result No.1
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.veltra.com
+DEBUG:urllib3.connectionpool:https://www.veltra.com:443 "GET /en/europe/spain/madrid/ HTTP/1.1" 200 32747
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.veltra.com
+DEBUG:urllib3.connectionpool:https://www.veltra.com:443 "GET /en/europe/spain/madrid/en/login HTTP/1.1" 200 32749
+INFO:root:2019-02-21 15:15:28.934547Scraping Result No.1
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.esmadrid.com
+DEBUG:urllib3.connectionpool:https://www.esmadrid.com:443 "GET /en/guided-tours-of-madrid HTTP/1.1" 200 18438
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.esmadrid.com
+DEBUG:urllib3.connectionpool:https://www.esmadrid.com:443 "GET /en/guided-tours-of-madrid/en HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:15:33.279819Scraping Result No.1
+INFO:root:2019-02-21 15:15:33.279819Scraping Result No.1
+INFO:root:2019-02-21 15:15:33.279819Scraping Result No.1
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): sports.orange.fr
+DEBUG:urllib3.connectionpool:https://sports.orange.fr:443 "GET /videos/zapping/zap-sport-du-21-fevrier-l-atletico-de-madrid-a-mis-ko-la-juventus-video-CNT000001d88T0.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): sports.orange.fr
+DEBUG:urllib3.connectionpool:https://sports.orange.fr:443 "GET /videos/zapping/zap-sport-du-21-fevrier-l-atletico-de-madrid-a-mis-ko-la-juventus-video-CNT000001d88T0.html//sports.orange.fr/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://sports.orange.fr:443 "GET /videos/zapping/zap-sport-du-21-fevrier-l-atletico-de-madrid-a-mis-ko-la-juventus-video-CNT000001d88T0.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=10&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:15:41.245272Scraping Result No.1
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tourradar.com
+DEBUG:urllib3.connectionpool:https://www.tourradar.com:443 "GET /a/europe-tours-madrid HTTP/1.1" 200 35744
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tourradar.com
+DEBUG:urllib3.connectionpool:https://www.tourradar.com:443 "GET /a/europe-tours-madrid/why?top=best-selection HTTP/1.1" 410 24885
+INFO:root:2019-02-21 15:15:43.506086Scraping Result No.1
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.madrid-tourist-guide.com
+DEBUG:urllib3.connectionpool:https://www.madrid-tourist-guide.com:443 "GET /en/tour/madrid-tour.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.madrid-tourist-guide.com
+DEBUG:urllib3.connectionpool:https://www.madrid-tourist-guide.com:443 "GET /en/tour/madrid-tour.html/index.html HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:15:44.987666Scraping Result No.1
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tours4fun.com
+DEBUG:urllib3.connectionpool:https://www.tours4fun.com:443 "GET /tours/madrid/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tours4fun.com
+DEBUG:urllib3.connectionpool:https://www.tours4fun.com:443 "GET /tours/madrid/overview/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:15:49.195574Scraping Result No.2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.realmadrid.com
+DEBUG:urllib3.connectionpool:https://www.realmadrid.com:443 "GET /en/tickets/bernabeu-tour HTTP/1.1" 200 37656
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.realmadrid.com
+DEBUG:urllib3.connectionpool:https://www.realmadrid.com:443 "GET /en/tickets/bernabeu-tour/en/football/games/copa-del-rey/real-madrid-barcelona-2019-02-27 HTTP/1.1" 404 12322
+INFO:root:2019-02-21 15:15:50.011649Scraping Result No.3
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.neweuropetours.eu
+DEBUG:urllib3.connectionpool:https://www.neweuropetours.eu:443 "GET /sandemans-tours/madrid/free-tour-of-madrid/ HTTP/1.1" 200 14675
+INFO:root:2019-02-21 15:15:50.528834Scraping Result No.3
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madridfoodtour.com
+DEBUG:urllib3.connectionpool:https://madridfoodtour.com:443 "GET /3-days-in-madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:15:51.898284Scraping Result No.3
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madridmuseumtours.com
+DEBUG:urllib3.connectionpool:https://madridmuseumtours.com:443 "GET /en/ HTTP/1.1" 200 27361
+INFO:root:2019-02-21 15:15:52.571577Scraping Result No.4
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.timeout.com
+DEBUG:urllib3.connectionpool:https://www.timeout.com:443 "GET /madrid/attractions/the-best-madrid-city-tours HTTP/1.1" 200 33647
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.timeout.com
+DEBUG:urllib3.connectionpool:https://www.timeout.com:443 "GET /madrid/attractions/the-best-madrid-city-tours/london HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:15:53.802813Scraping Result No.4
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/ HTTP/1.1" 200 16358
+INFO:root:2019-02-21 15:15:54.347884Scraping Result No.4
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): strawberrytours.com
+DEBUG:urllib3.connectionpool:https://strawberrytours.com:443 "GET /madrid/tours/free-madrid-landmarks-tour-new-city HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): strawberrytours.com
+DEBUG:urllib3.connectionpool:https://strawberrytours.com:443 "GET /madrid/tours/free-madrid-landmarks-tour-new-city/madrid HTTP/1.1" 404 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=20&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:16:01.919512Scraping Result No.4
+INFO:root:2019-02-21 15:16:01.919512Scraping Result No.4
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.freetour.com
+DEBUG:urllib3.connectionpool:https://www.freetour.com:443 "GET /madrid HTTP/1.1" 200 15856
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.freetour.com
+DEBUG:urllib3.connectionpool:https://www.freetour.com:443 "GET /madrid/es/madrid HTTP/1.1" 404 2831
+INFO:root:2019-02-21 15:16:03.594913Scraping Result No.4
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.toursbylocals.com
+INFO:root:2019-02-21 15:16:08.675991Scraping Result No.4
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.makemytrip.com
+INFO:root:2019-02-21 15:16:16.339679Scraping Result No.4
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.busvision.net
+DEBUG:urllib3.connectionpool:https://www.busvision.net:443 "GET /en/package/madrid-city-tour/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:16:19.970967Scraping Result No.5
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.ricksteves.com
+DEBUG:urllib3.connectionpool:https://www.ricksteves.com:443 "GET /tours/spain-portugal/barcelona-madrid HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.ricksteves.com
+DEBUG:urllib3.connectionpool:https://www.ricksteves.com:443 "GET /tours/spain-portugal/barcelona-madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:16:22.613302Scraping Result No.6
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.contexttravel.com
+DEBUG:urllib3.connectionpool:https://www.contexttravel.com:443 "GET /cities/madrid/tours/introduction-to-madrid-tour-madrid-through-the-centuries HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.contexttravel.com
+DEBUG:urllib3.connectionpool:https://www.contexttravel.com:443 "GET /cities/madrid/tours/introduction-to-madrid-tour-madrid-through-the-centuries/ HTTP/1.1" 301 None
+DEBUG:urllib3.connectionpool:https://www.contexttravel.com:443 "GET /cities/madrid/tours/introduction-to-madrid-tour-madrid-through-the-centuries HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:16:23.228207Scraping Result No.6
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): juliatravel.com
+DEBUG:urllib3.connectionpool:https://juliatravel.com:443 "GET /tours/madrid/madrid-morning-highlights-tour-12765_78/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:16:25.046997Scraping Result No.7
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madride.net
+DEBUG:urllib3.connectionpool:https://madride.net:443 "GET /free-tour-madrid/ HTTP/1.1" 200 18486
+INFO:root:2019-02-21 15:16:25.640576Scraping Result No.8
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ogotours.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=30&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:16:37.863215Scraping Result No.8
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.yatra.com
+INFO:root:2019-02-21 15:16:42.995011Scraping Result No.8
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.songkick.com
+DEBUG:urllib3.connectionpool:https://www.songkick.com:443 "GET /metro_areas/28755-spain-madrid HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.songkick.com
+DEBUG:urllib3.connectionpool:https://www.songkick.com:443 "GET /metro_areas/28755-spain-madrid/calendar?filter=attendance HTTP/1.1" 301 234
+DEBUG:urllib3.connectionpool:Resetting dropped connection: www.songkick.com
+DEBUG:urllib3.connectionpool:https://www.songkick.com:443 "GET /metro_areas/28755-spain-madrid?filter=attendance HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:16:46.883926Scraping Result No.8
+INFO:root:2019-02-21 15:16:46.883926Scraping Result No.8
+INFO:root:2019-02-21 15:16:46.883926Scraping Result No.8
+INFO:root:2019-02-21 15:16:46.883926Scraping Result No.8
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): freewalkingtoursmadrid.com
+DEBUG:urllib3.connectionpool:https://freewalkingtoursmadrid.com:443 "GET /tours-en/free-tour-madrid-in-english/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:16:47.368898Scraping Result No.8
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.panchotours.com
+DEBUG:urllib3.connectionpool:https://www.panchotours.com:443 "GET /madrid-royal-palace-tour HTTP/1.1" 200 11990
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.panchotours.com
+DEBUG:urllib3.connectionpool:https://www.panchotours.com:443 "GET /madrid-royal-palace-tour/seville-tour HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:16:51.657103Scraping Result No.9
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.mysteriumtours.com
+DEBUG:urllib3.connectionpool:https://www.mysteriumtours.com:443 "GET /madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:16:54.456845Scraping Result No.9
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.urbanadventures.com
+DEBUG:urllib3.connectionpool:https://www.urbanadventures.com:443 "GET /Madrid-tour-madrid-tapas-adventure HTTP/1.1" 200 20068
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.urbanadventures.com
+DEBUG:urllib3.connectionpool:https://www.urbanadventures.com:443 "GET /Madrid-tour-madrid-tapas-adventure/country?cn=Argentina&s-country=282 HTTP/1.1" 404 7601
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=40&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:02.233848Scraping Result No.10
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lasventastour.com
+DEBUG:urllib3.connectionpool:https://lasventastour.com:443 "GET /en/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:03.513575Scraping Result No.10
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): foodlovertour.com
+DEBUG:urllib3.connectionpool:https://foodlovertour.com:443 "GET /madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:06.969315Scraping Result No.10
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.insidersmadrid.com
+DEBUG:urllib3.connectionpool:http://www.insidersmadrid.com:80 "GET /tours/food-and-wine-tours/botin-restaurant-madrid-spain/ HTTP/1.1" 200 16314
+INFO:root:2019-02-21 15:17:10.288923Scraping Result No.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.eftours.com
+DEBUG:urllib3.connectionpool:https://www.eftours.com:443 "GET /educational-tour/madrid HTTP/1.1" 200 31997
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.eftours.com
+DEBUG:urllib3.connectionpool:https://www.eftours.com:443 "GET /educational-tour/madrid/ HTTP/1.1" 301 170
+DEBUG:urllib3.connectionpool:https://www.eftours.com:443 "GET /educational-tour/madrid HTTP/1.1" 200 32002
+INFO:root:2019-02-21 15:17:11.415772Scraping Result No.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.localmadridtours.com
+DEBUG:urllib3.connectionpool:https://www.localmadridtours.com:443 "GET /madrid/madrid-city-tour_5852 HTTP/1.1" 200 20773
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.localmadridtours.com
+DEBUG:urllib3.connectionpool:https://www.localmadridtours.com:443 "GET /madrid/madrid-city-tour_5852/ HTTP/1.1" 404 42839
+INFO:root:2019-02-21 15:17:12.732417Scraping Result No.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.secretfoodtours.com
+DEBUG:urllib3.connectionpool:https://www.secretfoodtours.com:443 "GET /madrid/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.secretfoodtours.com
+DEBUG:urllib3.connectionpool:https://www.secretfoodtours.com:443 "GET /madrid/recommendations/ HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:17:13.781580Scraping Result No.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): leafmadrid.com
+DEBUG:urllib3.connectionpool:https://leafmadrid.com:443 "GET /en/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:15.063398Scraping Result No.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devourtours.com
+DEBUG:urllib3.connectionpool:https://devourtours.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:16.009752Scraping Result No.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.acrossmadrid.com
+DEBUG:urllib3.connectionpool:https://www.acrossmadrid.com:443 "GET /en/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.acrossmadrid.com
+DEBUG:urllib3.connectionpool:https://www.acrossmadrid.com:443 "GET /en/en/ HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:17:17.545261Scraping Result No.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): gorunningtours.com
+DEBUG:urllib3.connectionpool:https://gorunningtours.com:443 "GET /p/spain/madrid/ HTTP/1.1" 200 17337
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=50&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:26.942590Scraping Result No.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.gomadrid.com
+DEBUG:urllib3.connectionpool:https://www.gomadrid.com:443 "GET /madrid-vision/ HTTP/1.1" 200 5739
+INFO:root:2019-02-21 15:17:27.359334Scraping Result No.11
+INFO:root:2019-02-21 15:17:27.359334Scraping Result No.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.rivieratravel.co.uk
+DEBUG:urllib3.connectionpool:https://www.rivieratravel.co.uk:443 "GET /european-tours/madrid-salamanca-toledo-tour HTTP/1.1" 200 44515
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.rivieratravel.co.uk
+DEBUG:urllib3.connectionpool:https://www.rivieratravel.co.uk:443 "GET /european-tours/madrid-salamanca-toledo-tour/blog HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.rivieratravel.co.uk:443 "GET /error-404 HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:17:34.048660Scraping Result No.12
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.bolsamadrid.es
+DEBUG:urllib3.connectionpool:http://www.bolsamadrid.es:80 "GET /ing/BMadrid/Palacio/Visita.aspx HTTP/1.1" 200 41639
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.bolsamadrid.es
+DEBUG:urllib3.connectionpool:http://www.bolsamadrid.es:80 "GET /ing/BMadrid/Palacio/Visita.aspx/?id=esp HTTP/1.1" 404 39886
+INFO:root:2019-02-21 15:17:35.844867Scraping Result No.13
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.takewalks.com
+DEBUG:urllib3.connectionpool:https://www.takewalks.com:443 "GET /madrid-tours/madrid-in-a-day-tour/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:36.097291Scraping Result No.14
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.gpsmycity.com
+DEBUG:urllib3.connectionpool:https://www.gpsmycity.com:443 "GET /gps-tour-guides/madrid-523.html HTTP/1.1" 200 8923
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.gpsmycity.com
+DEBUG:urllib3.connectionpool:https://www.gpsmycity.com:443 "GET /gps-tour-guides/madrid-523.html/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.gpsmycity.com:443 "GET /gps-tour-guides/madrid-523.html HTTP/1.1" 200 8923
+INFO:root:2019-02-21 15:17:36.481914Scraping Result No.14
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): en.atleticodemadrid.com
+DEBUG:urllib3.connectionpool:http://en.atleticodemadrid.com:80 "GET /atm/tour-hours-and-prices HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): en.atleticodemadrid.com
+DEBUG:urllib3.connectionpool:http://en.atleticodemadrid.com:80 "GET /atm/tour-hours-and-prices/atm/cookies-en HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:38.326713Scraping Result No.15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cosmostours.com.au
+DEBUG:urllib3.connectionpool:https://www.cosmostours.com.au:443 "GET /global-tours/lisbon-seville-madrid-6790 HTTP/1.1" 200 22350
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cosmostours.com.au
+DEBUG:urllib3.connectionpool:https://www.cosmostours.com.au:443 "GET /global-tours/lisbon-seville-madrid-6790/europe-tours HTTP/1.1" 302 None
+DEBUG:urllib3.connectionpool:https://www.cosmostours.com.au:443 "GET /trip-finder HTTP/1.1" 200 7147
+INFO:root:2019-02-21 15:17:42.966332Scraping Result No.15
+INFO:root:2019-02-21 15:17:42.966332Scraping Result No.15
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.newmadridband.com
+DEBUG:urllib3.connectionpool:http://www.newmadridband.com:80 "GET / HTTP/1.1" 200 8927
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.newmadridband.com
+DEBUG:urllib3.connectionpool:http://www.newmadridband.com:80 "GET / HTTP/1.1" 200 8927
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=60&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:52.614015Scraping Result No.16
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.segwaytrip.com
+DEBUG:urllib3.connectionpool:https://en.segwaytrip.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:54.472205Scraping Result No.16
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.discoverwalks.com
+DEBUG:urllib3.connectionpool:https://www.discoverwalks.com:443 "GET /tour/city/madrid-walking-tours/ HTTP/1.1" 200 9236
+INFO:root:2019-02-21 15:17:54.835815Scraping Result No.16
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.trixi.com
+DEBUG:urllib3.connectionpool:https://www.trixi.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.trixi.com
+DEBUG:urllib3.connectionpool:https://www.trixi.com:443 "GET /cart/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:17:58.510847Scraping Result No.17
+INFO:root:2019-02-21 15:17:58.510847Scraping Result No.17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.livingtours.com
+DEBUG:urllib3.connectionpool:https://www.livingtours.com:443 "GET /espanha/madrid-day-trips/madrid-tour-pack/madrid-combo-tours.html HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:18:00.742088Scraping Result No.17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bravobike.com
+DEBUG:urllib3.connectionpool:https://bravobike.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bravobike.com
+DEBUG:urllib3.connectionpool:https://bravobike.com:443 "GET /contact-page/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:18:03.968128Scraping Result No.17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.gocartours.com
+DEBUG:urllib3.connectionpool:https://www.gocartours.com:443 "GET /locations/barcelona-sightseeing-tours/ HTTP/1.1" 200 7268
+INFO:root:2019-02-21 15:18:04.450357Scraping Result No.17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bajabikes.eu
+DEBUG:urllib3.connectionpool:https://www.bajabikes.eu:443 "GET /en/bike-tours-madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:18:05.236199Scraping Result No.18
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cosmosvacations.ca
+DEBUG:urllib3.connectionpool:https://www.cosmosvacations.ca:443 "GET /tour/lisbon-seville-madrid/6790/ HTTP/1.1" 200 136168
+INFO:root:2019-02-21 15:18:06.710688Scraping Result No.19
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.elastic.co
+DEBUG:urllib3.connectionpool:https://www.elastic.co:443 "GET /elasticon/tour/2019/madrid HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.elastic.co
+DEBUG:urllib3.connectionpool:https://www.elastic.co:443 "GET /elasticon/tour/2019/madrid/learn HTTP/1.1" 404 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=70&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:18:16.307253Scraping Result No.19
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.hop-on-hop-off-bus.com
+DEBUG:urllib3.connectionpool:https://www.hop-on-hop-off-bus.com:443 "GET /madrid/madrid-hop-on-hop-off-bus-tour-segovia-guided-tour_30142 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.hop-on-hop-off-bus.com
+DEBUG:urllib3.connectionpool:https://www.hop-on-hop-off-bus.com:443 "GET /madrid/madrid-hop-on-hop-off-bus-tour-segovia-guided-tour_30142/ HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:18:17.425845Scraping Result No.19
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.accessiblemadrid.com
+DEBUG:urllib3.connectionpool:https://www.accessiblemadrid.com:443 "GET /en/blog/santiago-bernabeu-real-madrid-tour HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.accessiblemadrid.com
+DEBUG:urllib3.connectionpool:https://www.accessiblemadrid.com:443 "GET /en/blog/santiago-bernabeu-real-madrid-tour/en/blog/santiago-bernabeu-real-madrid-tour HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:18:18.959751Scraping Result No.20
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madridbiketours.com
+DEBUG:urllib3.connectionpool:https://madridbiketours.com:443 "GET /en/ HTTP/1.1" 200 16133
+INFO:root:2019-02-21 15:18:21.677783Scraping Result No.21
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.contiki.com
+DEBUG:urllib3.connectionpool:https://www.contiki.com:443 "GET /ca/en/guides/europe/spain/madrid HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.contiki.com
+DEBUG:urllib3.connectionpool:https://www.contiki.com:443 "GET /ca/en/guides/europe/spain/madrid/ca/en HTTP/1.1" 404 45654
+INFO:root:2019-02-21 15:18:23.592122Scraping Result No.21
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): rentandrollmadrid.com
+DEBUG:urllib3.connectionpool:https://rentandrollmadrid.com:443 "GET /en/bike-tours/madrid-at-night/ HTTP/1.1" 200 286089
+INFO:root:2019-02-21 15:18:28.228053Scraping Result No.22
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): localtuktuk.com
+DEBUG:urllib3.connectionpool:https://localtuktuk.com:443 "GET / HTTP/1.1" 200 16164
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): localtuktuk.com
+DEBUG:urllib3.connectionpool:https://localtuktuk.com:443 "GET /basket/ HTTP/1.1" 200 22371
+INFO:root:2019-02-21 15:18:34.288153Scraping Result No.23
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.singularmadridtours.com
+DEBUG:urllib3.connectionpool:http://www.singularmadridtours.com:80 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:18:34.521981Scraping Result No.23
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): go.veeam.com
+DEBUG:urllib3.connectionpool:https://go.veeam.com:443 "GET /veeamon-tour-emea HTTP/1.1" 200 3388
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): go.veeam.com
+DEBUG:urllib3.connectionpool:https://go.veeam.com:443 "GET /veeamon-tour-emea//go.veeam.com/veeamon-tour-form-emea HTTP/1.1" 200 3423
+INFO:root:2019-02-21 15:18:35.273927Scraping Result No.23
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.sunbonoo.com
+DEBUG:urllib3.connectionpool:https://www.sunbonoo.com:443 "GET /en/tuk-tuk-madrid-sightseeing-5091 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.sunbonoo.com
+DEBUG:urllib3.connectionpool:https://www.sunbonoo.com:443 "GET /en/tuk-tuk-madrid-sightseeing-5091/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:18:38.984087Scraping Result No.23
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.madrid-traveller.com
+DEBUG:urllib3.connectionpool:https://www.madrid-traveller.com:443 "GET /madrid-city-sightseeing-bus/ HTTP/1.1" 200 18656
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=80&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:18:46.681778Scraping Result No.23
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.globusjourneys.com
+DEBUG:urllib3.connectionpool:https://www.globusjourneys.com:443 "GET /tour/the-best-of-spain/zv/ HTTP/1.1" 200 161771
+INFO:root:2019-02-21 15:18:47.989614Scraping Result No.23
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.muse.mu
+DEBUG:urllib3.connectionpool:http://www.muse.mu:80 "GET /tour-date/madrid-spain-wanda-metropolitano-madrid-spain-2018-11-15-184500 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.muse.mu
+DEBUG:urllib3.connectionpool:http://www.muse.mu:80 "GET /tour-date/madrid-spain-wanda-metropolitano-madrid-spain-2018-11-15-184500/?frontpage=true HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:18:49.482661Scraping Result No.23
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): entradas.patrimonionacional.es
+DEBUG:urllib3.connectionpool:https://entradas.patrimonionacional.es:443 "GET /en-GB/informacion-recinto/6/palacio-real-de-madrid HTTP/1.1" 200 15065
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): entradas.patrimonionacional.es
+DEBUG:urllib3.connectionpool:https://entradas.patrimonionacional.es:443 "GET /en-GB/informacion-recinto/6/palacio-real-de-madrid/en-GB/condiciones-generales-servicio HTTP/1.1" 404 1282
+INFO:root:2019-02-21 15:18:50.982022Scraping Result No.23
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.getours.com
+DEBUG:urllib3.connectionpool:https://www.getours.com:443 "GET /tours/madrid-to-rome HTTP/1.1" 200 49494
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.getours.com
+DEBUG:urllib3.connectionpool:https://www.getours.com:443 "GET /tours/madrid-to-rome/privacy-policy HTTP/1.1" 307 166
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.getours.com
+DEBUG:urllib3.connectionpool:http://www.getours.com:80 "GET /tours/madrid-to-rome HTTP/1.1" 301 167
+DEBUG:urllib3.connectionpool:https://www.getours.com:443 "GET /tours/madrid-to-rome HTTP/1.1" 200 49501
+INFO:root:2019-02-21 15:18:54.774100Scraping Result No.23
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madsegs.com
+DEBUG:urllib3.connectionpool:https://madsegs.com:443 "GET / HTTP/1.1" 200 24920
+INFO:root:2019-02-21 15:18:55.305829Scraping Result No.24
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.disfrutamadrid.com
+DEBUG:urllib3.connectionpool:https://www.disfrutamadrid.com:443 "GET /actividades/ HTTP/1.1" 200 32100
+INFO:root:2019-02-21 15:18:56.030063Scraping Result No.25
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): thehostelgirl.com
+DEBUG:urllib3.connectionpool:https://thehostelgirl.com:443 "GET /free-madrid-travel-apps/ HTTP/1.1" 200 25230
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): thehostelgirl.com
+DEBUG:urllib3.connectionpool:https://thehostelgirl.com:443 "GET /free-madrid-travel-apps//www.booking.com?aid= HTTP/1.1" 301 20
+DEBUG:urllib3.connectionpool:https://thehostelgirl.com:443 "GET /free-madrid-travel-apps/www.booking.com?aid= HTTP/1.1" 404 14640
+INFO:root:2019-02-21 15:19:02.295582Scraping Result No.26
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): worldstrides.com
+DEBUG:urllib3.connectionpool:https://worldstrides.com:443 "GET /itineraries/salzburg-munich-madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:03.326711Scraping Result No.26
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.gourmetmadrid.com
+INFO:root:2019-02-21 15:19:03.739544Scraping Result No.26
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.walksofspain.com
+DEBUG:urllib3.connectionpool:https://www.walksofspain.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=90&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:11.527275Scraping Result No.26
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): theculturetrip.com
+DEBUG:urllib3.connectionpool:https://theculturetrip.com:443 "GET /europe/spain/articles/a-walking-tour-of-plaza-mayor-and-royal-madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:12.441437Scraping Result No.26
+INFO:root:2019-02-21 15:19:12.441437Scraping Result No.26
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bambaexperience.com
+DEBUG:urllib3.connectionpool:https://www.bambaexperience.com:443 "GET /MadridBikeTour-ss3069.html HTTP/1.1" 200 20200
+INFO:root:2019-02-21 15:19:12.801074Scraping Result No.27
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.gocollette.com
+DEBUG:urllib3.connectionpool:https://www.gocollette.com:443 "GET /en-ca/tours/europe/spain/madrid-and-barcelona HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.gocollette.com
+DEBUG:urllib3.connectionpool:https://www.gocollette.com:443 "GET /en-ca/tours/europe/spain/madrid-and-barcelona/en-au/tours/europe/spain/madrid-and-barcelona?site=collette-au HTTP/1.1" 302 226
+DEBUG:urllib3.connectionpool:https://www.gocollette.com:443 "GET /en-AU/tours/europe/spain/madrid-and-barcelona/en-au/tours/europe/spain/madrid-and-barcelona?site=collette-au HTTP/1.1" 302 297
+DEBUG:urllib3.connectionpool:https://www.gocollette.com:443 "GET /system/error/404.aspx?item=tours%2feurope%2fspain%2fmadrid-and-barcelona%2fen-au%2ftours%2feurope%2fspain%2fmadrid-and-barcelona&user=extranet%5cAnonymous&site=collette-au HTTP/1.1" 200 19190
+INFO:root:2019-02-21 15:19:16.762813Scraping Result No.28
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.theguardian.com
+DEBUG:urllib3.connectionpool:https://www.theguardian.com:443 "GET /football/2018/aug/01/manchester-united-wrap-up-us-tour-with-win-over-real-madrid HTTP/1.1" 200 163092
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.theguardian.com
+DEBUG:urllib3.connectionpool:https://www.theguardian.com:443 "GET /football/2018/aug/01/manchester-united-wrap-up-us-tour-with-win-over-real-madrid/discussion/p/94gpz HTTP/1.1" 404 7522
+INFO:root:2019-02-21 15:19:17.475860Scraping Result No.28
+INFO:root:2019-02-21 15:19:17.475860Scraping Result No.28
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): freewalkingtoursbylocals.com
+DEBUG:urllib3.connectionpool:http://freewalkingtoursbylocals.com:80 "GET /madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:20.897685Scraping Result No.28
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.madridticketsinternational.com
+DEBUG:urllib3.connectionpool:https://www.madridticketsinternational.com:443 "GET /tg/2605/tours-in-madrid HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:21.607161Scraping Result No.28
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): spanishsabores.com
+DEBUG:urllib3.connectionpool:https://spanishsabores.com:443 "GET /2017/08/31/tips-for-visiting-the-prado-museum-in-madrid/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=100&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:28.275401Scraping Result No.28
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.topdeck.travel
+DEBUG:urllib3.connectionpool:https://www.topdeck.travel:443 "GET /tours/tower-to-tapas HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.topdeck.travel
+DEBUG:urllib3.connectionpool:https://www.topdeck.travel:443 "GET /tours/tower-to-tapas/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:31.998441Scraping Result No.28
+INFO:root:2019-02-21 15:19:31.998441Scraping Result No.28
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.toursinmadrid.net
+DEBUG:urllib3.connectionpool:http://www.toursinmadrid.net:80 "GET /offer/18902/Madrid-City-Tour-%26-Bernabeu-Stadium-Tour HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:32.696233Scraping Result No.28
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.telegraph.co.uk
+DEBUG:urllib3.connectionpool:https://www.telegraph.co.uk:443 "GET /travel/destinations/europe/spain/madrid/articles/bless-hotel-madrid-etxeko-martin-berasategui-restaurant-review/ HTTP/1.1" 200 39239
+INFO:root:2019-02-21 15:19:34.353813Scraping Result No.28
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): boniver.org
+DEBUG:urllib3.connectionpool:https://boniver.org:443 "GET /tour HTTP/1.1" 200 19218
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): boniver.org
+DEBUG:urllib3.connectionpool:https://boniver.org:443 "GET /tour/ HTTP/1.1" 200 19250
+INFO:root:2019-02-21 15:19:35.389357Scraping Result No.29
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.trackmtb.com
+DEBUG:urllib3.connectionpool:http://www.trackmtb.com:80 "GET / HTTP/1.1" 200 11016
+INFO:root:2019-02-21 15:19:38.761838Scraping Result No.30
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.museodelprado.es
+DEBUG:urllib3.connectionpool:https://www.museodelprado.es:443 "GET /en/visit-the-museum HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:42.461243Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.bonjovi.com
+DEBUG:urllib3.connectionpool:http://www.bonjovi.com:80 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:42.970070Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): thisislany.com
+DEBUG:urllib3.connectionpool:https://thisislany.com:443 "GET /tour HTTP/1.1" 200 24301
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): thisislany.com
+DEBUG:urllib3.connectionpool:https://thisislany.com:443 "GET /tour/tour HTTP/1.1" 404 16654
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=110&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:50.195777Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.mymusictaste.com
+DEBUG:urllib3.connectionpool:https://www.mymusictaste.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:19:50.399596Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.europeantour.com
+DEBUG:urllib3.connectionpool:http://www.europeantour.com:80 "GET /europeantour/tournament/index.html HTTP/1.1" 200 17541
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.europeantour.com
+DEBUG:urllib3.connectionpool:http://www.europeantour.com:80 "GET /europeantour/tournament/index.html/index.html HTTP/1.1" 200 17541
+INFO:root:2019-02-21 15:19:50.999354Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.ledauphine.com
+DEBUG:urllib3.connectionpool:https://www.ledauphine.com:443 "GET /sport/2019/02/16/tour-d-europe-l-atletico-madrid-remercie-griezmann HTTP/1.1" 200 30255
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.ledauphine.com
+DEBUG:urllib3.connectionpool:https://www.ledauphine.com:443 "GET /sport/2019/02/16/tour-d-europe-l-atletico-madrid-remercie-griezmann/actualite/fil-info HTTP/1.1" 404 1156
+INFO:root:2019-02-21 15:19:52.554787Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.juventus.com
+DEBUG:urllib3.connectionpool:https://www.juventus.com:443 "GET /en/ HTTP/1.1" 200 21685
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.juventus.com
+DEBUG:urllib3.connectionpool:https://www.juventus.com:443 "GET /en/en/contact.php HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:19:54.642320Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.sport24.co.za
+DEBUG:urllib3.connectionpool:https://www.sport24.co.za:443 "GET /Tennis/ATPTour/federer-to-play-madrid-open-after-2-year-absence-20190220 HTTP/1.1" 200 27911
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.sport24.co.za
+DEBUG:urllib3.connectionpool:https://www.sport24.co.za:443 "GET /Tennis/ATPTour/federer-to-play-madrid-open-after-2-year-absence-20190220/ HTTP/1.1" 302 224
+DEBUG:urllib3.connectionpool:https://www.sport24.co.za:443 "GET /Error404.aspx?aspxerrorpath=/Tennis/ATPTour/federer-to-play-madrid-open-after-2-year-absence-20190220/.cnt HTTP/1.1" 200 2661
+INFO:root:2019-02-21 15:19:55.958119Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.runrocknroll.com
+DEBUG:urllib3.connectionpool:https://www.runrocknroll.com:443 "GET / HTTP/1.1" 200 14018
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.runrocknroll.com
+DEBUG:urllib3.connectionpool:https://www.runrocknroll.com:443 "GET /es/ HTTP/1.1" 200 14182
+INFO:root:2019-02-21 15:19:57.371329Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.atptour.com
+DEBUG:urllib3.connectionpool:https://www.atptour.com:443 "GET /en/news/federer-to-participate-at-madrid-2019 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.atptour.com
+DEBUG:urllib3.connectionpool:https://www.atptour.com:443 "GET /en/news/federer-to-participate-at-madrid-2019/en/atp-challenger-tour HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:19:57.967321Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.iberia.com
+DEBUG:urllib3.connectionpool:https://www.iberia.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.iberia.com
+DEBUG:urllib3.connectionpool:https://www.iberia.com:443 "GET /web/product.do?cntCat=Productos/INFLEG&cntId=condiciones_uso_cookies&menuId=INFLEG&isPopup=true HTTP/1.1" 200 6198
+INFO:root:2019-02-21 15:20:00.915107Scraping Result No.31
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.elrow.com
+DEBUG:urllib3.connectionpool:https://www.elrow.com:443 "GET /en/events/upcoming HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.elrow.com
+DEBUG:urllib3.connectionpool:https://www.elrow.com:443 "GET /en/events/upcoming/api/cookies HTTP/1.1" 404 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=120&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:09.657323Scraping Result No.32
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.wtatennis.com
+DEBUG:urllib3.connectionpool:https://www.wtatennis.com:443 "GET /tournaments HTTP/1.1" 200 25626
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.wtatennis.com
+DEBUG:urllib3.connectionpool:https://www.wtatennis.com:443 "GET /tournaments/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.wtatennis.com:443 "GET /tournaments HTTP/1.1" 200 25626
+INFO:root:2019-02-21 15:20:10.230226Scraping Result No.32
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.iol.co.za
+DEBUG:urllib3.connectionpool:https://www.iol.co.za:443 "GET /sport/tennis/atp-tour/roger-federer-back-on-court-at-the-madrid-open-19409512 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.iol.co.za
+DEBUG:urllib3.connectionpool:https://www.iol.co.za:443 "GET /sport/tennis/atp-tour/roger-federer-back-on-court-at-the-madrid-open-19409512/ HTTP/1.1" 301 112
+DEBUG:urllib3.connectionpool:https://www.iol.co.za:443 "GET /sport/tennis/atp-tour/roger-federer-back-on-court-at-the-madrid-open-19409512 HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:11.056250Scraping Result No.33
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.eaglerider.com
+DEBUG:urllib3.connectionpool:https://www.eaglerider.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:11.587087Scraping Result No.33
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.billieeilish.com
+DEBUG:urllib3.connectionpool:http://www.billieeilish.com:80 "GET / HTTP/1.1" 200 24556
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.billieeilish.com
+DEBUG:urllib3.connectionpool:http://www.billieeilish.com:80 "GET /user/login HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:12.417398Scraping Result No.33
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.to-madrid.com
+DEBUG:urllib3.connectionpool:http://www.to-madrid.com:80 "GET /tours HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.to-madrid.com
+DEBUG:urllib3.connectionpool:http://www.to-madrid.com:80 "GET /tours/weather_in_madrid_spain HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:20:13.597159Scraping Result No.34
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tashsultana.com
+DEBUG:urllib3.connectionpool:https://www.tashsultana.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tashsultana.com
+DEBUG:urllib3.connectionpool:https://www.tashsultana.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:17.382761Scraping Result No.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.thelocal.es
+DEBUG:urllib3.connectionpool:https://www.thelocal.es:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.thelocal.es
+DEBUG:urllib3.connectionpool:https://www.thelocal.es:443 "GET /page/view/membership-offer HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:18.872758Scraping Result No.36
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.estrepublicain.fr
+DEBUG:urllib3.connectionpool:https://www.estrepublicain.fr:443 "GET /sport/2019/02/16/tour-d-europe-l-atletico-madrid-remercie-griezmann HTTP/1.1" 200 32489
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.estrepublicain.fr
+DEBUG:urllib3.connectionpool:https://www.estrepublicain.fr:443 "GET /sport/2019/02/16/tour-d-europe-l-atletico-madrid-remercie-griezmann/edition-de-nancy-ville HTTP/1.1" 404 1189
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=130&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:27.440262Scraping Result No.37
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): live.itftennis.com
+DEBUG:urllib3.connectionpool:http://live.itftennis.com:80 "GET /en/live-scores/ HTTP/1.1" 200 5534
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): live.itftennis.com
+DEBUG:urllib3.connectionpool:http://live.itftennis.com:80 "GET /en/live-scores/en// HTTP/1.1" 404 345
+INFO:root:2019-02-21 15:20:28.157195Scraping Result No.37
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.goeuro.com
+DEBUG:urllib3.connectionpool:https://www.goeuro.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.goeuro.com
+DEBUG:urllib3.connectionpool:https://www.goeuro.com:443 "GET /trains/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:29.549456Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.srf.ch
+DEBUG:urllib3.connectionpool:https://www.srf.ch:443 "GET /sport/tennis/atp-tour/nach-3-jaehriger-absenz-federer-eroeffnet-sand-saison-in-madrid-2 HTTP/1.1" 200 21864
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.srf.ch
+DEBUG:urllib3.connectionpool:https://www.srf.ch:443 "GET /sport/tennis/atp-tour/nach-3-jaehriger-absenz-federer-eroeffnet-sand-saison-in-madrid-2/ HTTP/1.1" 200 20433
+INFO:root:2019-02-21 15:20:31.208965Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.worldpadeltour.com
+DEBUG:urllib3.connectionpool:https://www.worldpadeltour.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.worldpadeltour.com
+DEBUG:urllib3.connectionpool:https://www.worldpadeltour.com:443 "GET /en/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:33.709958Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.ryanair.com
+DEBUG:urllib3.connectionpool:https://www.ryanair.com:443 "GET /fr/fr/ HTTP/1.1" 200 8217
+INFO:root:2019-02-21 15:20:34.047481Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.beinsports.com
+DEBUG:urllib3.connectionpool:https://www.beinsports.com:443 "GET /en/atp-tour/news/federer-to-make-madrid-open-return-1/1118702 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.beinsports.com
+DEBUG:urllib3.connectionpool:https://www.beinsports.com:443 "GET /en/atp-tour/news/federer-to-make-madrid-open-return-1/1118702/en/ HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:20:37.305810Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.fodors.com
+DEBUG:urllib3.connectionpool:https://www.fodors.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:37.585110Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.manutd.com
+DEBUG:urllib3.connectionpool:https://www.manutd.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.manutd.com
+DEBUG:urllib3.connectionpool:https://www.manutd.com:443 "GET /en HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:39.798003Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dondiablo.com
+DEBUG:urllib3.connectionpool:https://www.dondiablo.com:443 "GET / HTTP/1.1" 200 19897
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dondiablo.com
+DEBUG:urllib3.connectionpool:https://www.dondiablo.com:443 "GET / HTTP/1.1" 200 19897
+INFO:root:2019-02-21 15:20:40.604372Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.runblogrun.com
+DEBUG:urllib3.connectionpool:http://www.runblogrun.com:80 "GET /2019/02/iaaf-world-indoor-tour-2019-dusseldorf-livestream.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.runblogrun.com
+DEBUG:urllib3.connectionpool:http://www.runblogrun.com:80 "GET /2019/02/iaaf-world-indoor-tour-2019-dusseldorf-livestream.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=140&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:20:47.301681Scraping Result No.38
+INFO:root:2019-02-21 15:20:47.301681Scraping Result No.38
+INFO:root:2019-02-21 15:20:47.302685Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.flashscore.com
+INFO:root:2019-02-21 15:20:58.349538Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): le10sport.com
+DEBUG:urllib3.connectionpool:https://le10sport.com:443 "GET /football/mercato/mercato-real-madrid-et-si-zidane-jouait-un-mauvais-tour-a-perez-436159 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): le10sport.com
+DEBUG:urllib3.connectionpool:https://le10sport.com:443 "GET /football/mercato/mercato-real-madrid-et-si-zidane-jouait-un-mauvais-tour-a-perez-436159/ HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://le10sport.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:00.769864Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.unibet.eu
+INFO:root:2019-02-21 15:21:01.105441Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lequipe.fr
+DEBUG:urllib3.connectionpool:https://www.lequipe.fr:443 "GET /Tennis/Directs HTTP/1.1" 200 25338
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lequipe.fr
+DEBUG:urllib3.connectionpool:https://www.lequipe.fr:443 "GET /Tennis/Directs//www.lequipe.fr HTTP/1.1" 404 13147
+INFO:root:2019-02-21 15:21:01.755968Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.marilynmanson.com
+DEBUG:urllib3.connectionpool:http://www.marilynmanson.com:80 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:02.088690Scraping Result No.38
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.escpeurope.eu
+DEBUG:urllib3.connectionpool:https://www.escpeurope.eu:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.escpeurope.eu
+DEBUG:urllib3.connectionpool:https://www.escpeurope.eu:443 "GET /press-room HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:03.353033Scraping Result No.39
+INFO:root:2019-02-21 15:21:03.353033Scraping Result No.39
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.ijf.org
+DEBUG:urllib3.connectionpool:https://www.ijf.org:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=150&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:10.750614Scraping Result No.40
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.hotelbeds.com
+DEBUG:urllib3.connectionpool:https://www.hotelbeds.com:443 "GET / HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.hotelbeds.com
+DEBUG:urllib3.connectionpool:http://www.hotelbeds.com:80 "GET /home HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.hotelbeds.com:443 "GET /home HTTP/1.1" 200 9136
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.hotelbeds.com
+DEBUG:urllib3.connectionpool:https://www.hotelbeds.com:443 "GET //corporate.hotelbeds.com HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.hotelbeds.com:443 "GET /login?error_code=NLSA&app=null HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:12.259148Scraping Result No.40
+INFO:root:2019-02-21 15:21:12.259148Scraping Result No.40
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): fr.tennistemple.com
+DEBUG:urllib3.connectionpool:https://fr.tennistemple.com:443 "GET /actu/federer-de-retour-sur-terre-battue-%C3%A0-madrid-79112 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): fr.tennistemple.com
+DEBUG:urllib3.connectionpool:https://fr.tennistemple.com:443 "GET /actu/federer-de-retour-sur-terre-battue-%C3%A0-madrid-79112/ HTTP/1.1" 302 None
+DEBUG:urllib3.connectionpool:https://fr.tennistemple.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:13.435722Scraping Result No.41
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.eurolines.de
+DEBUG:urllib3.connectionpool:https://www.eurolines.de:443 "GET / HTTP/1.1" 307 None
+DEBUG:urllib3.connectionpool:https://www.eurolines.de:443 "GET /de/startseite/ HTTP/1.1" 200 9547
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.eurolines.de
+DEBUG:urllib3.connectionpool:https://www.eurolines.de:443 "GET /de/startseite/ HTTP/1.1" 200 9547
+INFO:root:2019-02-21 15:21:14.702736Scraping Result No.41
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.canauxrama.com
+DEBUG:urllib3.connectionpool:https://www.canauxrama.com:443 "GET /en/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.canauxrama.com
+DEBUG:urllib3.connectionpool:https://www.canauxrama.com:443 "GET /en/contact.htm HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:15.922102Scraping Result No.42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.sports.fr
+DEBUG:urllib3.connectionpool:http://www.sports.fr:80 "GET /tennis/atp/articles/madrid-federer-revient-sur-terre-2397980/ HTTP/1.1" 200 29748
+INFO:root:2019-02-21 15:21:16.838179Scraping Result No.43
+INFO:root:2019-02-21 15:21:16.838179Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.klm.com
+DEBUG:urllib3.connectionpool:https://www.klm.com:443 "GET /home/us/en HTTP/1.1" 200 19825
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.klm.com
+DEBUG:urllib3.connectionpool:https://www.klm.com:443 "GET /home/us/en/home/us/en HTTP/1.1" 404 1902
+INFO:root:2019-02-21 15:21:17.615069Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.wework.com
+DEBUG:urllib3.connectionpool:https://www.wework.com:443 "GET / HTTP/1.1" 200 64201
+INFO:root:2019-02-21 15:21:17.926049Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.viamichelin.com
+DEBUG:urllib3.connectionpool:https://www.viamichelin.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=160&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:24.908401Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tennis365.com
+DEBUG:urllib3.connectionpool:https://www.tennis365.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tennis365.com
+DEBUG:urllib3.connectionpool:https://www.tennis365.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:25.660299Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tsn.ca
+DEBUG:urllib3.connectionpool:https://www.tsn.ca:443 "GET /ronaldo-s-opponents-triumphant-in-his-return-to-madrid-1.1261264 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tsn.ca
+DEBUG:urllib3.connectionpool:https://www.tsn.ca:443 "GET /ronaldo-s-opponents-triumphant-in-his-return-to-madrid-1.1261264/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:27.199153Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.flytap.com
+DEBUG:urllib3.connectionpool:https://www.flytap.com:443 "GET /en-us/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.flytap.com
+DEBUG:urllib3.connectionpool:https://www.flytap.com:443 "GET /en-us/en-us/ HTTP/1.1" 404 5865
+INFO:root:2019-02-21 15:21:29.644121Scraping Result No.43
+INFO:root:2019-02-21 15:21:29.644121Scraping Result No.43
+INFO:root:2019-02-21 15:21:29.644121Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.norwegian.com
+DEBUG:urllib3.connectionpool:https://www.norwegian.com:443 "GET /us/ HTTP/1.1" 200 14430
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.norwegian.com
+DEBUG:urllib3.connectionpool:https://www.norwegian.com:443 "GET /us/us/start/mytravels HTTP/1.1" 404 36328
+INFO:root:2019-02-21 15:21:30.257768Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.supershuttle.com
+DEBUG:urllib3.connectionpool:https://www.supershuttle.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:30.570827Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bild.de
+DEBUG:urllib3.connectionpool:https://www.bild.de:443 "GET /video/clip/intornational/intornational-ed-sheeran-kunst-schuss-60216476.bild.html HTTP/1.1" 200 24901
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bild.de
+DEBUG:urllib3.connectionpool:https://www.bild.de:443 "GET /video/clip/intornational/intornational-ed-sheeran-kunst-schuss-60216476.bild.html/ HTTP/1.1" 301 2229
+DEBUG:urllib3.connectionpool:https://www.bild.de:443 "GET /video/clip/intornational/intornational-ed-sheeran-kunst-schuss-60216476.bild.html HTTP/1.1" 200 24901
+INFO:root:2019-02-21 15:21:31.572379Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.ouest-france.fr
+DEBUG:urllib3.connectionpool:https://www.ouest-france.fr:443 "GET /sport/tennis/roger-federer/tennis-roger-federer-retrouve-la-terre-battue-au-masters-1000-de-madrid-6230691 HTTP/1.1" 403 481
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=170&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:38.831053Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.eurosport.fr
+DEBUG:urllib3.connectionpool:https://www.eurosport.fr:443 "GET /tennis/masters-madrid/2019/masters-1000-madrid-roger-federer-jouera-a-madrid-sur-terre-battue_sto7151823/story.shtml HTTP/1.1" 200 34030
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.eurosport.fr
+DEBUG:urllib3.connectionpool:https://www.eurosport.fr:443 "GET /tennis/masters-madrid/2019/masters-1000-madrid-roger-federer-jouera-a-madrid-sur-terre-battue_sto7151823/story.shtml/tennis/ HTTP/1.1" 404 22407
+INFO:root:2019-02-21 15:21:44.184639Scraping Result No.43
+INFO:root:2019-02-21 15:21:44.184639Scraping Result No.43
+INFO:root:2019-02-21 15:21:44.184639Scraping Result No.43
+INFO:root:2019-02-21 15:21:44.184639Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.espn.com
+DEBUG:urllib3.connectionpool:http://www.espn.com:80 "GET /golf/story/_/id/26027062/pga-tour-golfers-okd-wear-shorts-practice-rounds-pro-ams HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.espn.com
+DEBUG:urllib3.connectionpool:http://www.espn.com:80 "GET /golf/story/_/id/26027062/pga-tour-golfers-okd-wear-shorts-practice-rounds-pro-ams/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:44.738956Scraping Result No.43
+INFO:root:2019-02-21 15:21:44.738956Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=180&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:21:51.369559Scraping Result No.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.msn.com
+DEBUG:urllib3.connectionpool:https://www.msn.com:443 "GET /en-gb/sport/uefa-champions-league/cristiano-ronaldo-responds-to-atletico-madrid-jeers-i-won-five-champions-leagues-atleti-zero/ar-BBTT6s8 HTTP/1.1" 200 30999
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.msn.com
+DEBUG:urllib3.connectionpool:https://www.msn.com:443 "GET /en-gb/sport/uefa-champions-league/cristiano-ronaldo-responds-to-atletico-madrid-jeers-i-won-five-champions-leagues-atleti-zero/ar-BBTT6s8/en-gb HTTP/1.1" 404 38695
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=190&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=200&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=210&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=220&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=230&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=240&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=250&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=260&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=270&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=280&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=290&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=300&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=310&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=320&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=330&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=340&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=350&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=360&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=370&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=380&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=390&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=400&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=410&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=420&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=430&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=440&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=450&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=460&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=470&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=480&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=490&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=500&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=510&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=520&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=530&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=540&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=550&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=560&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=570&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=580&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=590&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=600&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=610&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=620&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=630&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=640&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=650&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=660&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=670&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=680&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=690&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=700&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=710&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=720&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=730&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=740&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=750&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&start=760&tbs=0&safe=off&tbm= HTTP/1.1" 200 None

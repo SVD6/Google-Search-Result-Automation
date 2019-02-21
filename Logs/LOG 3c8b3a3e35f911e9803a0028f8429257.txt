@@ -1,0 +1,4 @@
+INFO:root:2019-02-21 11:53:39.039699: Autobot started
+INFO:root:2019-02-21 11:53:45.008461: Magic Button Pressed
+INFO:root:2019-02-21 11:53:45.008461Starting search for query: Madrid Tour
+INFO:root:2019-02-21 11:56:37.272308: Autobot ended

@@ -37,7 +37,7 @@ class ExtractEmails:
             print ('Connection Failed')
 
     def extract_emails(self, url):
-        r = requests.get(url, headers=self.headers, verify=self.verify)
+        r = requests.get(url, headers=self.headers, verify=self.verify, timeout=5.0)
         self.scanned.append(url)
         if r.status_code == 200:
             self.get_all_links(r.text)

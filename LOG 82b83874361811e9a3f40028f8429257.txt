@@ -1,0 +1,30 @@
+INFO:root:2019-02-21 15:37:31.173694: Autobot started
+INFO:root:2019-02-21 15:37:39.949477: Magic Button Pressed
+INFO:root:2019-02-21 15:37:39.949477Starting search for query: Madrid Tour
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&btnG=Google+Search&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:37:50.612111Scraping Result No.0 URL: https://www.viator.com/en-CA/Madrid/d566-ttd
+INFO:root:2019-02-21 15:37:50.615092Scraping Result No.0 URL: https://www.tripadvisor.ca/Attractions-g187514-Activities-c42-Madrid.html
+INFO:root:2019-02-21 15:37:50.623293Scraping Result No.0 URL: https://www.getyourguide.com/madrid-l46/
+INFO:root:2019-02-21 15:37:50.623293Scraping Result No.0 URL: https://www.madridcitytours.com/
+INFO:root:2019-02-21 15:37:50.623293Scraping URL: https://www.madridcitytours.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.madridcitytours.com
+DEBUG:urllib3.connectionpool:https://www.madridcitytours.com:443 "GET / HTTP/1.1" 410 35
+INFO:root:2019-02-21 15:37:51.370030Scraping Result No.0 URL: https://www.tripsavvy.com/best-spain-tours-starting-from-madrid-1643751
+INFO:root:2019-02-21 15:37:51.370030Scraping URL: https://www.tripsavvy.com/best-spain-tours-starting-from-madrid-1643751 for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tripsavvy.com
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tripsavvy.com
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751 HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:37:52.174659Scraping Result No.0 URL: http://madrid.city-tour.com/en
+INFO:root:2019-02-21 15:37:52.174659Scraping URL: http://madrid.city-tour.com/en for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:http://madrid.city-tour.com:80 "GET /en HTTP/1.1" 301 324
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:https://madrid.city-tour.com:443 "GET /en HTTP/1.1" 200 11814
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:http://madrid.city-tour.com:80 "GET /en/en/blog HTTP/1.1" 301 332
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:https://madrid.city-tour.com:443 "GET /en/en/blog HTTP/1.1" 404 None
+INFO:root:2019-02-21 15:39:18.950140: Autobot ended

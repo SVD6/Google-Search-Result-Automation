@@ -1,0 +1,6 @@
+INFO:root:2019-02-21 15:06:45.645710: Autobot started
+INFO:root:2019-02-21 15:06:53.698468: Magic Button Pressed
+INFO:root:2019-02-21 15:06:53.699497Starting search for query: Madrid Tour
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Tour%2B&btnG=Google+Search&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 15:08:55.081864: Autobot ended
