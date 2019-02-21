@@ -10,7 +10,7 @@ setup(
     description='Web search + email extraction to excel sheet',
     long_description = r,
     install_requires=[
-        'requests==2.18.4',
+        'requests==2.20.0', # More secure
         'lxml==4.1.1',
         'fake-useragent', # Get latest version.
         'urllib3==1.24.1'

@@ -4,7 +4,10 @@ import datetime
 import logging
 import uuid
 import tldextract
+import requests
 import xlsxwriter
+import signal
+
 
 from extract_emails import ExtractEmails
 from googlesearch import search 
@@ -18,7 +21,6 @@ keywordPairs = []
 badDomains = []
 cities = []
 target = 0
-workbookName = None
 
 # START LOGGER
 logging.basicConfig(filename='LOG ' + str(uuid.uuid1().hex) + '.txt', level=logging.DEBUG)
@@ -32,7 +34,6 @@ def reset():
     keywordPairs = []
     fileName = None
     target = None
-    workbook = None
 
 # Literally does everything else
 def everythingelse():
@@ -60,10 +61,10 @@ def everythingelse():
         messagebox.showinfo('ERROR', 'Error populating keywordPairs: \n' + str(sys.exc_info()[0]))
         return 0
 
-    links = []
     domains = []
     excelpairs = []
     gotemails = []
+    links = 0
     row = 1
 
     # PERFORM THE SEARCH AND EXTRACT THE EMAILS
@@ -71,15 +72,18 @@ def everythingelse():
         searchquery = str(city + " " + word[0])
         numresults = word[1]
         numlinks = 0
+        logging.info(str(datetime.datetime.now()) + 'Starting search for query: ' + searchquery)
+        print('Starting search for query: ' + searchquery)
 
-        for webURL in search(searchquery, tld='ca', safe='off', start=0, pause=5):
-            logging.info(str(datetime.datetime.now()) + 'Starting search for query: ' + searchquery)
+        for webURL in search(searchquery, tld='ca', safe='off', start=0, pause=3):
+            logging.info(str(datetime.datetime.now()) + 'Scraping Result No.' + str(numlinks))
             domain = tldextract.extract(webURL)[1]
             if (domain not in domains and domain not in badDomains):
                 domains.append(domain)
                 em = ExtractEmails(webURL, True, 20, True, 'chrome').emails
                 if (len(em) > 0):
                     numlinks += 1
+                    links += 1
                     for email in em:
                         if email not in gotemails:
                             gotemails.append(email)
@@ -92,9 +96,8 @@ def everythingelse():
                 break
     
     book.close()
-    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries = ' + str(len(excelpairs)) + '\n' + 'Number of domains = ' + str(len(domains)) + '\n')
+    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries = ' + str(len(excelpairs)) + '\n' + 'Number of domains searched = ' + str(len(domains)) + '\n' + 'Number of domains with emails = ' + str(links))
     messagebox.showinfo('SUCCESS', 'Search completed :D')
-
 
 # Handles the button clicks
 def buttonHandler(text, thiscity, filename):

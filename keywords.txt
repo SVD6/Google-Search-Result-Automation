@@ -1,20 +1,3 @@
-Tour,350
-Food Tours,78
-Pub Crawl,74
-Restaurant Tour,74
-Food Tasting,74
-Walking Food Tour,74
-Wine Tour,74
-History Tour,
-Walking Tour,
-Guided Tour,
-Tour and Museum,
-Architecture Tour,
-Nature Tour,
-Hiking Tour,
-Helicopter Tour,
-Sports Tour,
-Yoga Experience,
-Bike Tour,
-Art Tour,
-Street Art Tour,
+Tour, 10
+Food Tour, 10
+Bike Tour, 15

@@ -1,0 +1,28 @@
+Tour,350
+Food Tours,78
+Pub Crawl,74
+Restaurant Tour,74
+Food Tasting,74
+Walking Food Tour,74
+Wine Tour,74
+History Tour,48
+Walking Tour,44
+Guided Tour,44
+Tour and Museum,44
+Architecture Tour,44
+Nature Tour,34
+Hiking Tour,32
+Helicopter Tour,32
+Sports Tour,32
+Yoga Experience,32
+Bike Tour,34
+Art Tour,14
+Street Art Tour,14
+Art Museum Tour,14
+Graffiti Art Tour,14
+Art Class,14
+Photography Tour,20
+Photography Class,18
+Photography Workshop,18
+Nightlife Tour,28
+Vip Tour,28
