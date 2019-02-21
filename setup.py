@@ -15,6 +15,10 @@ setup(
         'fake-useragent', # Get latest version.
         'urllib3==1.24.1'
         'tldextract==2.2.0'
+        'xlsxwriter==1.1.4'
+        'beautifulsoup4==4.7.1'
+        'google==2.0.1'
+        'soupsieve==1.8'
     ],
     classifiers=(
         'Programming Language :: Python',

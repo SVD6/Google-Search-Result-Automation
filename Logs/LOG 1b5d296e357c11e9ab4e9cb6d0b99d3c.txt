@@ -1,0 +1,122 @@
+INFO:root:2019-02-20 20:57:56.282789: Autobot started
+INFO:root:2019-02-20 20:58:03.510539: Magic Button Pressed
+INFO:root:2019-02-20 20:58:10.048515Starting search for query: Lisbon Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.golisbon.com
+DEBUG:urllib3.connectionpool:https://www.golisbon.com:443 "GET /tours/ HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:11.077075Starting search for query: Lisbon Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lisboncitytours.com
+DEBUG:urllib3.connectionpool:https://www.lisboncitytours.com:443 "GET / HTTP/1.1" 200 19022
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lisboncitytours.com
+DEBUG:urllib3.connectionpool:https://www.lisboncitytours.com:443 "GET /cart/view/ HTTP/1.1" 200 7959
+INFO:root:2019-02-20 20:58:13.296274Starting search for query: Lisbon Tours
+INFO:root:2019-02-20 20:58:13.298738Starting search for query: Lisbon Tours
+INFO:root:2019-02-20 20:58:13.298738Starting search for query: Lisbon Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.timeout.com
+DEBUG:urllib3.connectionpool:https://www.timeout.com:443 "GET /lisbon/things-to-do/lisbon-tours HTTP/1.1" 200 33730
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.timeout.com
+DEBUG:urllib3.connectionpool:https://www.timeout.com:443 "GET /lisbon/things-to-do/lisbon-tours/london HTTP/1.1" 404 None
+INFO:root:2019-02-20 20:58:15.606774Starting search for query: Lisbon Tours
+INFO:root:2019-02-20 20:58:15.607812Starting search for query: Lisbon Tours
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): wehatetourismtours.com
+DEBUG:urllib3.connectionpool:http://wehatetourismtours.com:80 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:16.114038Starting search for query: Lisbon Tours
+INFO:root:2019-02-20 20:58:16.115034Starting search for query: Lisbon Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.insidelisbon.com
+DEBUG:urllib3.connectionpool:https://www.insidelisbon.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.insidelisbon.com
+DEBUG:urllib3.connectionpool:https://www.insidelisbon.com:443 "GET /book-tours-lisbon/ HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:23.852919Starting search for query: Lisbon Food Tours
+INFO:root:2019-02-20 20:58:23.857014Starting search for query: Lisbon Food Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tasteoflisboa.com
+DEBUG:urllib3.connectionpool:https://www.tasteoflisboa.com:443 "GET / HTTP/1.1" 200 20728
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tasteoflisboa.com
+DEBUG:urllib3.connectionpool:https://www.tasteoflisboa.com:443 "GET /eng/home HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:25.837227Starting search for query: Lisbon Food Tours
+INFO:root:2019-02-20 20:58:25.838224Starting search for query: Lisbon Food Tours
+INFO:root:2019-02-20 20:58:25.838224Starting search for query: Lisbon Food Tours
+INFO:root:2019-02-20 20:58:25.838224Starting search for query: Lisbon Food Tours
+INFO:root:2019-02-20 20:58:25.838224Starting search for query: Lisbon Food Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.secretfoodtours.com
+DEBUG:urllib3.connectionpool:https://www.secretfoodtours.com:443 "GET /lisbon/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.secretfoodtours.com
+DEBUG:urllib3.connectionpool:https://www.secretfoodtours.com:443 "GET /lisbon/recommendations/ HTTP/1.1" 404 None
+INFO:root:2019-02-20 20:58:26.758940Starting search for query: Lisbon Food Tours
+INFO:root:2019-02-20 20:58:26.759936Starting search for query: Lisbon Food Tours
+INFO:root:2019-02-20 20:58:26.760933Starting search for query: Lisbon Food Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): susanshain.com
+DEBUG:urllib3.connectionpool:https://susanshain.com:443 "GET /lisbon-food-tour-review/ HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:28.527042Starting search for query: Lisbon Food Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): culinarybackstreets.com
+DEBUG:urllib3.connectionpool:https://culinarybackstreets.com:443 "GET /culinary-walks/lisbon/ HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:28.930125Starting search for query: Lisbon Food Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.travelmag.com
+DEBUG:urllib3.connectionpool:https://www.travelmag.com:443 "GET /articles/best-food-tours-lisbon/ HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:29.476762Starting search for query: Lisbon Food Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): treasuresoflisboa.com
+DEBUG:urllib3.connectionpool:https://treasuresoflisboa.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:30.327691Starting search for query: Lisbon Food Tours
+INFO:root:2019-02-20 20:58:36.293349Starting search for query: Lisbon Food Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.authenticfoodquest.com
+DEBUG:urllib3.connectionpool:https://www.authenticfoodquest.com:443 "GET /lisbon-food-tour/ HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:38.778686Starting search for query: Lisbon Food Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.withlocals.com
+DEBUG:urllib3.connectionpool:https://www.withlocals.com:443 "GET /experience/lisbon-s-favorite-food-tour-the-10-tastings-55b7e80c/ HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:58:39.082783Starting search for query: Lisbon Food Tours
+INFO:root:2019-02-20 20:58:39.083782Starting search for query: Lisbon Food Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): juliedawnfox.com
+DEBUG:urllib3.connectionpool:https://juliedawnfox.com:443 "GET /lisbon-food-tour/ HTTP/1.1" 200 26325
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): juliedawnfox.com
+DEBUG:urllib3.connectionpool:https://juliedawnfox.com:443 "GET /lisbon-food-tour/ HTTP/1.1" 200 26325
+INFO:root:2019-02-20 20:58:46.743070Starting search for query: Lisbon Wine Tours
+INFO:root:2019-02-20 20:58:46.744069Starting search for query: Lisbon Wine Tours
+INFO:root:2019-02-20 20:58:46.744069Starting search for query: Lisbon Wine Tours
+INFO:root:2019-02-20 20:58:46.744069Starting search for query: Lisbon Wine Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): blog.winetourismportugal.com
+DEBUG:urllib3.connectionpool:https://blog.winetourismportugal.com:443 "GET /wine-tours-in-lisbon-2018 HTTP/1.1" 200 12575
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): blog.winetourismportugal.com
+DEBUG:urllib3.connectionpool:https://blog.winetourismportugal.com:443 "GET /wine-tours-in-lisbon-2018//blog.winetourismportugal.com/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://blog.winetourismportugal.com:443 "GET /wine-tours-in-lisbon-2018/blog.winetourismportugal.com HTTP/1.1" 404 6494
+INFO:root:2019-02-20 20:58:47.674485Starting search for query: Lisbon Wine Tours
+INFO:root:2019-02-20 20:58:47.675481Starting search for query: Lisbon Wine Tours
+INFO:root:2019-02-20 20:58:47.675481Starting search for query: Lisbon Wine Tours
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.lisbonwinery.com
+DEBUG:urllib3.connectionpool:http://www.lisbonwinery.com:80 "GET / HTTP/1.1" 200 15435
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.lisbonwinery.com
+DEBUG:urllib3.connectionpool:http://www.lisbonwinery.com:80 "GET / HTTP/1.1" 200 15435
+INFO:root:2019-02-20 20:58:50.598394Starting search for query: Lisbon Wine Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): catavino.net
+DEBUG:urllib3.connectionpool:https://catavino.net:443 "GET /tours/portugal/lisbon/ HTTP/1.1" 200 25978
+INFO:root:2019-02-20 20:58:51.766584Starting search for query: Lisbon Wine Tours
+INFO:root:2019-02-20 20:58:51.766584Starting search for query: Lisbon Wine Tours
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.ineedtours.com
+DEBUG:urllib3.connectionpool:http://www.ineedtours.com:80 "GET /lisbon/food-wine/wine-tasting-winery-tours/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.ineedtours.com
+DEBUG:urllib3.connectionpool:http://www.ineedtours.com:80 "GET /lisbon/food-wine/wine-tasting-winery-tours/wishlist/ HTTP/1.1" 404 53273
+INFO:root:2019-02-20 20:59:07.620134Starting search for query: Lisbon Wine Tours
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.venhavinho.com
+DEBUG:urllib3.connectionpool:http://www.venhavinho.com:80 "GET /lisbon-wine-tour.html HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:59:08.293401Starting search for query: Lisbon Wine Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cellartours.com
+DEBUG:urllib3.connectionpool:https://www.cellartours.com:443 "GET /portugal/wine-tours/lisbon HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cellartours.com
+DEBUG:urllib3.connectionpool:https://www.cellartours.com:443 "GET /portugal/wine-tours/lisbon/ HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:59:08.951674Starting search for query: Lisbon Wine Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.venturists.net
+DEBUG:urllib3.connectionpool:https://www.venturists.net:443 "GET /wine-tasting-in-lisbon-portugal/ HTTP/1.1" 200 15326
+INFO:root:2019-02-20 20:59:09.433768Starting search for query: Lisbon Wine Tours
+INFO:root:2019-02-20 20:59:09.433768Starting search for query: Lisbon Wine Tours
+INFO:root:2019-02-20 20:59:09.433768Starting search for query: Lisbon Wine Tours
+INFO:root:2019-02-20 20:59:09.433768Starting search for query: Lisbon Wine Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.livingtours.com
+DEBUG:urllib3.connectionpool:https://www.livingtours.com:443 "GET /arrabida-wine-tour-full-day-lisbon.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.livingtours.com
+DEBUG:urllib3.connectionpool:https://www.livingtours.com:443 "GET /arrabida-wine-tour-full-day-lisbon.html?___store=default&___from_store=en HTTP/1.1" 301 None
+DEBUG:urllib3.connectionpool:https://www.livingtours.com:443 "GET /passeio-de-vinhos-em-lisboa.html HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:59:15.012508Starting search for query: Lisbon Wine Tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.smoothred.com
+DEBUG:urllib3.connectionpool:https://www.smoothred.com:443 "GET /destinations/portugal/lisbon/ HTTP/1.1" 200 None
+INFO:root:2019-02-20 20:59:16.975016: Completed a search, here are the stats: 
+Number of entries = 10
+Number of domains = 23
+
+INFO:root:2019-02-20 21:00:41.752542: Autobot ended

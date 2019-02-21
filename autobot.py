@@ -73,6 +73,7 @@ def everythingelse():
         numlinks = 0
 
         for webURL in search(searchquery, tld='ca', safe='off', start=0, pause=5):
+            logging.info(str(datetime.datetime.now()) + 'Starting search for query: ' + searchquery)
             domain = tldextract.extract(webURL)[1]
             if (domain not in domains and domain not in badDomains):
                 domains.append(domain)
@@ -91,7 +92,7 @@ def everythingelse():
                 break
     
     book.close()
-    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries = ' + str(len(excelpairs)) + '\n')
+    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries = ' + str(len(excelpairs)) + '\n' + 'Number of domains = ' + str(len(domains)) + '\n')
     messagebox.showinfo('SUCCESS', 'Search completed :D')
 
 
