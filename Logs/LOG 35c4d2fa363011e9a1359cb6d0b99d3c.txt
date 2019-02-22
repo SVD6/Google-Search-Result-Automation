@@ -1,0 +1,11 @@
+INFO:root:2019-02-21 18:27:09.994240: Autobot started
+INFO:root:2019-02-21 18:27:19.760877: Magic Button Pressed
+INFO:root:2019-02-21 18:27:19.764621Starting search for query: Madrid Food Tour
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=130&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=140&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=150&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=160&tbs=0&safe=off&tbm= HTTP/1.1" 200 None

@@ -1,0 +1,734 @@
+INFO:root:2019-02-21 17:17:53.939197: Autobot started
+INFO:root:2019-02-21 17:18:05.928163: Magic Button Pressed
+INFO:root:2019-02-21 17:18:05.931520Starting search for query: Madrid Food Tour
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&btnG=Google+Search&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:13.877900Scraping Result No.0 URL: https://madridfoodtour.com/
+INFO:root:2019-02-21 17:18:13.886670Scraping URL: https://madridfoodtour.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madridfoodtour.com
+DEBUG:urllib3.connectionpool:https://madridfoodtour.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:15.340058Scraping Result No.1 URL: https://madridfoodtour.com/tours/tour/tapas-taverns-history-tour/
+INFO:root:2019-02-21 17:18:15.340058Scraping Result No.1 URL: https://madridfoodtour.com/tours/
+INFO:root:2019-02-21 17:18:15.340058Scraping Result No.1 URL: https://madridfoodtour.com/blog/
+INFO:root:2019-02-21 17:18:15.340058Scraping Result No.1 URL: https://madridfoodtour.com/book-now/
+INFO:root:2019-02-21 17:18:15.342362Scraping Result No.1 URL: https://www.tripadvisor.ca/Attractions-g187514-Activities-c42-t204-Madrid.html
+INFO:root:2019-02-21 17:18:15.342362Scraping Result No.1 URL: https://www.tripadvisor.com/Attraction_Review-g187514-d3388332-Reviews-Devour_Madrid_Food_Tours-Madrid.html
+INFO:root:2019-02-21 17:18:15.343822Scraping Result No.1 URL: https://www.youtube.com/watch?v=xFo6NI12fjc
+INFO:root:2019-02-21 17:18:15.343822Scraping Result No.1 URL: https://www.youtube.com/watch?v=RotTFta67Zc
+INFO:root:2019-02-21 17:18:15.343822Scraping Result No.1 URL: https://www.youtube.com/watch?v=HMdlouKOo-A
+INFO:root:2019-02-21 17:18:15.344820Scraping Result No.1 URL: https://www.secretfoodtours.com/madrid/
+INFO:root:2019-02-21 17:18:15.344820Scraping URL: https://www.secretfoodtours.com/madrid/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.secretfoodtours.com
+DEBUG:urllib3.connectionpool:https://www.secretfoodtours.com:443 "GET /madrid/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.secretfoodtours.com
+DEBUG:urllib3.connectionpool:https://www.secretfoodtours.com:443 "GET /madrid/recommendations/ HTTP/1.1" 404 None
+INFO:root:2019-02-21 17:18:16.725746Scraping Result No.2 URL: https://www.viator.com/en-CA/Madrid-tours/Food-Tours/d566-g6-c80
+INFO:root:2019-02-21 17:18:16.730008Scraping Result No.2 URL: https://foodlovertour.com/madrid/
+INFO:root:2019-02-21 17:18:16.730008Scraping URL: https://foodlovertour.com/madrid/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): foodlovertour.com
+DEBUG:urllib3.connectionpool:https://foodlovertour.com:443 "GET /madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:19.376268Scraping Result No.3 URL: https://www.nomadicmatt.com/travel-blogs/madrid-food-tour/
+INFO:root:2019-02-21 17:18:19.377519Scraping URL: https://www.nomadicmatt.com/travel-blogs/madrid-food-tour/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nomadicmatt.com
+DEBUG:urllib3.connectionpool:https://www.nomadicmatt.com:443 "GET /travel-blogs/madrid-food-tour/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nomadicmatt.com
+DEBUG:urllib3.connectionpool:https://www.nomadicmatt.com:443 "GET /travel-blogs/madrid-food-tour/travel-blog/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.nomadicmatt.com:443 "GET /travel-blog/ HTTP/1.1" 200 15966
+INFO:root:2019-02-21 17:18:20.380779Scraping Result No.4 URL: https://trip101.com/article/food-tours-madrid-spain
+INFO:root:2019-02-21 17:18:20.382982Scraping Result No.4 URL: https://theculturetrip.com/europe/spain/articles/madrids-top-food-and-tapas-tours/
+INFO:root:2019-02-21 17:18:20.383304Scraping URL: https://theculturetrip.com/europe/spain/articles/madrids-top-food-and-tapas-tours/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): theculturetrip.com
+DEBUG:urllib3.connectionpool:https://theculturetrip.com:443 "GET /europe/spain/articles/madrids-top-food-and-tapas-tours/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=10&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:27.897419Scraping Result No.5 URL: https://winetourismspain.com/food-tours/madrid/
+INFO:root:2019-02-21 17:18:27.897419Scraping URL: https://winetourismspain.com/food-tours/madrid/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): winetourismspain.com
+DEBUG:urllib3.connectionpool:https://winetourismspain.com:443 "GET /food-tours/madrid/ HTTP/1.1" 200 7696
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): winetourismspain.com
+DEBUG:urllib3.connectionpool:https://winetourismspain.com:443 "GET /food-tours/madrid/about-us/ HTTP/1.1" 404 8099
+INFO:root:2019-02-21 17:18:31.729566Scraping Result No.6 URL: https://devourtours.com/
+INFO:root:2019-02-21 17:18:31.729852Scraping URL: https://devourtours.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devourtours.com
+DEBUG:urllib3.connectionpool:https://devourtours.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:32.808413Scraping Result No.7 URL: https://www.yelp.ca/biz/devour-madrid-food-tours-madrid
+INFO:root:2019-02-21 17:18:32.810120Scraping Result No.7 URL: https://www.discoverwalks.com/tour/madrid-walking-tours/madrid-food-tour/
+INFO:root:2019-02-21 17:18:32.811117Scraping URL: https://www.discoverwalks.com/tour/madrid-walking-tours/madrid-food-tour/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.discoverwalks.com
+DEBUG:urllib3.connectionpool:https://www.discoverwalks.com:443 "GET /tour/madrid-walking-tours/madrid-food-tour/ HTTP/1.1" 200 9791
+INFO:root:2019-02-21 17:18:33.306412Scraping Result No.8 URL: https://www.contexttravel.com/cities/madrid/tours/savoring-madrid-food-tour-tavernas-and-tapas
+INFO:root:2019-02-21 17:18:33.306717Scraping URL: https://www.contexttravel.com/cities/madrid/tours/savoring-madrid-food-tour-tavernas-and-tapas for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.contexttravel.com
+DEBUG:urllib3.connectionpool:https://www.contexttravel.com:443 "GET /cities/madrid/tours/savoring-madrid-food-tour-tavernas-and-tapas HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.contexttravel.com
+DEBUG:urllib3.connectionpool:https://www.contexttravel.com:443 "GET /cities/madrid/tours/savoring-madrid-food-tour-tavernas-and-tapas/ HTTP/1.1" 301 None
+DEBUG:urllib3.connectionpool:https://www.contexttravel.com:443 "GET /cities/madrid/tours/savoring-madrid-food-tour-tavernas-and-tapas HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:34.288757Scraping Result No.9 URL: https://www.lonelyplanet.com/spain/madrid/activities/devour-madrid-food-tour/a/poi-act/1557222/360770
+INFO:root:2019-02-21 17:18:34.289758Scraping URL: https://www.lonelyplanet.com/spain/madrid/activities/devour-madrid-food-tour/a/poi-act/1557222/360770 for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lonelyplanet.com
+DEBUG:urllib3.connectionpool:https://www.lonelyplanet.com:443 "GET /spain/madrid/activities/devour-madrid-food-tour/a/poi-act/1557222/360770 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lonelyplanet.com
+DEBUG:urllib3.connectionpool:https://www.lonelyplanet.com:443 "GET /spain/madrid/activities/devour-madrid-food-tour/a/poi-act/1557222/360770/spain/madrid/activities/a/poi-act/360770 HTTP/1.1" 301 75
+DEBUG:urllib3.connectionpool:https://www.lonelyplanet.com:443 "GET /spain/madrid/activities/a/poi-act/360770 HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:35.943218Scraping Result No.10 URL: https://www.urbanadventures.com/Madrid-tour-madrid-tapas-adventure
+INFO:root:2019-02-21 17:18:35.943218Scraping URL: https://www.urbanadventures.com/Madrid-tour-madrid-tapas-adventure for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.urbanadventures.com
+DEBUG:urllib3.connectionpool:https://www.urbanadventures.com:443 "GET /Madrid-tour-madrid-tapas-adventure HTTP/1.1" 200 20068
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.urbanadventures.com
+DEBUG:urllib3.connectionpool:https://www.urbanadventures.com:443 "GET /Madrid-tour-madrid-tapas-adventure/country?cn=Argentina&s-country=282 HTTP/1.1" 404 7601
+INFO:root:2019-02-21 17:18:36.904123Scraping Result No.11 URL: https://bitemojo.com/madrid-food-tours/
+INFO:root:2019-02-21 17:18:36.905286Scraping URL: https://bitemojo.com/madrid-food-tours/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bitemojo.com
+DEBUG:urllib3.connectionpool:https://bitemojo.com:443 "GET /madrid-food-tours/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bitemojo.com
+DEBUG:urllib3.connectionpool:https://bitemojo.com:443 "GET /madrid-food-tours/bangkok-food-tours/ HTTP/1.1" 301 None
+DEBUG:urllib3.connectionpool:https://bitemojo.com:443 "GET /bangkok-food-tours/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:45.315650Scraping Result No.12 URL: https://www.getyourguide.com/madrid-l46/private-food-tour-in-madrid-the-10-tastings-t114151/
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=20&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:51.543009Scraping Result No.12 URL: https://www.hostalpersal.com/en/madrid-news/devour-madrid/
+INFO:root:2019-02-21 17:18:51.543009Scraping URL: https://www.hostalpersal.com/en/madrid-news/devour-madrid/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.hostalpersal.com
+DEBUG:urllib3.connectionpool:https://www.hostalpersal.com:443 "GET /en/madrid-news/devour-madrid/ HTTP/1.1" 200 14143
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.hostalpersal.com
+DEBUG:urllib3.connectionpool:https://www.hostalpersal.com:443 "GET /en/madrid-news/devour-madrid/?PageSpeed=noscript HTTP/1.1" 200 14017
+INFO:root:2019-02-21 17:18:53.730436Scraping Result No.13 URL: https://spanishsabores.com/madrid-travel-guide/madrid-food-tours/
+INFO:root:2019-02-21 17:18:53.731431Scraping URL: https://spanishsabores.com/madrid-travel-guide/madrid-food-tours/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): spanishsabores.com
+DEBUG:urllib3.connectionpool:https://spanishsabores.com:443 "GET /madrid-travel-guide/madrid-food-tours/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:54.180861Scraping Result No.14 URL: https://spanishsabores.com/2018/09/22/best-walking-tours-in-madrid-discover-madrid-on-foot/
+INFO:root:2019-02-21 17:18:54.182059Scraping Result No.14 URL: https://www.foodieflashpacker.com/walking-food-tour-of-madrid-devour-tours/
+INFO:root:2019-02-21 17:18:54.183097Scraping URL: https://www.foodieflashpacker.com/walking-food-tour-of-madrid-devour-tours/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foodieflashpacker.com
+DEBUG:urllib3.connectionpool:https://www.foodieflashpacker.com:443 "GET /walking-food-tour-of-madrid-devour-tours/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foodieflashpacker.com
+DEBUG:urllib3.connectionpool:https://www.foodieflashpacker.com:443 "GET /walking-food-tour-of-madrid-devour-tours/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:55.434410Scraping Result No.15 URL: https://www.rtwgirl.com/devour-madrid-food-tours/
+INFO:root:2019-02-21 17:18:55.435412Scraping URL: https://www.rtwgirl.com/devour-madrid-food-tours/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.rtwgirl.com
+DEBUG:urllib3.connectionpool:https://www.rtwgirl.com:443 "GET /devour-madrid-food-tours/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:18:56.852147Scraping Result No.16 URL: http://www.madridchow.com/epic-madrid-food-tour-10-stops/
+INFO:root:2019-02-21 17:18:56.852147Scraping URL: http://www.madridchow.com/epic-madrid-food-tour-10-stops/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.madridchow.com
+DEBUG:urllib3.connectionpool:http://www.madridchow.com:80 "GET /epic-madrid-food-tour-10-stops/ HTTP/1.1" 200 9404
+INFO:root:2019-02-21 17:18:58.151810Scraping Result No.17 URL: https://www.meetup.com/es-ES/Eat-Madrid-Food-Tour-in-a-Very-Small-Group/
+INFO:root:2019-02-21 17:18:58.152812Scraping URL: https://www.meetup.com/es-ES/Eat-Madrid-Food-Tour-in-a-Very-Small-Group/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.meetup.com
+DEBUG:urllib3.connectionpool:https://www.meetup.com:443 "GET /es-ES/Eat-Madrid-Food-Tour-in-a-Very-Small-Group/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.meetup.com
+DEBUG:urllib3.connectionpool:https://www.meetup.com:443 "GET /es-ES/Eat-Madrid-Food-Tour-in-a-Very-Small-Group/es-ES/Eat-Madrid-Food-Tour-in-a-Very-Small-Group/ HTTP/1.1" 404 None
+INFO:root:2019-02-21 17:18:59.933237Scraping Result No.18 URL: http://www.cheryltiu.com/spain-madrid-food-tour-must/
+INFO:root:2019-02-21 17:18:59.934236Scraping URL: http://www.cheryltiu.com/spain-madrid-food-tour-must/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.cheryltiu.com
+DEBUG:urllib3.connectionpool:http://www.cheryltiu.com:80 "GET /spain-madrid-food-tour-must/ HTTP/1.1" 200 14403
+INFO:root:2019-02-21 17:19:00.495124Scraping Result No.19 URL: http://www.insidersmadrid.com/tours/food-and-wine-tours/madrid-gourmet-food-tour/
+INFO:root:2019-02-21 17:19:00.495124Scraping URL: http://www.insidersmadrid.com/tours/food-and-wine-tours/madrid-gourmet-food-tour/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.insidersmadrid.com
+DEBUG:urllib3.connectionpool:http://www.insidersmadrid.com:80 "GET /tours/food-and-wine-tours/madrid-gourmet-food-tour/ HTTP/1.1" 200 16212
+INFO:root:2019-02-21 17:19:02.429349Scraping Result No.20 URL: https://carmensluxurytravel.com/madrid-food-tours-ultimate-spanish-cuisine-tour/
+INFO:root:2019-02-21 17:19:02.429349Scraping URL: https://carmensluxurytravel.com/madrid-food-tours-ultimate-spanish-cuisine-tour/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): carmensluxurytravel.com
+DEBUG:urllib3.connectionpool:https://carmensluxurytravel.com:443 "GET /madrid-food-tours-ultimate-spanish-cuisine-tour/ HTTP/1.1" 200 37125
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): carmensluxurytravel.com
+DEBUG:urllib3.connectionpool:https://carmensluxurytravel.com:443 "GET /madrid-food-tours-ultimate-spanish-cuisine-tour/category/destinations/ HTTP/1.1" 404 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=30&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:10.380640Scraping Result No.21 URL: https://www.withlocals.com/experiences/spain/madrid/tours/food-tours/
+INFO:root:2019-02-21 17:19:10.380640Scraping URL: https://www.withlocals.com/experiences/spain/madrid/tours/food-tours/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.withlocals.com
+DEBUG:urllib3.connectionpool:https://www.withlocals.com:443 "GET /experiences/spain/madrid/tours/food-tours/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:10.893820Scraping Result No.22 URL: https://www.pinterest.com/madridfoodtour/
+INFO:root:2019-02-21 17:19:10.893820Scraping Result No.22 URL: https://traveladdicts.net/fun-things-learned-madrid-food-tour/
+INFO:root:2019-02-21 17:19:10.894854Scraping URL: https://traveladdicts.net/fun-things-learned-madrid-food-tour/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): traveladdicts.net
+DEBUG:urllib3.connectionpool:https://traveladdicts.net:443 "GET /fun-things-learned-madrid-food-tour/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:11.362942Scraping Result No.23 URL: https://travel.usnews.com/Madrid_Spain/Things_To_Do/Devour_Madrid_Food_Tours_64271/
+INFO:root:2019-02-21 17:19:11.362942Scraping URL: https://travel.usnews.com/Madrid_Spain/Things_To_Do/Devour_Madrid_Food_Tours_64271/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): travel.usnews.com
+DEBUG:urllib3.connectionpool:https://travel.usnews.com:443 "GET /Madrid_Spain/Things_To_Do/Devour_Madrid_Food_Tours_64271/ HTTP/1.1" 403 364
+INFO:root:2019-02-21 17:19:11.709517Scraping Result No.24 URL: https://luxeadventuretraveler.com/madrid-food-tour-devour-barcelona-food-tours/
+INFO:root:2019-02-21 17:19:11.709517Scraping URL: https://luxeadventuretraveler.com/madrid-food-tour-devour-barcelona-food-tours/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): luxeadventuretraveler.com
+DEBUG:urllib3.connectionpool:https://luxeadventuretraveler.com:443 "GET /madrid-food-tour-devour-barcelona-food-tours/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): luxeadventuretraveler.com
+DEBUG:urllib3.connectionpool:https://luxeadventuretraveler.com:443 "GET /madrid-food-tour-devour-barcelona-food-tours/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:12.449518Scraping Result No.25 URL: https://awesomeandalucia.com/best-walking-tours-madrid/
+INFO:root:2019-02-21 17:19:12.450739Scraping URL: https://awesomeandalucia.com/best-walking-tours-madrid/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): awesomeandalucia.com
+DEBUG:urllib3.connectionpool:https://awesomeandalucia.com:443 "GET /best-walking-tours-madrid/ HTTP/1.1" 200 14085
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): awesomeandalucia.com
+DEBUG:urllib3.connectionpool:https://awesomeandalucia.com:443 "GET /best-walking-tours-madrid//transferwise.evyy.net/c/456724/232167/985 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://awesomeandalucia.com:443 "GET /best-walking-tours-madrid/transferwise.evyy.net/c/456724/232167/985 HTTP/1.1" 404 None
+INFO:root:2019-02-21 17:19:16.122841Scraping Result No.26 URL: https://madride.net/madrid-food-tour-experience/
+INFO:root:2019-02-21 17:19:16.122841Scraping URL: https://madride.net/madrid-food-tour-experience/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madride.net
+DEBUG:urllib3.connectionpool:https://madride.net:443 "GET /madrid-food-tour-experience/ HTTP/1.1" 200 18171
+INFO:root:2019-02-21 17:19:16.932160Scraping Result No.27 URL: https://travelpast50.com/madrid-food-tour-spain/
+INFO:root:2019-02-21 17:19:16.932160Scraping URL: https://travelpast50.com/madrid-food-tour-spain/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): travelpast50.com
+DEBUG:urllib3.connectionpool:https://travelpast50.com:443 "GET /madrid-food-tour-spain/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): travelpast50.com
+DEBUG:urllib3.connectionpool:https://travelpast50.com:443 "GET /madrid-food-tour-spain/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:21.383817Scraping Result No.28 URL: https://www.gourmetmadrid.com/en/
+INFO:root:2019-02-21 17:19:21.383817Scraping URL: https://www.gourmetmadrid.com/en/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.gourmetmadrid.com
+DEBUG:urllib3.connectionpool:https://www.gourmetmadrid.com:443 "GET /en/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:22.095639Scraping Result No.29 URL: http://www.foodtourz.com/madrid---tapas-taverns--history
+INFO:root:2019-02-21 17:19:22.095639Scraping URL: http://www.foodtourz.com/madrid---tapas-taverns--history for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.foodtourz.com
+DEBUG:urllib3.connectionpool:http://www.foodtourz.com:80 "GET /madrid---tapas-taverns--history HTTP/1.1" 301 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foodtourz.com
+DEBUG:urllib3.connectionpool:https://www.foodtourz.com:443 "GET /madrid---tapas-taverns--history HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=40&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:30.000893Scraping Result No.30 URL: https://www.angloitalianfollowus.com/our-vegetarian-view-of-the-madrid-food-tour
+INFO:root:2019-02-21 17:19:30.002149Scraping URL: https://www.angloitalianfollowus.com/our-vegetarian-view-of-the-madrid-food-tour for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.angloitalianfollowus.com
+DEBUG:urllib3.connectionpool:https://www.angloitalianfollowus.com:443 "GET /our-vegetarian-view-of-the-madrid-food-tour HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.angloitalianfollowus.com
+DEBUG:urllib3.connectionpool:https://www.angloitalianfollowus.com:443 "GET /our-vegetarian-view-of-the-madrid-food-tour HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:32.266851Scraping Result No.31 URL: https://www.eatwith.com/events/18155
+INFO:root:2019-02-21 17:19:32.266851Scraping URL: https://www.eatwith.com/events/18155 for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.eatwith.com
+DEBUG:urllib3.connectionpool:https://www.eatwith.com:443 "GET /events/18155 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.eatwith.com
+DEBUG:urllib3.connectionpool:https://www.eatwith.com:443 "GET /events/18155/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:35.417572Scraping Result No.32 URL: https://www.washingtonpost.com/lifestyle/travel/mushrooms-vermouth-and-jamon-food-touring-in-madrid/2015/07/30/8fdd77a8-3213-11e5-8353-1215475949f4_story.html
+INFO:root:2019-02-21 17:19:35.417572Scraping URL: https://www.washingtonpost.com/lifestyle/travel/mushrooms-vermouth-and-jamon-food-touring-in-madrid/2015/07/30/8fdd77a8-3213-11e5-8353-1215475949f4_story.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.washingtonpost.com
+INFO:root:2019-02-21 17:19:40.710490Scraping Result No.33 URL: https://www.livingtours.com/madrid-tapas-wine.html
+INFO:root:2019-02-21 17:19:40.710490Scraping URL: https://www.livingtours.com/madrid-tapas-wine.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.livingtours.com
+DEBUG:urllib3.connectionpool:https://www.livingtours.com:443 "GET /madrid-tapas-wine.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.livingtours.com
+DEBUG:urllib3.connectionpool:https://www.livingtours.com:443 "GET /madrid-tapas-wine.html?___store=default&___from_store=en HTTP/1.1" 301 None
+DEBUG:urllib3.connectionpool:https://www.livingtours.com:443 "GET /passeio-madrid-tapas-vinhos.html HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:45.867526Scraping Result No.34 URL: https://www.nattivus.com/en/madrid/madrid-food-tour
+INFO:root:2019-02-21 17:19:45.868035Scraping URL: https://www.nattivus.com/en/madrid/madrid-food-tour for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nattivus.com
+DEBUG:urllib3.connectionpool:https://www.nattivus.com:443 "GET /en/madrid/madrid-food-tour HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:47.491513Scraping Result No.35 URL: https://devourbarcelonafoodtours.com/
+INFO:root:2019-02-21 17:19:47.491513Scraping URL: https://devourbarcelonafoodtours.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devourbarcelonafoodtours.com
+DEBUG:urllib3.connectionpool:https://devourbarcelonafoodtours.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:19:48.615713Scraping Result No.36 URL: https://www.uniquetoursfactory.com/private-tours/en/guided-tours/our-private-tours-madrid/food-tours
+INFO:root:2019-02-21 17:19:48.615713Scraping URL: https://www.uniquetoursfactory.com/private-tours/en/guided-tours/our-private-tours-madrid/food-tours for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.uniquetoursfactory.com
+DEBUG:urllib3.connectionpool:https://www.uniquetoursfactory.com:443 "GET /private-tours/en/guided-tours/our-private-tours-madrid/food-tours HTTP/1.1" 200 12229
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.uniquetoursfactory.com
+DEBUG:urllib3.connectionpool:https://www.uniquetoursfactory.com:443 "GET /private-tours/en/guided-tours/our-private-tours-madrid/food-tours/private-tours/en HTTP/1.1" 404 None
+INFO:root:2019-02-21 17:19:50.106422Scraping Result No.37 URL: http://www.nakedmadrid.com/tag/madrid-food-tour/
+INFO:root:2019-02-21 17:19:50.106422Scraping URL: http://www.nakedmadrid.com/tag/madrid-food-tour/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nakedmadrid.com
+DEBUG:urllib3.connectionpool:http://www.nakedmadrid.com:80 "GET /tag/madrid-food-tour/ HTTP/1.1" 200 29379
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nakedmadrid.com
+DEBUG:urllib3.connectionpool:http://www.nakedmadrid.com:80 "GET /tag/madrid-food-tour/?print=pdf-search HTTP/1.1" 200 None
+DEBUG:chardet.charsetprober:SHIFT_JIS Japanese prober hit error at byte 348
+DEBUG:chardet.charsetprober:EUC-JP Japanese prober hit error at byte 339
+DEBUG:chardet.charsetprober:GB2312 Chinese prober hit error at byte 350
+DEBUG:chardet.charsetprober:EUC-KR Korean prober hit error at byte 339
+DEBUG:chardet.charsetprober:CP949 Korean prober hit error at byte 345
+DEBUG:chardet.charsetprober:Big5 Chinese prober hit error at byte 339
+DEBUG:chardet.charsetprober:EUC-TW Taiwan prober hit error at byte 339
+DEBUG:chardet.charsetprober:windows-1251 confidence = 0.0420305674557701, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:KOI8-R confidence = 0.04119055526514868, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:ISO-8859-5 confidence = 0.04113531806413741, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:MacCyrillic confidence = 0.04348264765121794, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:IBM866 confidence = 0.04334972795992379, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:IBM855 confidence = 0.04329389341306542, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:ISO-8859-5 confidence = 0.04063629692267465, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:windows-1251 confidence = 0.04159301795294325, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:TIS-620 confidence = 0.04343461499804171, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:windows-1255 confidence = 0.04652288778356934, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:windows-1255 confidence = 0.04501748342300014, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:windows-1251 not active
+DEBUG:chardet.charsetprober:KOI8-R not active
+DEBUG:chardet.charsetprober:ISO-8859-5 not active
+DEBUG:chardet.charsetprober:MacCyrillic not active
+DEBUG:chardet.charsetprober:IBM866 not active
+DEBUG:chardet.charsetprober:IBM855 not active
+DEBUG:chardet.charsetprober:ISO-8859-7 Greek confidence = 0.07483803701452246
+DEBUG:chardet.charsetprober:windows-1253 Greek confidence = 0.07670179082489681
+DEBUG:chardet.charsetprober:ISO-8859-5 not active
+DEBUG:chardet.charsetprober:windows-1251 not active
+DEBUG:chardet.charsetprober:TIS-620 not active
+DEBUG:chardet.charsetprober:ISO-8859-9 Turkish confidence = 0.07778445412249835
+DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
+DEBUG:chardet.charsetprober:windows-1255 not active
+DEBUG:chardet.charsetprober:windows-1255 not active
+DEBUG:chardet.universaldetector:no probers hit minimum threshold
+DEBUG:chardet.universaldetector:utf-8  confidence = 0.010000000000000009
+DEBUG:chardet.universaldetector:SHIFT_JIS Japanese confidence = 0.01
+DEBUG:chardet.universaldetector:EUC-JP Japanese confidence = 0.01
+DEBUG:chardet.universaldetector:GB2312 Chinese confidence = 0.01
+DEBUG:chardet.universaldetector:EUC-KR Korean confidence = 0.01
+DEBUG:chardet.universaldetector:CP949 Korean confidence = 0.01
+DEBUG:chardet.universaldetector:Big5 Chinese confidence = 0.01
+DEBUG:chardet.universaldetector:EUC-TW Taiwan confidence = 0.01
+DEBUG:chardet.universaldetector:windows-1251 Russian confidence = 0.0420305674557701
+DEBUG:chardet.universaldetector:KOI8-R Russian confidence = 0.04119055526514868
+DEBUG:chardet.universaldetector:ISO-8859-5 Russian confidence = 0.04113531806413741
+DEBUG:chardet.universaldetector:MacCyrillic Russian confidence = 0.04348264765121794
+DEBUG:chardet.universaldetector:IBM866 Russian confidence = 0.04334972795992379
+DEBUG:chardet.universaldetector:IBM855 Russian confidence = 0.04329389341306542
+DEBUG:chardet.universaldetector:ISO-8859-7 Greek confidence = 0.07483803701452246
+DEBUG:chardet.universaldetector:windows-1253 Greek confidence = 0.07670179082489681
+DEBUG:chardet.universaldetector:ISO-8859-5 Bulgairan confidence = 0.04063629692267465
+DEBUG:chardet.universaldetector:windows-1251 Bulgarian confidence = 0.04159301795294325
+DEBUG:chardet.universaldetector:TIS-620 Thai confidence = 0.04343461499804171
+DEBUG:chardet.universaldetector:ISO-8859-9 Turkish confidence = 0.07778445412249835
+DEBUG:chardet.universaldetector:windows-1255 Hebrew confidence = 0.0
+DEBUG:chardet.universaldetector:windows-1255 Hebrew confidence = 0.04652288778356934
+DEBUG:chardet.universaldetector:windows-1255 Hebrew confidence = 0.04501748342300014
+DEBUG:chardet.universaldetector:windows-1255 Hebrew confidence = 0.04501748342300014
+DEBUG:chardet.charsetprober:SHIFT_JIS Japanese prober hit error at byte 348
+DEBUG:chardet.charsetprober:EUC-JP Japanese prober hit error at byte 339
+DEBUG:chardet.charsetprober:GB2312 Chinese prober hit error at byte 350
+DEBUG:chardet.charsetprober:EUC-KR Korean prober hit error at byte 339
+DEBUG:chardet.charsetprober:CP949 Korean prober hit error at byte 345
+DEBUG:chardet.charsetprober:Big5 Chinese prober hit error at byte 339
+DEBUG:chardet.charsetprober:EUC-TW Taiwan prober hit error at byte 339
+DEBUG:chardet.charsetprober:windows-1251 confidence = 0.0420305674557701, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:KOI8-R confidence = 0.04119055526514868, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:ISO-8859-5 confidence = 0.04113531806413741, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:MacCyrillic confidence = 0.04348264765121794, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:IBM866 confidence = 0.04334972795992379, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:IBM855 confidence = 0.04329389341306542, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:ISO-8859-5 confidence = 0.04063629692267465, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:windows-1251 confidence = 0.04159301795294325, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:TIS-620 confidence = 0.04343461499804171, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:windows-1255 confidence = 0.04652288778356934, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:windows-1255 confidence = 0.04501748342300014, below negative shortcut threshhold 0.05
+DEBUG:chardet.charsetprober:windows-1251 not active
+DEBUG:chardet.charsetprober:KOI8-R not active
+DEBUG:chardet.charsetprober:ISO-8859-5 not active
+DEBUG:chardet.charsetprober:MacCyrillic not active
+DEBUG:chardet.charsetprober:IBM866 not active
+DEBUG:chardet.charsetprober:IBM855 not active
+DEBUG:chardet.charsetprober:ISO-8859-7 Greek confidence = 0.07483803701452246
+DEBUG:chardet.charsetprober:windows-1253 Greek confidence = 0.07670179082489681
+DEBUG:chardet.charsetprober:ISO-8859-5 not active
+DEBUG:chardet.charsetprober:windows-1251 not active
+DEBUG:chardet.charsetprober:TIS-620 not active
+DEBUG:chardet.charsetprober:ISO-8859-9 Turkish confidence = 0.07778445412249835
+DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
+DEBUG:chardet.charsetprober:windows-1255 not active
+DEBUG:chardet.charsetprober:windows-1255 not active
+DEBUG:chardet.universaldetector:no probers hit minimum threshold
+DEBUG:chardet.universaldetector:utf-8  confidence = 0.010000000000000009
+DEBUG:chardet.universaldetector:SHIFT_JIS Japanese confidence = 0.01
+DEBUG:chardet.universaldetector:EUC-JP Japanese confidence = 0.01
+DEBUG:chardet.universaldetector:GB2312 Chinese confidence = 0.01
+DEBUG:chardet.universaldetector:EUC-KR Korean confidence = 0.01
+DEBUG:chardet.universaldetector:CP949 Korean confidence = 0.01
+DEBUG:chardet.universaldetector:Big5 Chinese confidence = 0.01
+DEBUG:chardet.universaldetector:EUC-TW Taiwan confidence = 0.01
+DEBUG:chardet.universaldetector:windows-1251 Russian confidence = 0.0420305674557701
+DEBUG:chardet.universaldetector:KOI8-R Russian confidence = 0.04119055526514868
+DEBUG:chardet.universaldetector:ISO-8859-5 Russian confidence = 0.04113531806413741
+DEBUG:chardet.universaldetector:MacCyrillic Russian confidence = 0.04348264765121794
+DEBUG:chardet.universaldetector:IBM866 Russian confidence = 0.04334972795992379
+DEBUG:chardet.universaldetector:IBM855 Russian confidence = 0.04329389341306542
+DEBUG:chardet.universaldetector:ISO-8859-7 Greek confidence = 0.07483803701452246
+DEBUG:chardet.universaldetector:windows-1253 Greek confidence = 0.07670179082489681
+DEBUG:chardet.universaldetector:ISO-8859-5 Bulgairan confidence = 0.04063629692267465
+DEBUG:chardet.universaldetector:windows-1251 Bulgarian confidence = 0.04159301795294325
+DEBUG:chardet.universaldetector:TIS-620 Thai confidence = 0.04343461499804171
+DEBUG:chardet.universaldetector:ISO-8859-9 Turkish confidence = 0.07778445412249835
+DEBUG:chardet.universaldetector:windows-1255 Hebrew confidence = 0.0
+DEBUG:chardet.universaldetector:windows-1255 Hebrew confidence = 0.04652288778356934
+DEBUG:chardet.universaldetector:windows-1255 Hebrew confidence = 0.04501748342300014
+DEBUG:chardet.universaldetector:windows-1255 Hebrew confidence = 0.04501748342300014
+INFO:root:2019-02-21 17:21:45.086688Scraping Result No.38 URL: https://kentondejong.com/blog/madrid-food-tour
+INFO:root:2019-02-21 17:21:45.087878Scraping URL: https://kentondejong.com/blog/madrid-food-tour for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): kentondejong.com
+DEBUG:urllib3.connectionpool:https://kentondejong.com:443 "GET /blog/madrid-food-tour HTTP/1.1" 200 17941
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): kentondejong.com
+DEBUG:urllib3.connectionpool:https://kentondejong.com:443 "GET /blog/madrid-food-tour/ HTTP/1.1" 404 13352
+INFO:root:2019-02-21 17:21:46.381102Scraping Result No.39 URL: https://devourgranadafoodtours.com/top-tips-devouring-granada/
+INFO:root:2019-02-21 17:21:46.381102Scraping URL: https://devourgranadafoodtours.com/top-tips-devouring-granada/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devourgranadafoodtours.com
+DEBUG:urllib3.connectionpool:https://devourgranadafoodtours.com:443 "GET /top-tips-devouring-granada/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=50&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:21:54.827182Scraping Result No.40 URL: https://passportandplates.com/blog/tapas-and-taverns-with-madrid-food-tours/
+INFO:root:2019-02-21 17:21:54.827182Scraping URL: https://passportandplates.com/blog/tapas-and-taverns-with-madrid-food-tours/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): passportandplates.com
+INFO:root:2019-02-21 17:22:00.221462Scraping Result No.41 URL: https://www.esmadrid.com/fr/information-touristique/devour-madrid
+INFO:root:2019-02-21 17:22:00.221462Scraping URL: https://www.esmadrid.com/fr/information-touristique/devour-madrid for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.esmadrid.com
+INFO:root:2019-02-21 17:22:05.734461Scraping Result No.42 URL: https://www.trevorhuxham.com/2015/04/madrid-food-tour.html
+INFO:root:2019-02-21 17:22:05.735544Scraping URL: https://www.trevorhuxham.com/2015/04/madrid-food-tour.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.trevorhuxham.com
+DEBUG:urllib3.connectionpool:https://www.trevorhuxham.com:443 "GET /2015/04/madrid-food-tour.html HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:22:06.641372Scraping Result No.43 URL: https://devoursevillefoodtours.com/
+INFO:root:2019-02-21 17:22:06.641372Scraping URL: https://devoursevillefoodtours.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devoursevillefoodtours.com
+DEBUG:urllib3.connectionpool:https://devoursevillefoodtours.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:22:08.019273Scraping Result No.44 URL: https://www.madsnailtravel.com/madrid-private-tours/madrid-gastronomy/tasting-night-tour-half-day
+INFO:root:2019-02-21 17:22:08.019273Scraping URL: https://www.madsnailtravel.com/madrid-private-tours/madrid-gastronomy/tasting-night-tour-half-day for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.madsnailtravel.com
+DEBUG:urllib3.connectionpool:https://www.madsnailtravel.com:443 "GET /madrid-private-tours/madrid-gastronomy/tasting-night-tour-half-day HTTP/1.1" 200 7984
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.madsnailtravel.com
+DEBUG:urllib3.connectionpool:https://www.madsnailtravel.com:443 "GET /madrid-private-tours/madrid-gastronomy/tasting-night-tour-half-day/index.php HTTP/1.1" 301 279
+DEBUG:urllib3.connectionpool:https://www.madsnailtravel.com:443 "GET /madrid-private-tours/madrid-gastronomy/tasting-night-tour-half-day/index HTTP/1.1" 404 None
+INFO:root:2019-02-21 17:22:09.763074Scraping Result No.45 URL: http://bonvoyagelauren.com/a-madrid-food-tour-review-tapas-taverns-history/
+INFO:root:2019-02-21 17:22:09.763074Scraping URL: http://bonvoyagelauren.com/a-madrid-food-tour-review-tapas-taverns-history/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): bonvoyagelauren.com
+DEBUG:urllib3.connectionpool:http://bonvoyagelauren.com:80 "GET /a-madrid-food-tour-review-tapas-taverns-history/ HTTP/1.1" 200 25013
+INFO:root:2019-02-21 17:22:12.971389Scraping Result No.46 URL: https://www.foodieandtours.com/madrid
+INFO:root:2019-02-21 17:22:12.971389Scraping URL: https://www.foodieandtours.com/madrid for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foodieandtours.com
+DEBUG:urllib3.connectionpool:https://www.foodieandtours.com:443 "GET /madrid HTTP/1.1" 302 296
+DEBUG:urllib3.connectionpool:https://www.foodieandtours.com:443 "GET /all-the-best HTTP/1.1" 200 1605
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foodieandtours.com
+DEBUG:urllib3.connectionpool:https://www.foodieandtours.com:443 "GET /madrid/ HTTP/1.1" 404 None
+INFO:root:2019-02-21 17:22:15.000563Scraping Result No.47 URL: https://www.veltra.com/en/europe/spain/madrid/ctg/162004:food_and_gourmet_tour/
+INFO:root:2019-02-21 17:22:15.000563Scraping URL: https://www.veltra.com/en/europe/spain/madrid/ctg/162004:food_and_gourmet_tour/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.veltra.com
+DEBUG:urllib3.connectionpool:https://www.veltra.com:443 "GET /en/europe/spain/madrid/ctg/162004:food_and_gourmet_tour/ HTTP/1.1" 200 36678
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.veltra.com
+DEBUG:urllib3.connectionpool:https://www.veltra.com:443 "GET /en/europe/spain/madrid/ctg/162004:food_and_gourmet_tour/en/login HTTP/1.1" 301 20
+DEBUG:urllib3.connectionpool:https://www.veltra.com:443 "GET /en/europe/spain/madrid/ctg/162004:food_and_gourmet_tour/ HTTP/1.1" 200 37259
+INFO:root:2019-02-21 17:22:19.955748Scraping Result No.48 URL: https://enjoytapasmadrid.com/en/madrid-food-tour/
+INFO:root:2019-02-21 17:22:19.956501Scraping URL: https://enjoytapasmadrid.com/en/madrid-food-tour/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): enjoytapasmadrid.com
+DEBUG:urllib3.connectionpool:https://enjoytapasmadrid.com:443 "GET /en/madrid-food-tour/ HTTP/1.1" 200 20254
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): enjoytapasmadrid.com
+DEBUG:urllib3.connectionpool:https://enjoytapasmadrid.com:443 "GET /en/madrid-food-tour/en/ HTTP/1.1" 404 14075
+INFO:root:2019-02-21 17:22:27.291148Scraping Result No.49 URL: https://devourmalagafoodtours.com/
+INFO:root:2019-02-21 17:22:27.291309Scraping URL: https://devourmalagafoodtours.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devourmalagafoodtours.com
+DEBUG:urllib3.connectionpool:https://devourmalagafoodtours.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=60&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:22:35.882561Scraping Result No.50 URL: https://www.xoxoday.com/private-madrid-food-tour/F1518443698818/
+INFO:root:2019-02-21 17:22:35.882561Scraping URL: https://www.xoxoday.com/private-madrid-food-tour/F1518443698818/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.xoxoday.com
+DEBUG:urllib3.connectionpool:https://www.xoxoday.com:443 "GET /private-madrid-food-tour/F1518443698818/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stores.xoxoday.com
+DEBUG:urllib3.connectionpool:https://stores.xoxoday.com:443 "GET /experiences/private-madrid-food-tour/F1518443698818/ HTTP/1.1" 200 9486
+INFO:root:2019-02-21 17:22:38.493706Scraping Result No.51 URL: https://www.facebook.com/madridfoodtour/
+INFO:root:2019-02-21 17:22:38.494704Scraping Result No.51 URL: https://www.cnbc.com/2018/04/26/the-top-food-experiences-in-the-world-according-to-tripadvisor.html
+INFO:root:2019-02-21 17:22:38.495705Scraping URL: https://www.cnbc.com/2018/04/26/the-top-food-experiences-in-the-world-according-to-tripadvisor.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnbc.com
+DEBUG:urllib3.connectionpool:https://www.cnbc.com:443 "GET /2018/04/26/the-top-food-experiences-in-the-world-according-to-tripadvisor.html HTTP/1.1" 200 37835
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnbc.com
+DEBUG:urllib3.connectionpool:https://www.cnbc.com:443 "GET /2018/04/26/the-top-food-experiences-in-the-world-according-to-tripadvisor.html//www.cnbc.com/make-it/ HTTP/1.1" 404 39486
+INFO:root:2019-02-21 17:22:39.500753Scraping Result No.52 URL: https://www.telegraph.co.uk/travel/destinations/europe/spain/madrid/articles/bless-hotel-madrid-etxeko-martin-berasategui-restaurant-review/
+INFO:root:2019-02-21 17:22:39.501096Scraping URL: https://www.telegraph.co.uk/travel/destinations/europe/spain/madrid/articles/bless-hotel-madrid-etxeko-martin-berasategui-restaurant-review/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.telegraph.co.uk
+DEBUG:urllib3.connectionpool:https://www.telegraph.co.uk:443 "GET /travel/destinations/europe/spain/madrid/articles/bless-hotel-madrid-etxeko-martin-berasategui-restaurant-review/ HTTP/1.1" 200 39257
+INFO:root:2019-02-21 17:22:41.333121Scraping Result No.53 URL: https://culinarybackstreets.com/
+INFO:root:2019-02-21 17:22:41.333400Scraping URL: https://culinarybackstreets.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): culinarybackstreets.com
+DEBUG:urllib3.connectionpool:https://culinarybackstreets.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:22:42.117225Scraping Result No.54 URL: https://www.goaheadtours.ca/tours
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=70&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:22:49.631408Scraping Result No.54 URL: https://www.realmadrid.com/en/football/news
+INFO:root:2019-02-21 17:22:49.631408Scraping URL: https://www.realmadrid.com/en/football/news for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.realmadrid.com
+DEBUG:urllib3.connectionpool:https://www.realmadrid.com:443 "GET /en/football/news HTTP/1.1" 200 35046
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.realmadrid.com
+DEBUG:urllib3.connectionpool:https://www.realmadrid.com:443 "GET /en/football/news/en/football/games/copa-del-rey/real-madrid-barcelona-2019-02-27 HTTP/1.1" 404 12322
+INFO:root:2019-02-21 17:22:52.411067Scraping Result No.55 URL: http://jxmes.com/taking-a-delicious-food-tour-in-madrid/
+INFO:root:2019-02-21 17:22:52.411067Scraping URL: http://jxmes.com/taking-a-delicious-food-tour-in-madrid/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): jxmes.com
+DEBUG:urllib3.connectionpool:http://jxmes.com:80 "GET /taking-a-delicious-food-tour-in-madrid/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:22:55.182958Scraping Result No.56 URL: https://www.iol.co.za/sport/tennis/atp-tour/roger-federer-back-on-court-at-the-madrid-open-19409512
+INFO:root:2019-02-21 17:22:55.182958Scraping URL: https://www.iol.co.za/sport/tennis/atp-tour/roger-federer-back-on-court-at-the-madrid-open-19409512 for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.iol.co.za
+DEBUG:urllib3.connectionpool:https://www.iol.co.za:443 "GET /sport/tennis/atp-tour/roger-federer-back-on-court-at-the-madrid-open-19409512 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.iol.co.za
+DEBUG:urllib3.connectionpool:https://www.iol.co.za:443 "GET /sport/tennis/atp-tour/roger-federer-back-on-court-at-the-madrid-open-19409512/ HTTP/1.1" 301 112
+DEBUG:urllib3.connectionpool:https://www.iol.co.za:443 "GET /sport/tennis/atp-tour/roger-federer-back-on-court-at-the-madrid-open-19409512 HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:22:56.542963Scraping Result No.57 URL: https://www.theinfatuation.com/
+INFO:root:2019-02-21 17:22:56.542963Scraping URL: https://www.theinfatuation.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.theinfatuation.com
+DEBUG:urllib3.connectionpool:https://www.theinfatuation.com:443 "GET / HTTP/1.1" 200 17319
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.theinfatuation.com
+DEBUG:urllib3.connectionpool:https://www.theinfatuation.com:443 "GET /atlanta HTTP/1.1" 200 15043
+INFO:root:2019-02-21 17:22:57.323291Scraping Result No.58 URL: http://www.hardrock.com/
+INFO:root:2019-02-21 17:22:57.324336Scraping URL: http://www.hardrock.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.hardrock.com
+DEBUG:urllib3.connectionpool:http://www.hardrock.com:80 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.hardrock.com
+DEBUG:urllib3.connectionpool:http://www.hardrock.com:80 "GET /healsfoundation HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:22:58.770871Scraping Result No.59 URL: https://www.kesari.in/World-Tours/Europe-Tours
+INFO:root:2019-02-21 17:22:58.770871Scraping URL: https://www.kesari.in/World-Tours/Europe-Tours for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.kesari.in
+DEBUG:urllib3.connectionpool:https://www.kesari.in:443 "GET /World-Tours/Europe-Tours HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.kesari.in
+DEBUG:urllib3.connectionpool:https://www.kesari.in:443 "GET /World-Tours/Europe-Tours//erp.kesari.in/mibew/index.php/chat?locale=en HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:01.372299Scraping Result No.60 URL: https://www.runrocknroll.com/
+INFO:root:2019-02-21 17:23:01.373295Scraping URL: https://www.runrocknroll.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.runrocknroll.com
+DEBUG:urllib3.connectionpool:https://www.runrocknroll.com:443 "GET / HTTP/1.1" 200 14021
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.runrocknroll.com
+DEBUG:urllib3.connectionpool:https://www.runrocknroll.com:443 "GET /es/ HTTP/1.1" 200 14182
+INFO:root:2019-02-21 17:23:02.443143Scraping Result No.61 URL: https://www.priceless.com/
+INFO:root:2019-02-21 17:23:02.443143Scraping URL: https://www.priceless.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.priceless.com
+DEBUG:urllib3.connectionpool:https://www.priceless.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:04.162085Scraping Result No.62 URL: https://www.atlasobscura.com/places/museo-de-america
+INFO:root:2019-02-21 17:23:04.163086Scraping URL: https://www.atlasobscura.com/places/museo-de-america for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.atlasobscura.com
+DEBUG:urllib3.connectionpool:https://www.atlasobscura.com:443 "GET /places/museo-de-america HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.atlasobscura.com
+DEBUG:urllib3.connectionpool:https://www.atlasobscura.com:443 "GET /places/museo-de-america/unusual-trips HTTP/1.1" 404 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=80&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:12.416361Scraping Result No.63 URL: https://www.thelocal.es/
+INFO:root:2019-02-21 17:23:12.416361Scraping URL: https://www.thelocal.es/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.thelocal.es
+DEBUG:urllib3.connectionpool:https://www.thelocal.es:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.thelocal.es
+DEBUG:urllib3.connectionpool:https://www.thelocal.es:443 "GET /page/view/membership-offer HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:14.298483Scraping Result No.64 URL: http://isachgiai.xyz/Meat-Madrid-More-than-food-t.html
+INFO:root:2019-02-21 17:23:14.298483Scraping URL: http://isachgiai.xyz/Meat-Madrid-More-than-food-t.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): isachgiai.xyz
+DEBUG:urllib3.connectionpool:http://isachgiai.xyz:80 "GET /Meat-Madrid-More-than-food-t.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): isachgiai.xyz
+DEBUG:urllib3.connectionpool:http://isachgiai.xyz:80 "GET /Meat-Madrid-More-than-food-t.html/Chestnut-and-Pork-Noodles-with-Bok-Choy-Chestnuts-Australia.html HTTP/1.1" 404 None
+INFO:root:2019-02-21 17:23:15.125646Scraping Result No.65 URL: https://www.riceland.com/
+INFO:root:2019-02-21 17:23:15.126641Scraping URL: https://www.riceland.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.riceland.com
+DEBUG:urllib3.connectionpool:https://www.riceland.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.riceland.com
+DEBUG:urllib3.connectionpool:https://www.riceland.com:443 "GET /pages/about-riceland/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:15.878254Scraping Result No.66 URL: https://www.chanbrothers.com/package/china
+INFO:root:2019-02-21 17:23:15.878254Scraping URL: https://www.chanbrothers.com/package/china for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.chanbrothers.com
+DEBUG:urllib3.connectionpool:https://www.chanbrothers.com:443 "GET /package/china HTTP/1.1" 200 59290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.chanbrothers.com
+DEBUG:urllib3.connectionpool:https://www.chanbrothers.com:443 "GET /package/china/home HTTP/1.1" 404 103
+INFO:root:2019-02-21 17:23:19.674093Scraping Result No.67 URL: https://www.escpeurope.eu/
+INFO:root:2019-02-21 17:23:19.674093Scraping URL: https://www.escpeurope.eu/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.escpeurope.eu
+DEBUG:urllib3.connectionpool:https://www.escpeurope.eu:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.escpeurope.eu
+DEBUG:urllib3.connectionpool:https://www.escpeurope.eu:443 "GET /press-room HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:21.574851Scraping Result No.68 URL: https://www.cnn.com/2019/02/18/football/real-madrid-la-liga-legends-marcelo-reguilon-spt-intl/index.html
+INFO:root:2019-02-21 17:23:21.574851Scraping URL: https://www.cnn.com/2019/02/18/football/real-madrid-la-liga-legends-marcelo-reguilon-spt-intl/index.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnn.com
+DEBUG:urllib3.connectionpool:https://www.cnn.com:443 "GET /2019/02/18/football/real-madrid-la-liga-legends-marcelo-reguilon-spt-intl/index.html HTTP/1.1" 200 250884
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnn.com
+DEBUG:urllib3.connectionpool:https://www.cnn.com:443 "GET /2019/02/18/football/real-madrid-la-liga-legends-marcelo-reguilon-spt-intl/index.html/ HTTP/1.1" 404 210748
+INFO:root:2019-02-21 17:23:22.959408Scraping Result No.69 URL: https://www.fodors.com/
+INFO:root:2019-02-21 17:23:22.959408Scraping URL: https://www.fodors.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.fodors.com
+DEBUG:urllib3.connectionpool:https://www.fodors.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:23.386713Scraping Result No.70 URL: https://www.princess.com/
+INFO:root:2019-02-21 17:23:23.386713Scraping URL: https://www.princess.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.princess.com
+DEBUG:urllib3.connectionpool:https://www.princess.com:443 "GET / HTTP/1.1" 200 16826
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.princess.com
+DEBUG:urllib3.connectionpool:https://www.princess.com:443 "GET /cruise-vacation-planning-dashboard/home.do HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.princess.com:443 "GET /cruise-vacation-planning-dashboard/showLogin.do HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): book.princess.com
+DEBUG:urllib3.connectionpool:https://book.princess.com:443 "GET /captaincircle/jsp/userLogin.jsp?srcURL=https://www.princess.com/cruise-with-me/loginReturn.do&fromGVP=true HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://book.princess.com:443 "GET /captaincircle/myPrincess.page HTTP/1.1" 200 16259
+INFO:root:2019-02-21 17:23:24.928462Scraping Result No.71 URL: http://www.hillspet.ca/
+INFO:root:2019-02-21 17:23:24.929460Scraping URL: http://www.hillspet.ca/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.hillspet.ca
+DEBUG:urllib3.connectionpool:http://www.hillspet.ca:80 "GET / HTTP/1.1" 301 183
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.hillspet.ca
+DEBUG:urllib3.connectionpool:https://www.hillspet.ca:443 "GET / HTTP/1.1" 301 238
+DEBUG:urllib3.connectionpool:https://www.hillspet.ca:443 "GET /en-ca/ HTTP/1.1" 301 237
+DEBUG:urllib3.connectionpool:https://www.hillspet.ca:443 "GET /en-ca HTTP/1.1" 200 14233
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.hillspet.ca
+DEBUG:urllib3.connectionpool:http://www.hillspet.ca:80 "GET /en-ca HTTP/1.1" 301 183
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.hillspet.ca
+DEBUG:urllib3.connectionpool:https://www.hillspet.ca:443 "GET /en-ca HTTP/1.1" 200 14233
+INFO:root:2019-02-21 17:23:25.962409Scraping Result No.72 URL: https://www.usda.gov/
+INFO:root:2019-02-21 17:23:25.962409Scraping URL: https://www.usda.gov/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.usda.gov
+DEBUG:urllib3.connectionpool:https://www.usda.gov:443 "GET / HTTP/1.1" 200 10521
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=90&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:33.036277Scraping Result No.73 URL: https://www.melia.com/en/home.htm
+INFO:root:2019-02-21 17:23:33.037276Scraping URL: https://www.melia.com/en/home.htm for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.melia.com
+DEBUG:urllib3.connectionpool:https://www.melia.com:443 "GET /en/home.htm HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.melia.com
+DEBUG:urllib3.connectionpool:https://www.melia.com:443 "GET /en/home.htm//www.melia.com/en/home.htm HTTP/1.1" 404 18438
+INFO:root:2019-02-21 17:23:34.173026Scraping Result No.74 URL: http://www.nusr-et.com.tr/en/home.aspx
+INFO:root:2019-02-21 17:23:34.173026Scraping URL: http://www.nusr-et.com.tr/en/home.aspx for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nusr-et.com.tr
+DEBUG:urllib3.connectionpool:http://www.nusr-et.com.tr:80 "GET /en/home.aspx HTTP/1.1" 200 18783
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.nusr-et.com.tr
+DEBUG:urllib3.connectionpool:http://www.nusr-et.com.tr:80 "GET /en/home.aspx/tr.aspx HTTP/1.1" 200 7806
+INFO:root:2019-02-21 17:23:35.339926Scraping Result No.75 URL: https://www.airnewzealand.com/
+INFO:root:2019-02-21 17:23:35.346180Scraping Result No.75 URL: https://en.aegeanair.com/
+INFO:root:2019-02-21 17:23:35.347180Scraping URL: https://en.aegeanair.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.aegeanair.com
+DEBUG:urllib3.connectionpool:https://en.aegeanair.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:36.424113Scraping Result No.76 URL: https://www.pepsico.com/
+INFO:root:2019-02-21 17:23:36.424113Scraping URL: https://www.pepsico.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.pepsico.com
+DEBUG:urllib3.connectionpool:https://www.pepsico.com:443 "GET / HTTP/1.1" 403 824
+INFO:root:2019-02-21 17:23:36.852186Scraping Result No.77 URL: https://www.independent.ie/sport/soccer/champions-league/juventus-have-a-mountain-to-climb-in-turin-as-atletico-madrid-triumph-at-the-wanda-metropolitano-37837291.html
+INFO:root:2019-02-21 17:23:36.853183Scraping URL: https://www.independent.ie/sport/soccer/champions-league/juventus-have-a-mountain-to-climb-in-turin-as-atletico-madrid-triumph-at-the-wanda-metropolitano-37837291.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.independent.ie
+DEBUG:urllib3.connectionpool:https://www.independent.ie:443 "GET /sport/soccer/champions-league/juventus-have-a-mountain-to-climb-in-turin-as-atletico-madrid-triumph-at-the-wanda-metropolitano-37837291.html HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.independent.ie:443 "GET /ca/sport/soccer/champions-league/juventus-have-a-mountain-to-climb-in-turin-as-atletico-madrid-triumph-at-the-wanda-metropolitano-37837291.html HTTP/1.1" 200 27344
+INFO:root:2019-02-21 17:23:37.435239Scraping Result No.78 URL: https://www.stef.com/
+INFO:root:2019-02-21 17:23:37.435239Scraping URL: https://www.stef.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.stef.com
+DEBUG:urllib3.connectionpool:https://www.stef.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.stef.com
+DEBUG:urllib3.connectionpool:https://www.stef.com:443 "GET /en HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:40.446353Scraping Result No.79 URL: https://www.standard.co.uk/sport/football/champions-league/uefa-champions-league-live-results-liverpool-fc-0-bayern-munich-0-schalke-v-man-city-atletico-madrid-a4071251.html
+INFO:root:2019-02-21 17:23:40.446353Scraping URL: https://www.standard.co.uk/sport/football/champions-league/uefa-champions-league-live-results-liverpool-fc-0-bayern-munich-0-schalke-v-man-city-atletico-madrid-a4071251.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.standard.co.uk
+DEBUG:urllib3.connectionpool:https://www.standard.co.uk:443 "GET /sport/football/champions-league/uefa-champions-league-live-results-liverpool-fc-0-bayern-munich-0-schalke-v-man-city-atletico-madrid-a4071251.html HTTP/1.1" 200 65983
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.standard.co.uk
+DEBUG:urllib3.connectionpool:https://www.standard.co.uk:443 "GET /sport/football/champions-league/uefa-champions-league-live-results-liverpool-fc-0-bayern-munich-0-schalke-v-man-city-atletico-madrid-a4071251.html/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Resetting dropped connection: www.standard.co.uk
+DEBUG:urllib3.connectionpool:https://www.standard.co.uk:443 "GET /sport/football/champions-league/uefa-champions-league-live-results-liverpool-fc-0-bayern-munich-0-schalke-v-man-city-atletico-madrid-a4071251.html HTTP/1.1" 200 65983
+INFO:root:2019-02-21 17:23:44.239616Scraping Result No.80 URL: https://www.groupon.com/
+INFO:root:2019-02-21 17:23:44.239616Scraping URL: https://www.groupon.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.groupon.com
+DEBUG:urllib3.connectionpool:https://www.groupon.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:45.027923Scraping Result No.81 URL: https://www.dhnet.be/sports/tennis/roger-federer-de-retour-sur-terre-battue-a-madrid-5c6d51bad8ad5878f0dbf697
+INFO:root:2019-02-21 17:23:45.027923Scraping URL: https://www.dhnet.be/sports/tennis/roger-federer-de-retour-sur-terre-battue-a-madrid-5c6d51bad8ad5878f0dbf697 for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dhnet.be
+DEBUG:urllib3.connectionpool:https://www.dhnet.be:443 "GET /sports/tennis/roger-federer-de-retour-sur-terre-battue-a-madrid-5c6d51bad8ad5878f0dbf697 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dhnet.be
+DEBUG:urllib3.connectionpool:https://www.dhnet.be:443 "GET /sports/tennis/roger-federer-de-retour-sur-terre-battue-a-madrid-5c6d51bad8ad5878f0dbf697/ HTTP/1.1" 301 256
+DEBUG:urllib3.connectionpool:https://www.dhnet.be:443 "GET /sports/tennis/roger-federer-de-retour-sur-terre-battue-a-madrid-5c6d51bad8ad5878f0dbf697 HTTP/1.1" 200 19010
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=100&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:23:55.003448Scraping Result No.82 URL: https://www.lesoir.be/207883/article/2019-02-20/roger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid
+INFO:root:2019-02-21 17:23:55.003448Scraping URL: https://www.lesoir.be/207883/article/2019-02-20/roger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lesoir.be
+DEBUG:urllib3.connectionpool:https://www.lesoir.be:443 "GET /207883/article/2019-02-20/roger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.lesoir.be:443 "GET /check_cookies?url=%2F207883%2Farticle%2F2019-02-20%2Froger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.lesoir.be:443 "GET /207883/article/2019-02-20/roger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid HTTP/1.1" 302 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): login.lesoir.be
+DEBUG:urllib3.connectionpool:https://login.lesoir.be:443 "GET /html/anonymous?unitId=LS_eng_prod&returnPage=https%3A%2F%2Fwww.lesoir.be%2F207883%2Farticle%2F2019-02-20%2Froger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): sso.soirmag.be
+DEBUG:urllib3.connectionpool:http://sso.soirmag.be:80 "GET /http/redirect/?unitId=LS_eng_prod&operation=anonymous&returnPage=https%3A%2F%2Fwww.lesoir.be%2F207883%2Farticle%2F2019-02-20%2Froger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid&anonymousId=398bc7309954a70d5ca4b1fb57f1d6bea51b87e81ac8c95e103f2f960fa09b05&hop=soirmag HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.lesoir.be:443 "GET /207883/article/2019-02-20/roger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid HTTP/1.1" 200 35705
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lesoir.be
+DEBUG:urllib3.connectionpool:https://www.lesoir.be:443 "GET /207883/article/2019-02-20/roger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid/ HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.lesoir.be:443 "GET /check_cookies?url=%2F207883%2Farticle%2F2019-02-20%2Froger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://www.lesoir.be:443 "GET /207883/article/2019-02-20/roger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid HTTP/1.1" 302 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): login.lesoir.be
+DEBUG:urllib3.connectionpool:https://login.lesoir.be:443 "GET /html/anonymous?unitId=LS_eng_prod&returnPage=https%3A%2F%2Fwww.lesoir.be%2F207883%2Farticle%2F2019-02-20%2Froger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): sso.soirmag.be
+DEBUG:urllib3.connectionpool:http://sso.soirmag.be:80 "GET /http/redirect/?unitId=LS_eng_prod&operation=anonymous&returnPage=https%3A%2F%2Fwww.lesoir.be%2F207883%2Farticle%2F2019-02-20%2Froger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid&anonymousId=40bdcd7b9e776f331bde91dbebcc98403e6f671208ab6c1c87a845baec36356e&hop=soirmag HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.lesoir.be:443 "GET /207883/article/2019-02-20/roger-federer-de-retour-sur-terre-battue-au-masters-1000-de-madrid HTTP/1.1" 200 35705
+INFO:root:2019-02-21 17:24:03.129097Scraping Result No.83 URL: https://www.thinkspain.com/news-spain/31322/ed-sheeran-real-madrid-please-sign-me-up
+INFO:root:2019-02-21 17:24:03.129233Scraping URL: https://www.thinkspain.com/news-spain/31322/ed-sheeran-real-madrid-please-sign-me-up for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.thinkspain.com
+DEBUG:urllib3.connectionpool:https://www.thinkspain.com:443 "GET /news-spain/31322/ed-sheeran-real-madrid-please-sign-me-up HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.thinkspain.com
+DEBUG:urllib3.connectionpool:https://www.thinkspain.com:443 "GET /news-spain/31322/ed-sheeran-real-madrid-please-sign-me-up/news-spain/31303/lydia-valentin-crowned-weightlifter-of-the-year-2018 HTTP/1.1" 404 None
+INFO:root:2019-02-21 17:24:04.676420Scraping Result No.84 URL: https://www.roccofortehotels.com/
+INFO:root:2019-02-21 17:24:04.676747Scraping URL: https://www.roccofortehotels.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.roccofortehotels.com
+DEBUG:urllib3.connectionpool:https://www.roccofortehotels.com:443 "GET / HTTP/1.1" 200 29278
+INFO:root:2019-02-21 17:24:08.930080Scraping Result No.85 URL: https://www.qatarairways.com/en-us/homepage.html
+INFO:root:2019-02-21 17:24:08.930080Scraping URL: https://www.qatarairways.com/en-us/homepage.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.qatarairways.com
+DEBUG:urllib3.connectionpool:https://www.qatarairways.com:443 "GET /en-us/homepage.html HTTP/1.1" 200 72263
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.qatarairways.com
+DEBUG:urllib3.connectionpool:https://www.qatarairways.com:443 "GET /en-us/homepage.html/index.html?q=dz/fr HTTP/1.1" 200 72307
+INFO:root:2019-02-21 17:24:12.996818Scraping Result No.86 URL: https://www.manutd.com/
+INFO:root:2019-02-21 17:24:12.997817Scraping URL: https://www.manutd.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.manutd.com
+DEBUG:urllib3.connectionpool:https://www.manutd.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.manutd.com
+DEBUG:urllib3.connectionpool:https://www.manutd.com:443 "GET /en HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:16.167132Scraping Result No.87 URL: https://www.dublinairport.com/
+INFO:root:2019-02-21 17:24:16.167132Scraping URL: https://www.dublinairport.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dublinairport.com
+DEBUG:urllib3.connectionpool:https://www.dublinairport.com:443 "GET / HTTP/1.1" 200 37367
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dublinairport.com
+DEBUG:urllib3.connectionpool:https://www.dublinairport.com:443 "GET /latest-news HTTP/1.1" 200 16045
+INFO:root:2019-02-21 17:24:17.725618Scraping Result No.88 URL: https://www.lotuscars.com/
+INFO:root:2019-02-21 17:24:17.725618Scraping URL: https://www.lotuscars.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lotuscars.com
+DEBUG:urllib3.connectionpool:https://www.lotuscars.com:443 "GET / HTTP/1.1" 302 None
+DEBUG:urllib3.connectionpool:https://www.lotuscars.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.lotuscars.com
+DEBUG:urllib3.connectionpool:https://www.lotuscars.com:443 "GET /how-we-use-cookies-our-website HTTP/1.1" 302 None
+DEBUG:urllib3.connectionpool:https://www.lotuscars.com:443 "GET /how-we-use-cookies-our-website HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:28.489320Scraping Result No.89 URL: https://www.exploreasheville.com/event-calendar/detail/open-studio-art-tour/24575/
+INFO:root:2019-02-21 17:24:28.489320Scraping URL: https://www.exploreasheville.com/event-calendar/detail/open-studio-art-tour/24575/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.exploreasheville.com
+DEBUG:urllib3.connectionpool:https://www.exploreasheville.com:443 "GET /event-calendar/detail/open-studio-art-tour/24575/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:29.341332Scraping Result No.90 URL: https://www.thenational.ae/sport/football/diego-simeone-s-triple-change-inspires-brave-atletico-madrid-to-impressive-win-over-juventus-in-pictures-1.828290
+INFO:root:2019-02-21 17:24:29.341332Scraping URL: https://www.thenational.ae/sport/football/diego-simeone-s-triple-change-inspires-brave-atletico-madrid-to-impressive-win-over-juventus-in-pictures-1.828290 for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.thenational.ae
+DEBUG:urllib3.connectionpool:https://www.thenational.ae:443 "GET /sport/football/diego-simeone-s-triple-change-inspires-brave-atletico-madrid-to-impressive-win-over-juventus-in-pictures-1.828290 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.thenational.ae
+DEBUG:urllib3.connectionpool:https://www.thenational.ae:443 "GET /sport/football/diego-simeone-s-triple-change-inspires-brave-atletico-madrid-to-impressive-win-over-juventus-in-pictures-1.828290/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.thenational.ae
+DEBUG:urllib3.connectionpool:http://www.thenational.ae:80 "GET /sport/football/diego-simeone-s-triple-change-inspires-brave-atletico-madrid-to-impressive-win-over-juventus-in-pictures-1.828290 HTTP/1.1" 301 183
+DEBUG:urllib3.connectionpool:https://www.thenational.ae:443 "GET /sport/football/diego-simeone-s-triple-change-inspires-brave-atletico-madrid-to-impressive-win-over-juventus-in-pictures-1.828290 HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:30.673264Scraping Result No.91 URL: https://www.belfasttelegraph.co.uk/sport/football/diego-simeone-insists-there-is-still-plenty-to-do-for-atletico-madrid-despite-win-over-juventus-37837700.html
+INFO:root:2019-02-21 17:24:30.673264Scraping URL: https://www.belfasttelegraph.co.uk/sport/football/diego-simeone-insists-there-is-still-plenty-to-do-for-atletico-madrid-despite-win-over-juventus-37837700.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.belfasttelegraph.co.uk
+DEBUG:urllib3.connectionpool:https://www.belfasttelegraph.co.uk:443 "GET /sport/football/diego-simeone-insists-there-is-still-plenty-to-do-for-atletico-madrid-despite-win-over-juventus-37837700.html HTTP/1.1" 200 21185
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=110&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:38.490745Scraping Result No.92 URL: https://www.irishtimes.com/sport/soccer/champions-league/cristiano-ronaldo-recorded-goading-atl%C3%A9tico-madrid-after-defeat-1.3801830
+INFO:root:2019-02-21 17:24:38.490745Scraping URL: https://www.irishtimes.com/sport/soccer/champions-league/cristiano-ronaldo-recorded-goading-atl%C3%A9tico-madrid-after-defeat-1.3801830 for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.irishtimes.com
+DEBUG:urllib3.connectionpool:https://www.irishtimes.com:443 "GET /sport/soccer/champions-league/cristiano-ronaldo-recorded-goading-atl%C3%A9tico-madrid-after-defeat-1.3801830 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.irishtimes.com
+DEBUG:urllib3.connectionpool:https://www.irishtimes.com:443 "GET /sport/soccer/champions-league/cristiano-ronaldo-recorded-goading-atl%C3%A9tico-madrid-after-defeat-1.3801830/newsletters HTTP/1.1" 404 None
+INFO:root:2019-02-21 17:24:39.287459Scraping Result No.93 URL: https://new.artsmia.org/
+INFO:root:2019-02-21 17:24:39.287459Scraping URL: https://new.artsmia.org/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): new.artsmia.org
+DEBUG:urllib3.connectionpool:https://new.artsmia.org:443 "GET / HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:39.892011Scraping Result No.94 URL: https://www.boston.com/food/restaurants/2019/02/19/food-hall-inspired-bar-mercato-opens-friday
+INFO:root:2019-02-21 17:24:39.892011Scraping URL: https://www.boston.com/food/restaurants/2019/02/19/food-hall-inspired-bar-mercato-opens-friday for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.boston.com
+DEBUG:urllib3.connectionpool:https://www.boston.com:443 "GET /food/restaurants/2019/02/19/food-hall-inspired-bar-mercato-opens-friday HTTP/1.1" 200 55486
+INFO:root:2019-02-21 17:24:40.401340Scraping Result No.95 URL: https://www.msn.com/en-gb/sport/uefa-champions-league/cristiano-ronaldo-responds-to-atletico-madrid-jeers-i-won-five-champions-leagues-atleti-zero/ar-BBTT6s8
+INFO:root:2019-02-21 17:24:40.402337Scraping Result No.95 URL: https://sport360.com/video/tennis/319167/belinda-bencic-reaches-her-biggest-semi-final-in-three-years-with-dubai-win-over-simona-halep
+INFO:root:2019-02-21 17:24:40.402337Scraping URL: https://sport360.com/video/tennis/319167/belinda-bencic-reaches-her-biggest-semi-final-in-three-years-with-dubai-win-over-simona-halep for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): sport360.com
+DEBUG:urllib3.connectionpool:https://sport360.com:443 "GET /video/tennis/319167/belinda-bencic-reaches-her-biggest-semi-final-in-three-years-with-dubai-win-over-simona-halep HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): sport360.com
+DEBUG:urllib3.connectionpool:https://sport360.com:443 "GET /video/tennis/319167/belinda-bencic-reaches-her-biggest-semi-final-in-three-years-with-dubai-win-over-simona-halep/?utm=from_logo HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:41.835899Scraping Result No.96 URL: https://www.thestar.com.my/sport/football/2019/02/21/ronaldo-reminds-atletico-of-champions-league-haul/
+INFO:root:2019-02-21 17:24:41.836040Scraping URL: https://www.thestar.com.my/sport/football/2019/02/21/ronaldo-reminds-atletico-of-champions-league-haul/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.thestar.com.my
+DEBUG:urllib3.connectionpool:https://www.thestar.com.my:443 "GET /sport/football/2019/02/21/ronaldo-reminds-atletico-of-champions-league-haul/ HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:42.953725Scraping Result No.97 URL: https://www.campofriofoodgroup.com/
+INFO:root:2019-02-21 17:24:42.954757Scraping URL: https://www.campofriofoodgroup.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.campofriofoodgroup.com
+DEBUG:urllib3.connectionpool:https://www.campofriofoodgroup.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.campofriofoodgroup.com
+DEBUG:urllib3.connectionpool:https://www.campofriofoodgroup.com:443 "GET /company/at-a-glance HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:45.214856Scraping Result No.98 URL: http://gokigalitours.com/
+INFO:root:2019-02-21 17:24:45.214856Scraping URL: http://gokigalitours.com/ for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): gokigalitours.com
+INFO:root:2019-02-21 17:24:50.419325Scraping Result No.99 URL: https://www.dailymail.co.uk/sport/golf/article-6729167/Im-hungry-Tiger-Woods-reveals-eats-SEVEN-meals-day.html
+INFO:root:2019-02-21 17:24:50.419325Scraping URL: https://www.dailymail.co.uk/sport/golf/article-6729167/Im-hungry-Tiger-Woods-reveals-eats-SEVEN-meals-day.html for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dailymail.co.uk
+DEBUG:urllib3.connectionpool:https://www.dailymail.co.uk:443 "GET /sport/golf/article-6729167/Im-hungry-Tiger-Woods-reveals-eats-SEVEN-meals-day.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dailymail.co.uk
+DEBUG:urllib3.connectionpool:https://www.dailymail.co.uk:443 "GET /sport/golf/article-6729167/Im-hungry-Tiger-Woods-reveals-eats-SEVEN-meals-day.html/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.dailymail.co.uk:443 "GET /sport/golf/article-6729167/Im-hungry-Tiger-Woods-reveals-eats-SEVEN-meals-day.html HTTP/1.1" 200 None
+INFO:root:2019-02-21 17:24:51.933910Scraping Result No.100 URL: http://irbms-rplrp.org/wp-content/uploads/2019/02/n0xqiyw/sdtpbn1.php?yiatdjsrw=culinary-internship-in-spain
+INFO:root:2019-02-21 17:24:51.933910Scraping URL: http://irbms-rplrp.org/wp-content/uploads/2019/02/n0xqiyw/sdtpbn1.php?yiatdjsrw=culinary-internship-in-spain for emails
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): irbms-rplrp.org
+DEBUG:urllib3.connectionpool:http://irbms-rplrp.org:80 "GET /wp-content/uploads/2019/02/n0xqiyw/sdtpbn1.php?yiatdjsrw=culinary-internship-in-spain HTTP/1.1" 200 22023
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=120&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=130&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=140&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=150&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=160&tbs=0&safe=off&tbm= HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.ca
+DEBUG:urllib3.connectionpool:https://www.google.ca:443 "GET /search?hl=en&q=Madrid+Food+Tour%2B&start=170&tbs=0&safe=off&tbm= HTTP/1.1" 200 None

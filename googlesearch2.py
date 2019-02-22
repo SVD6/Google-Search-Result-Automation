@@ -45,6 +45,7 @@ def get_page(url, user_agent):
     try:
         r = requests.get(url, headers=headers, verify=True, timeout=5.0)
         print('googlesearch request')
+        print(r.text)
         return r.text
     except Exception:
         print('Error sending request, googlesearch2.py')
@@ -124,7 +125,7 @@ def search(query, tld, lang, tbs, safe, num, start, stop, domains, pause, only_s
         html = get_page(url, user_agent)
 
         if (html == 'bad'):
-            start += num
+            start += num   
             if num == 10:
                 url = url_next_page % vars()
             else:

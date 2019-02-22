@@ -42,6 +42,9 @@ msn
 iwtx
 travelshift
 travelmarketplace
+dailymail
+boston
+sport360
 wetravel
 goaheadtours
 yelp

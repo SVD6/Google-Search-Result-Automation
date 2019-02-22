@@ -74,7 +74,7 @@ def everythingelse():
         logging.info(str(datetime.datetime.now()) + 'Starting search for query: ' + searchquery)
         print('Starting search for query: ' + searchquery)
 
-        for webURL in search(query=searchquery, tld='ca', start=0, pause=5.0, lang='en', tbs='0', safe='off', user_agent='random', 
+        for webURL in search(query=searchquery, tld='ca', start=130, pause=5.0, lang='en', tbs='0', safe='off', user_agent='random', 
         num=10, stop=None, domains=None, only_standard=False, extra_params={}, tpe=''):
             logging.info(str(datetime.datetime.now()) + 'Scraping Result No.' + str(len(domains)) + ' URL: ' + webURL)
             domain = tldextract.extract(webURL)[1]
