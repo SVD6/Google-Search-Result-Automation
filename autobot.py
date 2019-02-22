@@ -4,10 +4,12 @@ import datetime
 import logging
 import uuid
 import tldextract
+import time
+import random
 import xlsxwriter
 
 from extract_emails import ExtractEmails
-from googlesearch2 import search 
+from google import standard_search
 from tkinter import Label, Entry, StringVar, IntVar, Button, Frame, messagebox
 
 
@@ -38,6 +40,8 @@ def reset():
 def everythingelse():
     global keywordPairs, city, fileName
 
+    start_time = time.time()
+
     # MAKE THE WORKSHEET
     book = xlsxwriter.Workbook(workbookName + '.xlsx')
     wsh = book.add_worksheet()
@@ -59,46 +63,83 @@ def everythingelse():
         logging.error(str(datetime.datetime.now()) + ': Error populating the keyword pairs')
         messagebox.showinfo('ERROR', 'Error populating keywordPairs: \n' + str(sys.exc_info()[0]))
         return 0
-
+    # List of all domains visited
     domains = []
-    excelpairs = []
+    # List of final excel entries
+    exceltriples = []
+    # List of emails
     gotemails = []
-    links = 0
+    # List of all links visited
+    links = []
+    # Current row of excel
     row = 1
 
     # PERFORM THE SEARCH AND EXTRACT THE EMAILS
     for word in keywordPairs:
         searchquery = str(city + " " + word[0])
         numresults = word[1]
-        numlinks = 0
         logging.info(str(datetime.datetime.now()) + 'Starting search for query: ' + searchquery)
-        print('Starting search for query: ' + searchquery)
+        numsuccessful = 0
+        firstpage = 1
+        pagestosearch = int(((numresults - numsuccessful) / 10) + 1)
 
-        for webURL in search(query=searchquery, tld='ca', start=130, pause=5.0, lang='en', tbs='0', safe='off', user_agent='random', 
-        num=10, stop=None, domains=None, only_standard=False, extra_params={}, tpe=''):
-            logging.info(str(datetime.datetime.now()) + 'Scraping Result No.' + str(len(domains)) + ' URL: ' + webURL)
-            domain = tldextract.extract(webURL)[1]
-            if (domain not in domains and domain not in badDomains):
-                domains.append(domain)
-                logging.info(str(datetime.datetime.now()) + 'Scraping URL: ' + str(webURL) + ' for emails')
-                em = ExtractEmails(webURL, True, 20, True, 'random').emails
-                if (len(em) > 0):
-                    numlinks += 1
-                    links += 1
-                    print('Successful Domain no.' + str(links))
-                    for email in em:
-                        if email not in gotemails:
-                            gotemails.append(email)
-                            excelpairs.append((webURL, email))
-                            wsh.write(row, 0, email)
-                            wsh.write(row, 1, webURL)
-                            row += 1
+        while numsuccessful < numresults:
+            for result in standard_search.search(query=searchquery, pages=pagestosearch, first_page=firstpage):
+                if (numsuccessful == numresults):
+                    pass
+                else:
+                    links.append(result.link)
+                    domain = tldextract.extract(result.link)[1]
+
+                    if (domain not in domains and domain not in badDomains):
+                        print(domain)
+                        domains.append(domain)
+                        logging.info(str(datetime.datetime.now()) + 'Scraping URL: ' + str(result.link) + ' for emails')
+                        em = ExtractEmails(url=result.link, depth=30, print_log=True, ssl_verify=True, user_agent='random')
+                        emails = em.emails
+
+                        if (len(emails) > 0):
+                            numsuccessful += 1
+                            logging.info(str(datetime.datetime.now()) + 'Found some emails, number:' + str(numsuccessful))
+
+                            for email in emails:
+                                if email not in gotemails:
+                                    gotemails.append(email)
+                                    exceltriples.append((result.link, email, result.name))
+                                    wsh.write(row, 0, email)
+                                    wsh.write(row, 1, result.link)
+                                    wsh.write(row, 2, result.name)
+                                    row += 1
+
+            firstpage += pagestosearch
+            pagestosearch = int(((numresults - numsuccessful) / 10) + 3)
+            time.sleep(random.randint(5, 15))
+
+        # for webURL in search(query=searchquery, tld='ca', start=130, pause=5.0, lang='en', tbs='0', safe='off', user_agent='random', 
+        # num=10, stop=None, domains=None, only_standard=False, extra_params={}, tpe=''):
+        #     logging.info(str(datetime.datetime.now()) + 'Scraping Result No.' + str(len(domains)) + ' URL: ' + webURL)
+        #     domain = tldextract.extract(webURL)[1]
+        #     if (domain not in domains and domain not in badDomains):
+        #         domains.append(domain)
+        #         logging.info(str(datetime.datetime.now()) + 'Scraping URL: ' + str(webURL) + ' for emails')
+        #         em = ExtractEmails(webURL, True, 20, True, 'random').emails
+        #         if (len(em) > 0):
+        #             numlinks += 1
+        #             links += 1
+        #             print('Successful Domain no.' + str(links))
+        #             for email in em:
+        #                 if email not in gotemails:
+        #                     gotemails.append(email)
+        #                     excelpairs.append((webURL, email))
+        #                     wsh.write(row, 0, email)
+        #                     wsh.write(row, 1, webURL)
+        #                     row += 1
             
-            if (numlinks == numresults):
-                break
+        #     if (numlinks == numresults):
+        #         break
     
     book.close()
-    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries = ' + str(len(excelpairs)) + '\n' + 'Number of domains searched = ' + str(len(domains)) + '\n' + 'Number of domains with emails = ' + str(links))
+    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries: ' + str(len(exceltriples)) + '\n' + 'Number of results searched: ' + str(len(links)) + '\n' + "\n Number of 'good' domains:" + str(len(domains)) + '\nNumber of domains with emails: ' + str(numsuccessful) + '\n' + 'Time Elapsed = ' + str((start_time - time.time())))
     messagebox.showinfo('SUCCESS', 'Search completed :D')
 
 

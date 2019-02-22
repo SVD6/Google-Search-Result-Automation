@@ -1,0 +1,127 @@
+INFO:root:2019-02-22 15:00:14.044254: Autobot started
+INFO:root:2019-02-22 15:00:21.802064: Magic Button Pressed
+INFO:root:2019-02-22 15:00:21.802064Starting search for query: Madrid Food Tour
+DEBUG:chardet.charsetprober:utf-8  confidence = 0.99
+DEBUG:chardet.charsetprober:SHIFT_JIS Japanese confidence = 0.01
+DEBUG:chardet.charsetprober:EUC-JP Japanese confidence = 0.01
+DEBUG:chardet.charsetprober:GB2312 Chinese confidence = 0.01
+DEBUG:chardet.charsetprober:EUC-KR Korean confidence = 0.01
+DEBUG:chardet.charsetprober:CP949 Korean confidence = 0.01
+DEBUG:chardet.charsetprober:Big5 Chinese confidence = 0.01
+DEBUG:chardet.charsetprober:EUC-TW Taiwan confidence = 0.01
+DEBUG:chardet.charsetprober:windows-1251 Russian confidence = 0.01
+DEBUG:chardet.charsetprober:KOI8-R Russian confidence = 0.01
+DEBUG:chardet.charsetprober:ISO-8859-5 Russian confidence = 0.0
+DEBUG:chardet.charsetprober:MacCyrillic Russian confidence = 0.0
+DEBUG:chardet.charsetprober:IBM866 Russian confidence = 0.0
+DEBUG:chardet.charsetprober:IBM855 Russian confidence = 0.01
+DEBUG:chardet.charsetprober:ISO-8859-7 Greek confidence = 0.0
+DEBUG:chardet.charsetprober:windows-1253 Greek confidence = 0.0
+DEBUG:chardet.charsetprober:ISO-8859-5 Bulgairan confidence = 0.0
+DEBUG:chardet.charsetprober:windows-1251 Bulgarian confidence = 0.01
+DEBUG:chardet.charsetprober:TIS-620 Thai confidence = 0.09122227910775974
+DEBUG:chardet.charsetprober:ISO-8859-9 Turkish confidence = 0.4533214604595471
+DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
+DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
+DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
+DEBUG:chardet.charsetprober:utf-8  confidence = 0.99
+DEBUG:chardet.charsetprober:SHIFT_JIS Japanese confidence = 0.01
+DEBUG:chardet.charsetprober:EUC-JP Japanese confidence = 0.01
+DEBUG:chardet.charsetprober:GB2312 Chinese confidence = 0.01
+DEBUG:chardet.charsetprober:EUC-KR Korean confidence = 0.01
+DEBUG:chardet.charsetprober:CP949 Korean confidence = 0.01
+DEBUG:chardet.charsetprober:Big5 Chinese confidence = 0.01
+DEBUG:chardet.charsetprober:EUC-TW Taiwan confidence = 0.01
+INFO:root:2019-02-22 15:00:25.315923Scraping URL: https://www.youtube.com/watch?v=xFo6NI12fjc for emails
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/ HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc//www.youtube.com/upload HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/premium?ybp=Eg9GRXdoYXRfdG9fd2F0Y2g%253D HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/results?sp=EiG4AQHCARtDaElKZ1R3S2dKY3BRZzBSYVNLTVljSGVOc1E%253D&search_query=Madrid HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/user/jamesblick78 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/channel/UCo1HWB7bmrjpscWdZ5Xx3Xw HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/timedtext_video?v=xFo6NI12fjc&bl=watch&auto=yes&ref=wt HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/redirect?q=http%3A%2F%2Fbit.ly%2FSubscribeJamesBlick&v=xFo6NI12fjc&event=video_description&redir_token=PothBS1ByOx13Z8-StTv26Iu4gl8MTU1MDk1MjAyNUAxNTUwODY1NjI1 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/redirect?q=http%3A%2F%2Fbit.ly%2F2REk5KV&v=xFo6NI12fjc&event=video_description&redir_token=PothBS1ByOx13Z8-StTv26Iu4gl8MTU1MDk1MjAyNUAxNTUwODY1NjI1 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/redirect?q=http%3A%2F%2Fbit.ly%2F2zsS2Wb&v=xFo6NI12fjc&event=video_description&redir_token=PothBS1ByOx13Z8-StTv26Iu4gl8MTU1MDk1MjAyNUAxNTUwODY1NjI1 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/redirect?q=http%3A%2F%2Famzn.to%2F2ng6ihk&v=xFo6NI12fjc&event=video_description&redir_token=PothBS1ByOx13Z8-StTv26Iu4gl8MTU1MDk1MjAyNUAxNTUwODY1NjI1 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/redirect?q=http%3A%2F%2Fbit.ly%2F2MM7btx&v=xFo6NI12fjc&event=video_description&redir_token=PothBS1ByOx13Z8-StTv26Iu4gl8MTU1MDk1MjAyNUAxNTUwODY1NjI1 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/redirect?q=https%3A%2F%2Fbooki.ng%2F2N4tVsh&v=xFo6NI12fjc&event=video_description&redir_token=PothBS1ByOx13Z8-StTv26Iu4gl8MTU1MDk1MjAyNUAxNTUwODY1NjI1 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/redirect?q=http%3A%2F%2Fbit.ly%2F2LBx9OG&v=xFo6NI12fjc&event=video_description&redir_token=PothBS1ByOx13Z8-StTv26Iu4gl8MTU1MDk1MjAyNUAxNTUwODY1NjI1 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/results?search_query=%23SpainRevealed HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/results?search_query=%23JamesBlick HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/results?search_query=%23madrid HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/channel/UCUrY9QznFi4-S3jWihvaBpA HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=cxkHSgXLfRM HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=HPBzlSvp_Nk HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=UrfVd6CUcY4 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=rCgUvfSzYU0 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=F5NyDlHWcq4 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=PF-HLWYfHEI HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=kGmfnmRzNIU HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=olfWPdeaM10 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=0GCuvcTI090 HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=sOCmLG1m8pM HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=ob0TMTYLGBM HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.youtube.com
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc/watch?v=8L3KpV8zS4Y HTTP/1.1" 303 0
+DEBUG:urllib3.connectionpool:https://www.youtube.com:443 "GET /watch?v=xFo6NI12fjc HTTP/1.1" 200 None

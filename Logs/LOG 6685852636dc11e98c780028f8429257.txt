@@ -1,0 +1,14 @@
+INFO:root:2019-02-22 14:59:45.224221: Autobot started
+INFO:root:2019-02-22 14:59:51.725597: Magic Button Pressed
+INFO:root:2019-02-22 14:59:56.763122: Magic Button Pressed
+INFO:root:2019-02-22 14:59:56.763122Starting search for query: Madrid Food Tour
+INFO:root:2019-02-22 14:59:59.149169: Magic Button Pressed
+INFO:root:2019-02-22 14:59:59.149169Starting search for query: Madrid Food Tour
+INFO:root:2019-02-22 14:59:59.734098: Magic Button Pressed
+INFO:root:2019-02-22 14:59:59.734098Starting search for query: Madrid Food Tour
+INFO:root:2019-02-22 15:00:00.218693: Magic Button Pressed
+INFO:root:2019-02-22 15:00:00.234490Starting search for query: Madrid Food Tour
+INFO:root:2019-02-22 15:00:00.409876: Magic Button Pressed
+INFO:root:2019-02-22 15:00:00.410876Starting search for query: Madrid Food Tour
+INFO:root:2019-02-22 15:00:00.586732: Magic Button Pressed
+INFO:root:2019-02-22 15:00:00.586732Starting search for query: Madrid Food Tour
