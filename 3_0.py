@@ -15,25 +15,29 @@ from selenium import webdriver
 from extract_emails import ExtractEmails
 from bs4 import BeautifulSoup
 
+
 # GLOBAL VARIABLES
 city = ''
 workbookName = ''
-wordsfile = ''
+wordsFile = ''
 keywordPairs = []
 badDomains = []
 cities = []
 target = 0
 emails = []
 language = 'en'
-perpage = 50
+perPage = 50
 domains = []
-numsuccessful = 0
+numSuccessful = 0
+numResults = 0
+
 
 #Initiate stuff
-driver = webdriver.Chrome('C:/Users/sai.vikranth/Documents/autobot/Google-Search-Result-Automation/Archive/chromedriver.exe')
+driver = webdriver.Chrome('C:/Users/sai.vikranth/Documents/autobot/Google-Search-Result-Automation/Archive/chromedriver.exe') # UPDATE THIS PATH FOR YOUR LOCAL SYSTEM
 NoSuchElementException = selenium.common.exceptions.NoSuchElementException
 logging.basicConfig(filename='LOG ' + str(uuid.uuid1().hex) + '.txt', level=logging.DEBUG)
 logging.info(str(datetime.datetime.now()) + ': Autobot started')
+
 
 # Reset Function which runs at the start of every button click
 def reset():
@@ -43,8 +47,10 @@ def reset():
     workbookName = None
     target = None
 
+
+# Literally does everything else
 def everythingelse():
-    global workbookName, emails, city, keywordPairs, language, perpage, driver, domains, numsuccessful, wordsfile
+    global workbookName, emails, city, keywordPairs, language, perPage, driver, domains, numSuccessful, wordsFile, numResults
     start_time = time.time()
 
     # MAKE THE WORKSHEET
@@ -71,6 +77,7 @@ def everythingelse():
         messagebox.showinfo('ERROR', 'Error populating keywordPairs: \n' + str(sys.exc_info()[0]))
         return 0
 
+    # ACCUMULATE LINKS FOR EACH 
     for word in keywordPairs:
         searchquery = str(city + "+" + word[0])
         logging.info(str(datetime.datetime.now()) + ': Started searching for ' + searchquery)
@@ -78,7 +85,7 @@ def everythingelse():
         start = 0
         currlinks = []
         while isActive:
-            url = 'https://www.google.com/search?nl=' + language + '&q=' + searchquery + '&start=' + str(start) + '&num=' + str(perpage)
+            url = 'https://www.google.com/search?nl=' + language + '&q=' + searchquery + '&start=' + str(start) + '&num=' + str(perPage)
             driver.get(url)
             try:
                 driver.find_element_by_class_name("g")
@@ -89,6 +96,8 @@ def everythingelse():
                     a = div.find("a")
                     link = a["href"]
                     domain = tldextract.extract(link)[1]
+                    numResults += 1
+
                     if (domain not in domains and domain not in badDomains):
                         domains.append(link)
                         currlinks.append(link)
@@ -102,7 +111,7 @@ def everythingelse():
                 logging.error(str(datetime.datetime.now()) + ': Some other error occurred during search')
                 continue
 
-            start += perpage
+            start += perPage
             time.sleep(random.randint(10, 15))
         
         logging.info(str(datetime.datetime.now()) + ': Completed searching for ' + searchquery)
@@ -110,31 +119,33 @@ def everythingelse():
 
         driver.close()
         print(len(currlinks))
+        print(numResults)
+
+        # START SCRAPING FOR EMAILS
         for url in currlinks:
-            em = ExtractEmails(url=url, depth=30, print_log=True, ssl_verify=True, user_agent='random')
+            em = ExtractEmails(url=url, depth=20, print_log=True, ssl_verify=True, user_agent='random')
             deseemails = em.emails
             if (len(deseemails) > 0):
-                numsuccessful += 1
+                numSuccessful += 1
                 for email in deseemails:
                     if email not in emails:
+                        print(email)
                         emails.append(email)
                         exceltriples.append((url, email))
                         wsh.write(row, 0, email)
                         wsh.write(row, 1, url)
                         row += 1
-            
-            if (len(emails) == 5):
-                break
 
     book.close()
-    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries: ' + str(len(exceltriples)) + '\n' + 'Number of results searched: ' + str(len(domains)) + '\n' + "\n Number of 'good' domains:" + str(len(domains)) + '\nNumber of domains with emails: ' + str(numsuccessful) + '\n' + 'Time Elapsed = ' + str((start_time - time.time())))
+    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries: ' + str(len(exceltriples)) + '\n' + 'Number of results searched: ' + str(len(domains)) + "\nNumber of 'good' domains:" + str(len(domains)) + '\nNumber of domains with emails: ' + str(numSuccessful) + '\n' + 'Time Elapsed = ' + str((time.time() - start_time)))
     messagebox.showinfo('SUCCESS', 'Search completed :D')
+
 
 # Handles the button clicks
 def buttonHandler(text, thiscity, filename):
     global city, keywordPairs, cities, workbookName, wordsfile
     reset()
-    workbookName = filename + '.txt'
+    workbookName = filename
     wordsfile = text + '.txt'
     logging.info(str(datetime.datetime.now()) + ': Magic Button Pressed')
 
