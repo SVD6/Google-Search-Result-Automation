@@ -15,11 +15,11 @@ from tkinter import Label, Entry, StringVar, IntVar, Button, Frame, messagebox
 
 # GLOBAL VARIABLES
 city = ''
-fileName = ''
 keywordPairs = []
 badDomains = []
 cities = []
 target = 0
+workbookName = ''
 
 
 # START LOGGER
@@ -29,16 +29,16 @@ logging.info(str(datetime.datetime.now()) + ': Autobot started')
 
 # Reset Function which runs at the start of every button click
 def reset():
-    global city, keywordPairs, fileName, target
+    global city, keywordPairs, workbookName, target
     city = None
     keywordPairs = []
-    fileName = None
+    workbookName = None
     target = None
 
 
 # Literally does everything else
 def everythingelse():
-    global keywordPairs, city, fileName
+    global keywordPairs, city, workbookName
 
     start_time = time.time()
 
@@ -145,11 +145,9 @@ def everythingelse():
 
 # Handles the button clicks
 def buttonHandler(text, thiscity, filename):
-    global city, keywordPairs, fileName, cities, workbookName
+    global city, keywordPairs, cities, workbookName
     reset()
-    fileName = text + '.txt'
-    workbookName = filename
-
+    workbookName = text + '.txt'
     logging.info(str(datetime.datetime.now()) + ': Magic Button Pressed')
 
     # VERIFY CITY
