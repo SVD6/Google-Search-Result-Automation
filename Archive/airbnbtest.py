@@ -1,9 +1,13 @@
 import requests
+import tldextract
+import selenium
 
 from googlesearch import search 
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from re import match, findall
+
+NoSuchElementException = selenium.common.exceptions.NoSuchElementException
 
 def _get_number_of_results(results_div):
     """Return the total number of results of the google search.
@@ -33,21 +37,32 @@ start = '20'
 num = '10'
 
 url = 'https://www.google.com/search?nl=' + language + '&q=' + searchquery + '&start=' + start + '&num=' + num
+disurl = 'https://www.google.com/search?nl=en&q=Madrid+Tours&num=30&start=10'
 
 isresult = True
 
 driver = webdriver.Chrome('C:/Users/sai.vikranth/Documents/autobot/Google-Search-Result-Automation/Archive/chromedriver.exe')
-driver.get(url)
+driver.get(disurl)
 html = driver.page_source
-driver.find_element_by_class_name("g")
+try:
+    driver.find_element_by_class_name("g")
+except NoSuchElementException:
+    print('No searchresults here')
+testing = html.find("did not match any documents.")
+
+print(testing)
+
 
 soup = BeautifulSoup(html, "html.parser")
-divs = soup.findAll("div", attrs={"class": "g"})
-
+try:
+    divs = soup.findAll("div", attrs={"class": "g"})
+except NoSuchElementException:
+    print ('No search results here')
 for div in divs:
     a = div.find("a")
     link = a["href"]
-    print(link)
+    domain = tldextract.extract(link)[1]
+    print(domain)
 print(len(divs))
 
 

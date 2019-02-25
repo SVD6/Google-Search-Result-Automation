@@ -1,0 +1,6 @@
+INFO:root:2019-02-25 14:26:27.799513: Autobot started
+INFO:root:2019-02-25 14:26:37.805330: Magic Button Pressed
+ERROR:root:2019-02-25 14:26:37.806333: Error populating the keyword pairs
+INFO:root:2019-02-25 14:26:45.674172: Autobot ended
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64908/session/1e4b34e7d80d4ce43614e012e9bd2146 {"sessionId": "1e4b34e7d80d4ce43614e012e9bd2146"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

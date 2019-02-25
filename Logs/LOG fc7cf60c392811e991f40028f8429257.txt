@@ -1,0 +1,33 @@
+INFO:root:2019-02-25 13:13:00.903374: Autobot started
+INFO:root:2019-02-25 13:13:07.166691: Magic Button Pressed
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=0&num=50", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/element {"using": "class name", "value": "g", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/source {"sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=50&num=50", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/element {"using": "class name", "value": "g", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/source {"sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=100&num=50", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/element {"using": "class name", "value": "g", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/source {"sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=150&num=50", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/element {"using": "class name", "value": "g", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/source {"sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=200&num=50", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4/element {"using": "class name", "value": "g", "sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:2019-02-25 13:14:14.604268: Autobot ended
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:57363/session/7daa20b53a993494e8fa087cd1a336c4 {"sessionId": "7daa20b53a993494e8fa087cd1a336c4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

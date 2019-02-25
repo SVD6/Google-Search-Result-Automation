@@ -1,25 +1,39 @@
 import tkinter
 import logging
 import sys
+import uuid
+import time
+import random
+import selenium
 import xlsxwriter
+import selenium
+import tldextract
 import datetime
 
 from tkinter import Label, Entry, StringVar, IntVar, Button, Frame, messagebox
 from selenium import webdriver
+from extract_emails import ExtractEmails
+from bs4 import BeautifulSoup
 
 # GLOBAL VARIABLES
 city = ''
 workbookName = ''
+wordsfile = ''
 keywordPairs = []
 badDomains = []
 cities = []
 target = 0
 emails = []
 language = 'en'
-perpage = '30'
+perpage = 50
+domains = []
+numsuccessful = 0
 
 #Initiate stuff
 driver = webdriver.Chrome('C:/Users/sai.vikranth/Documents/autobot/Google-Search-Result-Automation/Archive/chromedriver.exe')
+NoSuchElementException = selenium.common.exceptions.NoSuchElementException
+logging.basicConfig(filename='LOG ' + str(uuid.uuid1().hex) + '.txt', level=logging.DEBUG)
+logging.info(str(datetime.datetime.now()) + ': Autobot started')
 
 # Reset Function which runs at the start of every button click
 def reset():
@@ -30,7 +44,8 @@ def reset():
     target = None
 
 def everythingelse():
-    global workbookName, emails, city, keywordPairs, language, perpage, driver
+    global workbookName, emails, city, keywordPairs, language, perpage, driver, domains, numsuccessful, wordsfile
+    start_time = time.time()
 
     # MAKE THE WORKSHEET
     book = xlsxwriter.Workbook(workbookName + '.xlsx')
@@ -41,10 +56,12 @@ def everythingelse():
     wsh.write('A1', 'Contact Email', bold)
     wsh.write('B1', 'Website Link', bold)
     wsh.write('C1', 'Website Title', bold)
+    row = 1
+    exceltriples = []
 
     # POPULATE KEYWORD PAIRS
     try:
-        with open(workbookName, 'r') as pairs:
+        with open(wordsfile, 'r') as pairs:
             for line in pairs:
                 final = line.rstrip('\n')
                 word, num = final.split(',')
@@ -56,21 +73,69 @@ def everythingelse():
 
     for word in keywordPairs:
         searchquery = str(city + "+" + word[0])
+        logging.info(str(datetime.datetime.now()) + ': Started searching for ' + searchquery)
         isActive = True
         start = 0
+        currlinks = []
         while isActive:
             url = 'https://www.google.com/search?nl=' + language + '&q=' + searchquery + '&start=' + str(start) + '&num=' + str(perpage)
             driver.get(url)
-            isActive = False
+            try:
+                driver.find_element_by_class_name("g")
+                html = driver.page_source
+                soup = BeautifulSoup(html, "html.parser")
+                divs = soup.findAll("div", attrs={"class": "g"})
+                for div in divs:
+                    a = div.find("a")
+                    link = a["href"]
+                    domain = tldextract.extract(link)[1]
+                    if (domain not in domains and domain not in badDomains):
+                        domains.append(link)
+                        currlinks.append(link)
+            except NoSuchElementException:
+                print('No searchresults here')
+                logging.error(str(datetime.datetime.now()) + ': No more search results left')
+                isActive = False
+                continue
+            except Exception:
+                print('Error finding search divs')
+                logging.error(str(datetime.datetime.now()) + ': Some other error occurred during search')
+                continue
 
+            start += perpage
+            time.sleep(random.randint(10, 15))
+        
+        logging.info(str(datetime.datetime.now()) + ': Completed searching for ' + searchquery)
+        logging.info(str(datetime.datetime.now()) + ': Started email scraping for ' + searchquery)
 
+        driver.close()
+        print(len(currlinks))
+        for url in currlinks:
+            em = ExtractEmails(url=url, depth=30, print_log=True, ssl_verify=True, user_agent='random')
+            deseemails = em.emails
+            if (len(deseemails) > 0):
+                numsuccessful += 1
+                for email in deseemails:
+                    if email not in emails:
+                        emails.append(email)
+                        exceltriples.append((url, email))
+                        wsh.write(row, 0, email)
+                        wsh.write(row, 1, url)
+                        row += 1
+            
+            if (len(emails) == 5):
+                break
+
+    book.close()
+    logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries: ' + str(len(exceltriples)) + '\n' + 'Number of results searched: ' + str(len(domains)) + '\n' + "\n Number of 'good' domains:" + str(len(domains)) + '\nNumber of domains with emails: ' + str(numsuccessful) + '\n' + 'Time Elapsed = ' + str((start_time - time.time())))
+    messagebox.showinfo('SUCCESS', 'Search completed :D')
 
 # Handles the button clicks
 def buttonHandler(text, thiscity, filename):
-    global city, keywordPairs, cities, workbookName
+    global city, keywordPairs, cities, workbookName, wordsfile
     reset()
-    workbookName = text + '.txt'
-
+    workbookName = filename + '.txt'
+    wordsfile = text + '.txt'
     logging.info(str(datetime.datetime.now()) + ': Magic Button Pressed')
 
     # VERIFY CITY

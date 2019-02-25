@@ -1,0 +1,32 @@
+INFO:root:2019-02-25 13:05:48.091971: Autobot started
+INFO:root:2019-02-25 13:07:01.090572: Magic Button Pressed
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=0&num=50", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/element {"using": "class name", "value": "g", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/source {"sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=30&num=50", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/element {"using": "class name", "value": "g", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/source {"sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=60&num=50", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/element {"using": "class name", "value": "g", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/source {"sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=90&num=50", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/element {"using": "class name", "value": "g", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/source {"sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=120&num=50", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/element {"using": "class name", "value": "g", "sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:56866/session/84abd7357604034f477febf7ad1fa3ee/source {"sessionId": "84abd7357604034f477febf7ad1fa3ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

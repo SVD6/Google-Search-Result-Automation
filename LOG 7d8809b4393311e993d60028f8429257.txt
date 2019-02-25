@@ -1,0 +1,88 @@
+INFO:root:2019-02-25 14:28:12.369349: Autobot started
+INFO:root:2019-02-25 14:28:28.496679: Magic Button Pressed
+INFO:root:2019-02-25 14:28:28.496679: Started searching for Madrid+Tour
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=0&num=50", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/element {"using": "class name", "value": "g", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/source {"sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=50&num=50", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/element {"using": "class name", "value": "g", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/source {"sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=100&num=50", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/element {"using": "class name", "value": "g", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/source {"sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=150&num=50", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/element {"using": "class name", "value": "g", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/source {"sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=200&num=50", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65054/session/0bdd56c80bf77c542899c84a9d15ceb9/element {"using": "class name", "value": "g", "sessionId": "0bdd56c80bf77c542899c84a9d15ceb9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:root:2019-02-25 14:29:29.164903: No more search results left
+INFO:root:2019-02-25 14:29:29.164903: Completed searching for Madrid+Tour
+INFO:root:2019-02-25 14:29:29.164903: Started email scraping for Madrid+Tour
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tripsavvy.com
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tripsavvy.com
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751/ HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tripsavvy.com
+DEBUG:urllib3.connectionpool:https://www.tripsavvy.com:443 "GET /best-spain-tours-starting-from-madrid-1643751/legal HTTP/1.1" 404 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:http://madrid.city-tour.com:80 "GET /en HTTP/1.1" 301 324
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madrid.city-tour.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.veltra.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.esmadrid.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tourradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.madrid-tourist-guide.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.tours4fun.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.realmadrid.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.neweuropetours.eu
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.neweuropetours.eu
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): madridmuseumtours.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.timeout.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.freetour.com
+DEBUG:urllib3.connectionpool:https://www.freetour.com:443 "GET /madrid HTTP/1.1" 200 15803
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.freetour.com
+DEBUG:urllib3.connectionpool:https://www.freetour.com:443 "GET /madrid/es/madrid HTTP/1.1" 404 2831
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.freetour.com
+DEBUG:urllib3.connectionpool:https://www.freetour.com:443 "GET /madrid/signup/go HTTP/1.1" 404 2831
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.makemytrip.com
+DEBUG:urllib3.connectionpool:https://www.makemytrip.com:443 "GET /holidays-international/madrid-vacation-tour-packages.html HTTP/1.1" 200 14965
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.makemytrip.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/ HTTP/1.1" 200 16352
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/spain/vacation-packages/ HTTP/1.1" 404 7719
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/spain/local-tours/ HTTP/1.1" 404 7719
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/spain/sightseeing-tours/ HTTP/1.1" 404 7719
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/spain/vacation-packages-from-madrid/ HTTP/1.1" 404 7719
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/spain/vacation-packages-from-barcelona/ HTTP/1.1" 404 7719
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/spain/vacation-packages-from-lisbon/ HTTP/1.1" 404 7719
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/vacation-packages-from-madrid/ HTTP/1.1" 200 25341
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/vacation-packages/ HTTP/1.1" 200 25188
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/sightseeing-tours/ HTTP/1.1" 200 23995
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/barcelona/ HTTP/1.1" 404 7719
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com
+DEBUG:urllib3.connectionpool:https://www.taketours.com:443 "GET /spain/madrid/ HTTP/1.1" 404 7719
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.taketours.com

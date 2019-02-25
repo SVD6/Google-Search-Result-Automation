@@ -1,0 +1,9 @@
+INFO:root:2019-02-25 13:04:05.432323: Autobot started
+INFO:root:2019-02-25 13:04:13.429676: Magic Button Pressed
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56759/session/0abf08f7ac7cc62c2298df4001dc1713/url {"url": "https://www.google.com/search?nl=en&q=Madrid+Tour&start=0&num=50", "sessionId": "0abf08f7ac7cc62c2298df4001dc1713"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56759/session/0abf08f7ac7cc62c2298df4001dc1713/element {"using": "class name", "value": "g", "sessionId": "0abf08f7ac7cc62c2298df4001dc1713"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:2019-02-25 13:04:44.694865: Autobot ended
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:56759/session/0abf08f7ac7cc62c2298df4001dc1713 {"sessionId": "0abf08f7ac7cc62c2298df4001dc1713"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

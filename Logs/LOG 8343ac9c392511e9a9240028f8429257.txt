@@ -1,0 +1,6 @@
+INFO:root:2019-02-25 12:48:09.034439: Autobot started
+INFO:root:2019-02-25 12:48:17.680802: Magic Button Pressed
+INFO:root:2019-02-25 12:48:19.072384: Magic Button Pressed
+INFO:root:2019-02-25 12:48:19.771712: Autobot ended
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:55760/session/db6334d9991a57778593fafab45003f8 {"sessionId": "db6334d9991a57778593fafab45003f8"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
