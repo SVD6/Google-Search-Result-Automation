@@ -1,4 +1,0 @@
-INFO:root:2019-02-25 14:36:58.161742: Autobot started
-INFO:root:2019-02-25 14:37:15.501013: Autobot ended
-DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49749/session/a312a22612dfa20b324e5efc9e4415b6 {"sessionId": "a312a22612dfa20b324e5efc9e4415b6"}
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

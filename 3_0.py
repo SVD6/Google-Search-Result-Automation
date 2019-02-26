@@ -30,6 +30,8 @@ perPage = 50
 domains = []
 numSuccessful = 0
 numResults = 0
+links = ['aporras@julia.net', 'incoming@julia.net', 'service@tours4fun.com', 'tour@corp.realmadrid', 'info@madridmuseumtours.com', 'webmaster@civitatis.com', 'rick@ricksteves.com', 'info@rivieratravel.co', 'groups@rivieratravel.co', 'atencionalcliente@busvision.net', 'info@busvision.net', 'info.neworleansbus@gmail.com', 'customerservices@panchotours.com', 'slick@1.8', 'info@walksofitaly.com', 'info@madridurbanadventures.com', 'info@madride.net', 'nfo@insidersmadrid.com', 'info@insidersmadrid.com', 'jetsettingfools@outlook.com', 'info@ogotours.com', 'Emailinfo@devourtours.comPhoneSpain', 'webmaster@toursgratis.com', 'info@toursgratis.com', 'visitas@grupobme.es', 'tour@atleticodemadrid.com', 'comunicacion@clubatleticodemadrid.com', 'info@boostespana.com', 'newmadridmail@gmail.com',
+'madrid@trixi.com', 'info@madridbiketours.com', 'info@rainbowgaytours.com', 'info@bravobike.com', 'enquiries@globusfamily.co', 'info@bajabikes.eu', 'username@example.com', 'info@nattivus.com', 'info@madrides.es', 'info@accessiblemadrid.com', 'contact@rentandroll.es', 'lisboa@localtuktuk.com', 'madrid@localtuktuk.com', 'info@citylifemadrid.com', 'tarjetatransportepublico@crtm.es', 'atencion.visitante@museodelprado.es', 'normalize@6.0', 'example@domain.com', 'jquery@2.2', 'es5.shim@4.1', 'lodash@3.10', 'react@0.14', 'fitvids@1.1', 'jquery.slick@1.6', 'hola@ejemplo.com', 'name@example.com', 'titti@ponderosa.it', 'stefania@ponderosa.it', 'Susan.Tilly@musicsales.co', '8@7.k', 'M@dv.vݖ', 'x@C0.h', 'info@elrowfamily.com', 'hr@elrowfamily.com', 'TABLES@STUDIO338.CO', 'dave.plugandplay@gmail.com', 'tashsultanateam@paradigmagency.com', 'paulb@freetradeagency.co', 'rzifarelli@paradigmagency.com', 'admin@lemontreemusic.com', 'Qk@8.fy', '3@7.A', 'T@G.ݤ', 'Wq@G.Cr', 'b2binterfacesupport@miki.co', 'WorldAdSense@us.world', 'react-intl@2.4', 'robert@broofa.com', 'example@email.com', 'mautrechy@escpeurope.eu', 'crudisch@escpeurope.eu', 'kwolenska@escpeurope.eu', 'tfernandez@escpeurope.eu', 'lherold@escpeurope.eu', 'cmarinelli@escpeurope.eu', 'particles.js@2.0', 'akaplan@escpeurope.eu', 'tschmitz@escpeurope.eu', 'aiakovleva@escpeurope.eu', 'rwilken@escpeurope.eu', 'jehlers@escpeurope.eu', 'patrick.wolf@edu.escpeurope', 'angelica.zorzettig@edu.escpeurope', 'hallo@mirkokraeft.com', '4@h.5', 'info-erasmus@escpeurope.eu', 'vcacean@escpeurope.eu', 'info.de@escpeurope.eu', 'efett@escpeurope.eu', 'clehmann@escpeurope.eu', 'amechelhoff@escpeurope.eu', 'bkapteina@escpeurope.eu', 'achristodulu@escpeurope.eu', 'cklauth@escpeurope.eu', 'kgrimm@escpeurope.eu', 'library-berlin@escpeurope.eu', 'fmorrone@escpeurope.eu', 'ttse@escpeurope.eu', 'shoyez@escpeurope.eu', 'info.es@escpeurope.eu', 'info.it@escpeurope.eu', 'info.pl@escpeurope.eu', 'mail@ejemplo.com', 'admin@ijf.org', 'president@ijf.org', 'treasurer@ijf.org', 'gs@ijf.org', 'habibsissoko1@yahoo.fr', 'president@eju.net', 'mlarranaga@yahoo.com', 'president@oceaniajudo.com', 'juanbarcos@teleline.es', 'snijdersjan@eju.net', 'bartajudo@volny.cz', 'artem.judo@mail.ru', 'lascau@ijf.org', 'lisa@ijf.org', 'meridjajudoecc@yahoo.fr', 'benone@ijf.org', 'ijf@ijf.org', 'ajjf@judo.or', 'LSynkova@smpbank.ru', 'r.siteny@gmail.com', 'president@judo.az', 'feedback@wework.com', 'privacy@wework.com', 'DPO.Singapore@wework.com', 'joinus@wework.com', 'press@wework.com', 'visites.hdv@paris.fr', 'reception@1lombardstreet.com', 'office@thedonrestaurant.co', 'coqdargent@danddlondon.com', 'london.bookings@stonegatepubs.com', 'bun176133@mabretailemail.net', 'city@vinoteca.co', 'bookings@thedonrestaurant.co', 'tappithen@davy.co', 'manager@silkandgrain.co', 'enquiries@mrestaurants.co', 'threadneedlestreet@brasserieblanc.com', 'reservations@mintleaflounge.com', 'reservations@coyarestaurant.com', 'info@theindia.org', 'info@brigadierslondon.com', 'vipdesk@ytlhotels.co', 'info@mpwbank.com', 'woolgateexchange@davy.co', 'info@cabotte.co', 'oldewineshades@elvino.co', 'city@gauchorestaurants.com', 'masonsavenue@elvino.co', 'mansionhouse@thaisq.com', 'info@theanthologistbar.co', 'adams.court@ballsbrothers.co', 'info@lucsbrasserie.com', 'info@thefollybar.co', 'taberna@etruscarestaurants.com', 'bowlane@planetofthegrapes.co', 'reservations@citysociallondon.com', 'thegallery@ballsbrothers.co', 'reservations@templeandsons.co', 'info@chamberlainsoflondon.com', 'latasca.leadenhall@latasca.co', 'reservations@breadstreetkitchen.com', 'byron@byronhamburgers.com', 'madisoninfo@danddlondon.com', 'restaurants@skygarden.london', 'manager@thefactoryhouse.co', 'plantationplace@davy.co', 'enquires@boltonsrestaurant.co', 'info@foxfinewines.co', 'onenewchange@zizzi.co', 'informacion@congreso.es', 'info@chukaramenbar.com', 'askuabarra@gmail.com', 'hotelurban@derbyhotels.es', 'john.smith@gmail.com', 'media@impacthub.net', 'partnerships@impacthub.net', 'support@sports.fr', 'CustomerService@SuperShuttle.com', 'never@supershuttle.com', 'gabinetedeprensa@acciona.es', 'redessociales@acciona.com', 'inversores@acciona.es']
 
 
 #Initiate stuff
@@ -50,7 +52,7 @@ def reset():
 
 # Literally does everything else
 def everythingelse():
-    global workbookName, emails, city, keywordPairs, language, perPage, driver, domains, numSuccessful, wordsFile, numResults
+    global workbookName, emails, city, keywordPairs, language, perPage, driver, domains, numSuccessful, wordsFile, numResults, links
     start_time = time.time()
 
     # MAKE THE WORKSHEET
@@ -84,10 +86,11 @@ def everythingelse():
         isActive = True
         start = 0
         currlinks = []
+
         while isActive:
             url = 'https://www.google.com/search?nl=' + language + '&q=' + searchquery + '&start=' + str(start) + '&num=' + str(perPage)
-            driver.get(url)
             try:
+                driver.get(url)
                 driver.find_element_by_class_name("g")
                 html = driver.page_source
                 soup = BeautifulSoup(html, "html.parser")
@@ -98,7 +101,7 @@ def everythingelse():
                     domain = tldextract.extract(link)[1]
                     numResults += 1
 
-                    if (domain not in domains and domain not in badDomains):
+                    if (domain not in domains and domain not in badDomains and link not in links):
                         domains.append(link)
                         currlinks.append(link)
             except NoSuchElementException:
@@ -117,7 +120,6 @@ def everythingelse():
         logging.info(str(datetime.datetime.now()) + ': Completed searching for ' + searchquery)
         logging.info(str(datetime.datetime.now()) + ': Started email scraping for ' + searchquery)
 
-        driver.close()
         print(len(currlinks))
         print(numResults)
 
@@ -135,7 +137,8 @@ def everythingelse():
                         wsh.write(row, 0, email)
                         wsh.write(row, 1, url)
                         row += 1
-
+    
+    driver.close()
     book.close()
     logging.info(str(datetime.datetime.now()) + ': Completed a search, here are the stats: \n' + 'Number of entries: ' + str(len(exceltriples)) + '\n' + 'Number of results searched: ' + str(len(domains)) + "\nNumber of 'good' domains:" + str(len(domains)) + '\nNumber of domains with emails: ' + str(numSuccessful) + '\n' + 'Time Elapsed = ' + str((time.time() - start_time)))
     messagebox.showinfo('SUCCESS', 'Search completed :D')

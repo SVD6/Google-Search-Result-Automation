@@ -1,4 +1,3 @@
-Tour,350
 Food Tours,78
 Pub Crawl,74
 Restaurant Tour,74
